@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="bn" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>বিদেশি অভিনয়শিল্পী — CINECAST গ্লোবাল কাস্টিং</title>
+  <meta name="description" content="আন্তর্জাতিক কো-প্রোডাকশন, ব্র্যান্ড টিভিসি ও ওটিটি প্রজেক্টের জন্য ভারত, তুরস্ক, ইউরোপ ও এশিয়ার ভেরিফাইড বিদেশি অভিনয়শিল্পী ও মডেল।" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Hind+Siliguri:wght@300;400;500;600;700&family=Oswald:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.8/themes/odometer-theme-default.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <div class="ambient-glow ambient-glow-1" aria-hidden="true"></div>
+  <div class="ambient-glow ambient-glow-2" aria-hidden="true"></div>
+
+  <!-- ==================== NAVBAR ==================== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand" aria-label="CineCast Media Agency Home">
+        <span class="brand-icon"><i class="fa-solid fa-clapperboard"></i></span>
+        <span class="brand-text">
+          <span class="brand-title">CINECAST</span>
+          <span class="brand-sub">MEDIA &amp; PORTFOLIO</span>
+        </span>
+      </a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Primary Navigation">
+        <a href="index.html" class="nav-link">হোম</a>
+        <div class="nav-dropdown">
+          <button class="nav-link nav-dropdown-toggle active" type="button" aria-expanded="false">
+            <span>প্রোফাইল</span><i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="nav-dropdown-menu">
+            <a href="profiles.html" class="nav-dropdown-item"><i class="fa-solid fa-users"></i> অভিনয়শিল্পী ও মডেল প্রোফাইল</a>
+            <a href="international-artists.html" class="nav-dropdown-item active"><i class="fa-solid fa-globe"></i> বিদেশি অভিনয়শিল্পী</a>
+            <a href="index.html#talent-directory" class="nav-dropdown-item"><i class="fa-solid fa-magnifying-glass"></i> লাইভ ট্যালেন্ট ডিরেক্টরি</a>
+          </div>
+        </div>
+        <div class="nav-dropdown">
+          <button class="nav-link nav-dropdown-toggle" type="button" aria-expanded="false">
+            <span>মিডিয়া ও স্টুডিও</span><i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="nav-dropdown-menu">
+            <a href="gallery.html" class="nav-dropdown-item"><i class="fa-solid fa-images"></i> ফটো গ্যালারি</a>
+            <a href="videos.html" class="nav-dropdown-item"><i class="fa-solid fa-clapperboard"></i> ভিডিও পোর্টফোলিও</a>
+            <a href="shooting-houses.html" class="nav-dropdown-item"><i class="fa-solid fa-building"></i> শুটিং হাউজ</a>
+          </div>
+        </div>
+        <div class="nav-dropdown">
+          <button class="nav-link nav-dropdown-toggle" type="button" aria-expanded="false">
+            <span>ডায়েরি ও নোটিশ</span><i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="nav-dropdown-menu">
+            <a href="notices.html" class="nav-dropdown-item"><i class="fa-solid fa-bullhorn"></i> নোটিশ বোর্ড</a>
+            <a href="directors-diary.html" class="nav-dropdown-item"><i class="fa-solid fa-film"></i> পরিচালক ও প্রযোজক ডায়েরি</a>
+            <a href="artists-diary.html" class="nav-dropdown-item"><i class="fa-solid fa-book-open"></i> অভিনয়শিল্পী ডাইরি</a>
+          </div>
+        </div>
+        <div class="nav-dropdown">
+          <button class="nav-link nav-dropdown-toggle" type="button" aria-expanded="false">
+            <span>মতামত</span><i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="nav-dropdown-menu">
+            <a href="opinions.html" class="nav-dropdown-item"><i class="fa-solid fa-pen-nib"></i> আমাদের মতামত</a>
+            <a href="reviews.html" class="nav-dropdown-item"><i class="fa-solid fa-star"></i> ক্লায়েন্ট ও শিল্পী রিভিউ</a>
+          </div>
+        </div>
+        <a href="index.html#registration-section" class="nav-link">আবেদন করুন</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn-outline-gold hidden-sm" id="openShowreelBtn" type="button">
+          <i class="fa-solid fa-play"></i><span>শো-রিল</span>
+        </button>
+        <a href="index.html#registration-section" class="btn-gold-pill">
+          <i class="fa-solid fa-circle-plus"></i><span>প্রোফাইল জমা দিন</span>
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" type="button" aria-label="Toggle Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== SUBPAGE HERO ==================== -->
+  <section class="page-hero">
+    <div class="page-hero-bg" style="background-image: url('assets/images/hero-cinema.jpg');"></div>
+    <div class="container page-hero-inner">
+      <div class="breadcrumb-row">
+        <a href="index.html">হোম</a>
+        <i class="fa-solid fa-chevron-right"></i>
+        <span>বিদেশি অভিনয়শিল্পী</span>
+      </div>
+      <span class="eyebrow"><i class="fa-solid fa-earth-asia"></i> গ্লোবাল কাস্টিং ডেস্ক</span>
+      <h1>আন্তর্জাতিক ও <span class="text-gold-gradient">বিদেশি অভিনয়শিল্পী</span></h1>
+      <p>যৌথ প্রযোজনার চলচ্চিত্র, আন্তর্জাতিক ব্র্যান্ড টিভিসি ও ওটিটি প্রজেক্টের জন্য ওয়ার্ক-পারমিট রেডি বিদেশি শিল্পী ও মডেল রোস্টার।</p>
+    </div>
+  </section>
+
+  <!-- ==================== STATS STRIP ==================== -->
+  <section class="stats-section" id="stats-section">
+    <div class="container">
+      <div class="stats-odometer-card" id="statsStrip">
+        <div class="stat-item" data-gsap="bottom">
+          <div class="stat-icon"><i class="fa-solid fa-globe"></i></div>
+          <div class="stat-num-row"><span class="odometer stat-odo" data-target="14">0</span><span class="stat-plus">+</span></div>
+          <p class="stat-label">দেশের শিল্পী নেটওয়ার্ক</p>
+        </div>
+        <div class="stat-item" data-gsap="top">
+          <div class="stat-icon"><i class="fa-solid fa-passport"></i></div>
+          <div class="stat-num-row"><span class="odometer stat-odo" data-target="75">0</span><span class="stat-plus">+</span></div>
+          <p class="stat-label">ওয়ার্ক-পারমিট রেডি আর্টিস্ট</p>
+        </div>
+        <div class="stat-item" data-gsap="bottom">
+          <div class="stat-icon"><i class="fa-solid fa-language"></i></div>
+          <div class="stat-num-row"><span class="odometer stat-odo" data-target="12">0</span><span class="stat-plus">+</span></div>
+          <p class="stat-label">আন্তর্জাতিক ভাষা</p>
+        </div>
+        <div class="stat-item" data-gsap="top">
+          <div class="stat-icon"><i class="fa-solid fa-plane-arrival"></i></div>
+          <div class="stat-num-row"><span class="odometer stat-odo" data-target="7">0</span><span class="stat-plus">দিন</span></div>
+          <p class="stat-label">ঢাকা লোকেশন রোল-ইন</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== INTERNATIONAL ARTISTS ROSTER ==================== -->
+  <section class="section-pad">
+    <div class="container">
+      <div class="section-header-row">
+        <div>
+          <span class="eyebrow"><i class="fa-solid fa-plane"></i> দেশ ও অঞ্চলভিত্তিক শিল্পী</span>
+          <h2 class="section-title">বিশ্বমানের <span class="text-gold-gradient">কাস্টিং পুল</span></h2>
+        </div>
+        <div class="filter-pills" id="intlFilters">
+          <button class="filter-pill active" data-filter="all" type="button">সব দেশ</button>
+          <button class="filter-pill" data-filter="india" type="button">ভারত</button>
+          <button class="filter-pill" data-filter="europe" type="button">ইউরোপ ও ইউকে</button>
+          <button class="filter-pill" data-filter="middleeast" type="button">তুরস্ক ও মধ্যপ্রাচ্য</button>
+          <button class="filter-pill" data-filter="asia" type="button">দক্ষিণ-পূর্ব এশিয়া</button>
+        </div>
+      </div>
+
+      <div class="subpage-toolbar">
+        <div class="search-box-dark">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" id="intlSearch" placeholder="দেশের নাম, ভাষা বা শিল্পীর নাম খুঁজুন..." />
+        </div>
+        <div class="result-count-pill">তালিকাভুক্ত: <strong id="intlCountNum">6</strong> জন আন্তর্জাতিক শিল্পী</div>
+      </div>
+
+      <div class="directory-grid" id="intlGrid">
+        <!-- Intl 1 -->
+        <article class="dir-card" data-category="india" data-tags="কলকাতা বাংলা হিন্দি ইংরেজি ওটিটি">
+          <div class="dir-photo">
+            <img src="assets/images/portfolio-casting.jpg" alt="Arjun Chatterjee" />
+            <div class="dir-badges-top">
+              <span class="dir-cat-badge">ফিল্ম ও ওটিটি</span>
+              <span class="dir-age-badge">৩১ বছর</span>
+            </div>
+            <span class="country-flag-pill"><i class="fa-solid fa-location-dot"></i> কলকাতা, ভারত</span>
+          </div>
+          <div class="dir-body">
+            <span class="availability-pill">বাংলাদেশ-ভারত যৌথ প্রযোজনা</span>
+            <h3>অর্জুন চ্যাটার্জি (Arjun)</h3>
+            <p class="dir-specialty">থ্রিলার লিড, গোয়েন্দা ও কর্পোরেট ফিল্ম</p>
+            <div class="dir-meta-row">
+              <span><i class="fa-solid fa-ruler-vertical"></i> 6' 0"</span>
+              <span><i class="fa-solid fa-language"></i> বাংলা, হিন্দি, ইংরেজি</span>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">ওয়ার্ক-পারমিট রেডি</span>
+              <span class="skill-tag">ভয়েস ডাবিং</span>
+            </div>
+            <div class="dir-actions-row">
+              <button class="btn-outline-gold btn-sm" type="button"
+                data-open-talent
+                data-name="অর্জুন চ্যাটার্জি (Arjun)"
+                data-category="ভারতীয় চলচ্চিত্র ও ওটিটি অভিনেতা"
+                data-specialty="থ্রিলার লিড, গোয়েন্দা ও কর্পোরেট ফিল্ম"
+                data-age="৩১"
+                data-height="6' 0&quot;"
+                data-exp="৭ বছর অভিজ্ঞতা"
+                data-photo="assets/images/portfolio-casting.jpg"
+                data-bio="টলিউড ও দুই বাংলার একাধিক ওয়েব ফিল্মে প্রধান চরিত্রে কাজ করেছেন। বাংলাদেশ ওয়ার্ক-পারমিট ও দ্রুত ভিসা প্রসেসিং সুবিধা সম্পন্ন।"
+                data-video="https://www.youtube.com/watch?v=aqz-KE-bpKQ">
+                <i class="fa-solid fa-id-badge"></i> <span>প্রোফাইল দেখুন</span>
+              </button>
+              <button class="btn-gold-pill btn-sm" type="button" data-open-booking="বিদেশি অভিনয়শিল্পী কাস্টিং">রিকোয়েস্ট</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Intl 2 -->
+        <article class="dir-card" data-category="europe" data-tags="লন্ডন ইউকে ইংলিশ কর্পোরেট ফ্যাশন মডেল">
+          <div class="dir-photo">
+            <img src="assets/images/portfolio-music.jpg" alt="Elena Vance" />
+            <div class="dir-badges-top">
+              <span class="dir-cat-badge">ইন্টারন্যাশনাল মডেল</span>
+              <span class="dir-age-badge">২৬ বছর</span>
+            </div>
+            <span class="country-flag-pill"><i class="fa-solid fa-location-dot"></i> লন্ডন, যুক্তরাজ্য</span>
+          </div>
+          <div class="dir-body">
+            <span class="availability-pill">ঢাকা ও ব্যাংকক শুট এভেইলেবল</span>
+            <h3>এলেনা ভ্যান্স (Elena Vance)</h3>
+            <p class="dir-specialty">লাক্সারি কসমেটিক্স, ব্যাংক ও এয়ারলাইন্স টিভিসি</p>
+            <div class="dir-meta-row">
+              <span><i class="fa-solid fa-ruler-vertical"></i> 5' 8"</span>
+              <span><i class="fa-solid fa-language"></i> ইংরেজি, ফরাসি</span>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">হাই-এন্ড টিভিসি</span>
+              <span class="skill-tag">ভয়েসওভার</span>
+            </div>
+            <div class="dir-actions-row">
+              <button class="btn-outline-gold btn-sm" type="button"
+                data-open-talent
+                data-name="এলেনা ভ্যান্স (Elena Vance)"
+                data-category="ব্রিটিশ অভিনেত্রী ও মডেল"
+                data-specialty="লাক্সারি কসমেটিক্স, ব্যাংক ও এয়ারলাইন্স টিভিসি"
+                data-age="২৬"
+                data-height="5' 8&quot;"
+                data-exp="৫ বছর অভিজ্ঞতা"
+                data-photo="assets/images/portfolio-music.jpg"
+                data-bio="লন্ডন ও দুবাইয়ের একাধিক গ্লোবাল ব্র্যান্ড বিজ্ঞাপনের পরিচিত মুখ। আন্তর্জাতিক মানের লাইফস্টাইল ও কর্পোরেট ফিল্মে নিয়মিত কাজ করেন।"
+                data-video="https://www.youtube.com/watch?v=LXb3EKWsInQ">
+                <i class="fa-solid fa-id-badge"></i> <span>প্রোফাইল দেখুন</span>
+              </button>
+              <button class="btn-gold-pill btn-sm" type="button" data-open-booking="বিদেশি অভিনয়শিল্পী কাস্টিং">রিকোয়েস্ট</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Intl 3 -->
+        <article class="dir-card" data-category="middleeast" data-tags="ইস্তাম্বুল তুরস্ক দুবাই ঐতিহাসিক ড্রামা আরবি">
+          <div class="dir-photo">
+            <img src="assets/images/hero-studio.jpg" alt="Emirhan Demir" />
+            <div class="dir-badges-top">
+              <span class="dir-cat-badge">অ্যাকশন ও ড্রামা</span>
+              <span class="dir-age-badge">২৯ বছর</span>
+            </div>
+            <span class="country-flag-pill"><i class="fa-solid fa-location-dot"></i> ইস্তাম্বুল, তুরস্ক</span>
+          </div>
+          <div class="dir-body">
+            <span class="availability-pill">৭ দিনের নোটিশে ট্রাভেল রেডি</span>
+            <h3>এমিরহান দেমির (Emirhan)</h3>
+            <p class="dir-specialty">হিস্টোরিক্যাল ড্রামা, পারফিউম টিভিসি ও স্পোর্টস</p>
+            <div class="dir-meta-row">
+              <span><i class="fa-solid fa-ruler-vertical"></i> 6' 2"</span>
+              <span><i class="fa-solid fa-language"></i> তুর্কি, ইংরেজি, আরবি</span>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">অশ্বারোহণ</span>
+              <span class="skill-tag">কমব্যাট অ্যাকশন</span>
+            </div>
+            <div class="dir-actions-row">
+              <button class="btn-outline-gold btn-sm" type="button"
+                data-open-talent
+                data-name="এমিরহান দেমির (Emirhan)"
+                data-category="তুর্কি অভিনেতা ও মডেল"
+                data-specialty="হিস্টোরিক্যাল ড্রামা, পারফিউম টিভিসি ও স্পোর্টস"
+                data-age="২৯"
+                data-height="6' 2&quot;"
+                data-exp="৬ বছর অভিজ্ঞতা"
+                data-photo="assets/images/hero-studio.jpg"
+                data-bio="তুরস্কের জনপ্রিয় পিরিয়ড ড্রামা প্রোডাকশনে প্রশিক্ষিত অ্যাকশন ও ক্যারেক্টার পারফর্মার।"
+                data-video="https://www.youtube.com/watch?v=aqz-KE-bpKQ">
+                <i class="fa-solid fa-id-badge"></i> <span>প্রোফাইল দেখুন</span>
+              </button>
+              <button class="btn-gold-pill btn-sm" type="button" data-open-booking="বিদেশি অভিনয়শিল্পী কাস্টিং">রিকোয়েস্ট</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Intl 4 -->
+        <article class="dir-card" data-category="asia" data-tags="ব্যাংকক থাইল্যান্ড দক্ষিণ পূর্ব এশিয়া বিউটি টিভিসি">
+          <div class="dir-photo">
+            <img src="assets/images/portfolio-film.jpg" alt="Nadia Lim" />
+            <div class="dir-badges-top">
+              <span class="dir-cat-badge">কমার্শিয়াল অভিনেত্রী</span>
+              <span class="dir-age-badge">২৫ বছর</span>
+            </div>
+            <span class="country-flag-pill"><i class="fa-solid fa-location-dot"></i> ব্যাংকক, থাইল্যান্ড</span>
+          </div>
+          <div class="dir-body">
+            <span class="availability-pill">অন-অ্যারাইভাল টিম সাপোর্ট</span>
+            <h3>নাদিয়া লিম (Nadia Lim)</h3>
+            <p class="dir-specialty">ট্যুরিজম, স্কিনকেয়ার ও রিটেইল ব্র্যান্ড ফিল্ম</p>
+            <div class="dir-meta-row">
+              <span><i class="fa-solid fa-ruler-vertical"></i> 5' 6"</span>
+              <span><i class="fa-solid fa-language"></i> থাই, ইংরেজি, ম্যান্ডারিন</span>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">কসমেটিক্স ক্লোজআপ</span>
+              <span class="skill-tag">ড্যান্স</span>
+            </div>
+            <div class="dir-actions-row">
+              <button class="btn-outline-gold btn-sm" type="button"
+                data-open-talent
+                data-name="নাদিয়া লিম (Nadia Lim)"
+                data-category="দক্ষিণ-পূর্ব এশীয় মডেল ও অভিনেত্রী"
+                data-specialty="ট্যুরিজম, স্কিনকেয়ার ও রিটেইল ব্র্যান্ড ফিল্ম"
+                data-age="২৫"
+                data-height="5' 6&quot;"
+                data-exp="৪ বছর অভিজ্ঞতা"
+                data-photo="assets/images/portfolio-film.jpg"
+                data-bio="ব্যাংকক ও সিঙ্গাপুরে একাধিক বাংলাদেশি ব্র্যান্ডের আউটডোর শুটে কাজ করার বাস্তব অভিজ্ঞতা রয়েছে।"
+                data-video="https://www.youtube.com/watch?v=LXb3EKWsInQ">
+                <i class="fa-solid fa-id-badge"></i> <span>প্রোফাইল দেখুন</span>
+              </button>
+              <button class="btn-gold-pill btn-sm" type="button" data-open-booking="বিদেশি অভিনয়শিল্পী কাস্টিং">রিকোয়েস্ট</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Intl 5 -->
+        <article class="dir-card" data-category="europe" data-tags="মিলান ইতালি ইউরোপ কর্পোরেট ফ্যাশন সিইও">
+          <div class="dir-photo">
+            <img src="assets/images/hero-cinema.jpg" alt="Matteo Rossi" />
+            <div class="dir-badges-top">
+              <span class="dir-cat-badge">কর্পোরেট ও এক্সিকিউটিভ</span>
+              <span class="dir-age-badge">৩৯ বছর</span>
+            </div>
+            <span class="country-flag-pill"><i class="fa-solid fa-location-dot"></i> মিলান, ইতালি</span>
+          </div>
+          <div class="dir-body">
+            <span class="availability-pill">দোভাষী ও ট্রাভেল রেডি</span>
+            <h3>ম্যাটিও রোসি (Matteo Rossi)</h3>
+            <p class="dir-specialty">অটোমোবাইল, ঘড়ি, সুট ব্র্যান্ড ও বিদেশি ইনভেস্টর রোল</p>
+            <div class="dir-meta-row">
+              <span><i class="fa-solid fa-ruler-vertical"></i> 6' 0"</span>
+              <span><i class="fa-solid fa-language"></i> ইতালীয়, ইংরেজি</span>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">লাক্সারি সুট</span>
+              <span class="skill-tag">অটোমোটিভ শুট</span>
+            </div>
+            <div class="dir-actions-row">
+              <button class="btn-outline-gold btn-sm" type="button"
+                data-open-talent
+                data-name="ম্যাটিও রোসি (Matteo Rossi)"
+                data-category="ইউরোপীয় ক্যারেক্টার মডেল"
+                data-specialty="অটোমোবাইল, ঘড়ি, সুট ব্র্যান্ড ও বিদেশি ইনভেস্টর রোল"
+                data-age="৩৯"
+                data-height="6' 0&quot;"
+                data-exp="১০ বছর অভিজ্ঞতা"
+                data-photo="assets/images/hero-cinema.jpg"
+                data-bio="মিলান ও দুবাইয়ের লাক্সারি মেনসওয়্যার ও গ্লোবাল কর্পোরেট ক্যাম্পেইনের অভিজ্ঞ শিল্পী।"
+                data-video="https://www.youtube.com/watch?v=aqz-KE-bpKQ">
+                <i class="fa-solid fa-id-badge"></i> <span>প্রোফাইল দেখুন</span>
+              </button>
+              <button class="btn-gold-pill btn-sm" type="button" data-open-booking="বিদেশি অভিনয়শিল্পী কাস্টিং">রিকোয়েস্ট</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Intl 6 -->
+        <article class="dir-card" data-category="india" data-tags="মুম্বাই ভারত হিন্দি বাংলা নৃত্য অডিশন">
+          <div class="dir-photo">
+            <img src="assets/images/portfolio-casting.jpg" alt="Riya Sen Sharma" />
+            <div class="dir-badges-top">
+              <span class="dir-cat-badge">মিউজিক্যাল ও ফিল্ম</span>
+              <span class="dir-age-badge">২৫ বছর</span>
+            </div>
+            <span class="country-flag-pill"><i class="fa-solid fa-location-dot"></i> মুম্বাই, ভারত</span>
+          </div>
+          <div class="dir-body">
+            <span class="availability-pill">বাংলাদেশ-ভারত যৌথ শুট</span>
+            <h3>রিয়া সেন শর্মা (Riya Sen)</h3>
+            <p class="dir-specialty">ফিল্ম সঙ, ওটিটি স্পেশাল এপিয়ারেন্স ও ফ্যাশন</p>
+            <div class="dir-meta-row">
+              <span><i class="fa-solid fa-ruler-vertical"></i> 5' 7"</span>
+              <span><i class="fa-solid fa-language"></i> হিন্দি, বাংলা, ইংরেজি</span>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">কনটেম্পোরারি ড্যান্স</span>
+              <span class="skill-tag">ওটিটি লিড</span>
+            </div>
+            <div class="dir-actions-row">
+              <button class="btn-outline-gold btn-sm" type="button"
+                data-open-talent
+                data-name="রিয়া সেন শর্মা (Riya Sen)"
+                data-category="ভারতীয় অভিনেত্রী ও ড্যান্স পারফর্মার"
+                data-specialty="ফিল্ম সঙ, ওটিটি স্পেশাল এপিয়ারেন্স ও ফ্যাশন"
+                data-age="২৫"
+                data-height="5' 7&quot;"
+                data-exp="৫ বছর অভিজ্ঞতা"
+                data-photo="assets/images/portfolio-casting.jpg"
+                data-bio="মুম্বাইয়ের মিউজিক লেবেল ও ডিজিটাল সিরিজে কাজ করা দক্ষ পারফর্মার ও অভিনেত্রী।"
+                data-video="https://www.youtube.com/watch?v=LXb3EKWsInQ">
+                <i class="fa-solid fa-id-badge"></i> <span>প্রোফাইল দেখুন</span>
+              </button>
+              <button class="btn-gold-pill btn-sm" type="button" data-open-booking="বিদেশি অভিনয়শিল্পী কাস্টিং">রিকোয়েস্ট</button>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="directory-empty" id="intlEmpty" hidden>
+        <i class="fa-solid fa-globe"></i>
+        <h3>এই অঞ্চলের বা কীওয়ার্ডের কোনো শিল্পী পাওয়া যায়নি</h3>
+        <p>“সব দেশ” সিলেক্ট করুন অথবা ভিন্ন ভাষা/শহর দিয়ে খুঁজুন।</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PRODUCTION LOGISTICS SUPPORT ==================== -->
+  <section class="section-pad">
+    <div class="container">
+      <div class="section-header-center">
+        <span class="eyebrow"><i class="fa-solid fa-shield-halved"></i> এন্ড-টু-এন্ড কো-অর্ডিনেশন</span>
+        <h2 class="section-title">বিদেশি শিল্পী কাস্টিংয়ে <span class="text-gold-gradient">আমাদের পূর্ণাঙ্গ সহায়তা</span></h2>
+      </div>
+      <div class="checklist-grid">
+        <div class="checklist-card">
+          <i class="fa-solid fa-file-signature"></i>
+          <h4>ভিসা ও ওয়ার্ক-পারমিট</h4>
+          <p>সরকারি নিয়ম মেনে ইনভাইটেশন লেটার ও শ্যুটিং পারমিটের সমস্ত কাগজপত্র আমরা প্রস্তুত করি।</p>
+        </div>
+        <div class="checklist-card">
+          <i class="fa-solid fa-hotel"></i>
+          <h4>এয়ারপোর্ট ও আবাসন</h4>
+          <p>ভিআইপি এয়ারপোর্ট রিসিভ, পাঁচতারকা হোটেল বুকিং ও সেট ট্রান্সপোর্ট ব্যবস্থাপনা।</p>
+        </div>
+        <div class="checklist-card">
+          <i class="fa-solid fa-comments"></i>
+          <h4>অন-সেট দোভাষী ও ডাবিং</h4>
+          <p>ইংরেজি, হিন্দি, তুর্কি বা আরবি সংলাপ সমন্বয় ও প্রয়োজনীয় ভয়েস-ডাবিং সাপোর্ট।</p>
+        </div>
+        <div class="checklist-card">
+          <i class="fa-solid fa-handshake"></i>
+          <h4>নিরাপদ চুক্তি ও পেমেন্ট</h4>
+          <p>আন্তর্জাতিক শিল্পী ও বাংলাদেশি প্রোডাকশন হাউসের মধ্যে স্বচ্ছ লিগ্যাল অ্যাগ্রিমেন্ট।</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand">
+          <span class="brand-icon"><i class="fa-solid fa-clapperboard"></i></span>
+          <span class="brand-text">
+            <span class="brand-title">CINECAST</span>
+            <span class="brand-sub">MEDIA &amp; PORTFOLIO</span>
+          </span>
+        </a>
+        <p class="footer-desc">বাংলাদেশের অন্যতম আধুনিক কাস্টিং এজেন্সি ও প্রোডাকশন পোর্টফোলিও হাউস। নাটক, সিনেমা, ওটিটি ও বিজ্ঞাপনের পূর্ণাঙ্গ সৃজনশীল অংশীদার।</p>
+        <div class="social-row">
+          <a href="index.html" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="index.html" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="index.html" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="index.html" aria-label="Vimeo"><i class="fa-brands fa-vimeo-v"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>ট্যালেন্ট ও মিডিয়া</h4>
+        <ul>
+          <li><a href="profiles.html">অভিনয়শিল্পী ও মডেল প্রোফাইল</a></li>
+          <li><a href="international-artists.html">বিদেশি অভিনয়শিল্পী</a></li>
+          <li><a href="shooting-houses.html">শুটিং হাউজ</a></li>
+          <li><a href="gallery.html">ফটো গ্যালারি</a></li>
+          <li><a href="videos.html">ভিডিও পোর্টফোলিও</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>ডায়েরি, নোটিশ ও মতামত</h4>
+        <ul>
+          <li><a href="notices.html">অফিসিয়াল নোটিশ</a></li>
+          <li><a href="directors-diary.html">পরিচালক ও প্রযোজক ডায়েরি</a></li>
+          <li><a href="artists-diary.html">অভিনয়শিল্পী ডাইরি</a></li>
+          <li><a href="opinions.html">আমাদের মতামত</a></li>
+          <li><a href="reviews.html">রিভিউ ও ফিডব্যাক</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>স্টুডিও যোগাযোগ</h4>
+        <ul class="contact-list">
+          <li><i class="fa-solid fa-location-dot"></i> রোড ১১, বনানী, ঢাকা-১২১৩</li>
+          <li><i class="fa-solid fa-phone"></i> +৮৮০ ১৭০০-০০০১২৩</li>
+          <li><i class="fa-solid fa-envelope"></i> casting@cinecastmedia.bd</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <span>© ২০২৬ CINECAST Media &amp; Portfolio. সর্বস্বত্ব সংরক্ষিত।</span>
+        <span>Designed with Classic IT</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modals -->
+  <div class="modal-backdrop" id="reelModal" aria-hidden="true">
+    <div class="modal-dialog modal-video">
+      <div class="reel-modal-topbar">
+        <div>
+          <span class="reel-badge" id="reelCategory">অফিসিয়াল শো-রিল</span>
+          <h3 id="reelTitle">CINECAST ২০২৬ মেগা শো-রিল</h3>
+        </div>
+        <button class="modal-close modal-close-inline" data-close-modal="reelModal" type="button" aria-label="Close Modal"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div class="reel-player-wrap">
+        <video id="reelVideo" class="reel-video-el" controls playsinline preload="metadata" poster="assets/images/hero-cinema.jpg" hidden></video>
+        <iframe id="reelIframe" class="reel-iframe-el" title="YouTube Video Player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <div class="reel-modal-footer">
+        <span class="reel-footer-note"><i class="fa-brands fa-youtube"></i> YouTube প্লেয়ার</span>
+        <a id="reelExternalLink" class="btn-outline-gold btn-sm" href="https://www.youtube.com/watch?v=aqz-KE-bpKQ" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i><span>YouTube-এ দেখুন</span></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-backdrop" id="submitModal" aria-hidden="true">
+    <div class="modal-dialog modal-form">
+      <button class="modal-close" data-close-modal="submitModal" type="button" aria-label="Close Modal"><i class="fa-solid fa-xmark"></i></button>
+      <div class="modal-header">
+        <span class="eyebrow"><i class="fa-solid fa-globe"></i> গ্লোবাল কাস্টিং ডেস্ক</span>
+        <h3>বিদেশি শিল্পী কাস্টিং অনুরোধ</h3>
+        <p>প্রজেক্টের তারিখ, লোকেশন ও শিল্পী চাহিদা জানালে আমাদের টিম যোগাযোগ করবে।</p>
+      </div>
+      <form id="demoSubmitForm" class="demo-form">
+        <div class="form-row"><label>আপনার নাম / প্রোডাকশন হাউস</label><input type="text" placeholder="যেমন: আরিফুর রহমান / কাইজেন ফিল্মস" required /></div>
+        <div class="form-row-2">
+          <div class="form-row">
+            <label>ক্যাটাগরি</label>
+            <select>
+              <option>বিদেশি অভিনয়শিল্পী কাস্টিং</option>
+              <option>অভিনয়শিল্পী / মডেল</option>
+              <option>শুটিং হাউজ বুকিং</option>
+              <option>সিনেমা / ওটিটি প্রোডাকশন</option>
+            </select>
+          </div>
+          <div class="form-row"><label>মোবাইল / ইমেইল</label><input type="text" placeholder="০১৭XX-XXXXXX" required /></div>
+        </div>
+        <div class="form-row"><label>পছন্দের দেশ ও শুটিং তারিখ</label><input type="text" placeholder="যেমন: ইউরোপীয় মডেল, মে ১৫-১৮" /></div>
+        <button class="btn-gold-pill w-full btn-lg" type="submit"><i class="fa-solid fa-paper-plane"></i><span>রিকোয়েস্ট পাঠান</span></button>
+      </form>
+    </div>
+  </div>
+
+  <div class="modal-backdrop" id="talentDetailModal" aria-hidden="true">
+    <div class="modal-dialog modal-talent">
+      <button class="modal-close" data-close-modal="talentDetailModal" type="button" aria-label="Close Modal"><i class="fa-solid fa-xmark"></i></button>
+      <div class="talent-modal-layout">
+        <div class="talent-modal-photo">
+          <img id="tmPhoto" src="assets/images/portfolio-casting.jpg" alt="Artist Photo" />
+          <span class="talent-verified" id="tmBadge"><i class="fa-solid fa-circle-check"></i> গ্লোবাল রোস্টার</span>
+        </div>
+        <div class="talent-modal-body">
+          <span class="eyebrow" id="tmCategory">আন্তর্জাতিক শিল্পী</span>
+          <h3 id="tmName">অর্জুন চ্যাটার্জি</h3>
+          <p class="tm-specialty" id="tmSpecialty">থ্রিলার লিড</p>
+          <div class="tm-specs">
+            <div><span>বয়স</span><strong id="tmAge">৩১ বছর</strong></div>
+            <div><span>উচ্চতা</span><strong id="tmHeight">6' 0"</strong></div>
+            <div><span>অভিজ্ঞতা</span><strong id="tmExperience">৭ বছর</strong></div>
+          </div>
+          <p class="tm-bio" id="tmBio"></p>
+          <div class="tm-actions">
+            <button class="btn-gold-pill" id="tmWatchAuditionBtn" type="button"><i class="fa-solid fa-circle-play"></i><span>শো-রিল দেখুন</span></button>
+            <a class="btn-outline-gold" id="tmDriveLink" href="index.html#registration-section"><i class="fa-solid fa-paper-plane"></i><span>কাস্টিং রিকোয়েস্ট</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast-banner" id="toastBanner" role="status" aria-live="polite">
+    <i class="fa-solid fa-circle-check"></i>
+    <span id="toastMsg">আপনার অনুরোধ সফলভাবে গৃহীত হয়েছে!</span>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrambleTextPlugin.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.8/odometer.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+

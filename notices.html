@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="bn" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>নোটিশ বোর্ড — CINECAST কাস্টিং ও প্রোডাকশন</title>
+  <meta name="description" content="চলমান অডিশন কল, নতুন ওটিটি প্রজেক্ট সার্কুলার, শিল্পী নিবন্ধন নীতিমালা ও ওয়ার্কশপ সংক্রান্ত অফিসিয়াল নোটিশ।" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Hind+Siliguri:wght@300;400;500;600;700&family=Oswald:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.8/themes/odometer-theme-default.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <div class="ambient-glow ambient-glow-1" aria-hidden="true"></div>
+  <div class="ambient-glow ambient-glow-2" aria-hidden="true"></div>
+
+  <!-- ==================== NAVBAR ==================== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand" aria-label="CineCast Media Agency Home">
+        <span class="brand-icon"><i class="fa-solid fa-clapperboard"></i></span>
+        <span class="brand-text">
+          <span class="brand-title">CINECAST</span>
+          <span class="brand-sub">MEDIA &amp; PORTFOLIO</span>
+        </span>
+      </a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Primary Navigation">
+        <a href="index.html" class="nav-link">হোম</a>
+        <div class="nav-dropdown">
+          <button class="nav-link nav-dropdown-toggle" type="button" aria-expanded="false">
+            <span>প্রোফাইল</span><i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="nav-dropdown-menu">
+            <a href="profiles.html" class="nav-dropdown-item"><i class="fa-solid fa-users"></i> অভিনয়শিল্পী ও মডেল প্রোফাইল</a>
+            <a href="international-artists.html" class="nav-dropdown-item"><i class="fa-solid fa-globe"></i> বিদেশি অভিনয়শিল্পী</a>
+            <a href="index.html#talent-directory" class="nav-dropdown-item"><i class="fa-solid fa-magnifying-glass"></i> লাইভ ট্যালেন্ট ডিরেক্টরি</a>
+          </div>
+        </div>
+        <div class="nav-dropdown">
+          <button class="nav-link nav-dropdown-toggle" type="button" aria-expanded="false">
+            <span>মিডিয়া ও স্টুডিও</span><i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="nav-dropdown-menu">
+            <a href="gallery.html" class="nav-dropdown-item"><i class="fa-solid fa-images"></i> ফটো গ্যালারি</a>
+            <a href="videos.html" class="nav-dropdown-item"><i class="fa-solid fa-clapperboard"></i> ভিডিও পোর্টফোলিও</a>
+            <a href="shooting-houses.html" class="nav-dropdown-item"><i class="fa-solid fa-building"></i> শুটিং হাউজ</a>
+          </div>
+        </div>
+        <div class="nav-dropdown">
+          <button class="nav-link nav-dropdown-toggle active" type="button" aria-expanded="false">
+            <span>ডায়েরি ও নোটিশ</span><i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="nav-dropdown-menu">
+            <a href="notices.html" class="nav-dropdown-item active"><i class="fa-solid fa-bullhorn"></i> নোটিশ বোর্ড</a>
+            <a href="directors-diary.html" class="nav-dropdown-item"><i class="fa-solid fa-film"></i> পরিচালক ও প্রযোজক ডায়েরি</a>
+            <a href="artists-diary.html" class="nav-dropdown-item"><i class="fa-solid fa-book-open"></i> অভিনয়শিল্পী ডাইরি</a>
+          </div>
+        </div>
+        <div class="nav-dropdown">
+          <button class="nav-link nav-dropdown-toggle" type="button" aria-expanded="false">
+            <span>মতামত</span><i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="nav-dropdown-menu">
+            <a href="opinions.html" class="nav-dropdown-item"><i class="fa-solid fa-pen-nib"></i> আমাদের মতামত</a>
+            <a href="reviews.html" class="nav-dropdown-item"><i class="fa-solid fa-star"></i> ক্লায়েন্ট ও শিল্পী রিভিউ</a>
+          </div>
+        </div>
+        <a href="index.html#registration-section" class="nav-link">আবেদন করুন</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn-outline-gold hidden-sm" id="openShowreelBtn" type="button">
+          <i class="fa-solid fa-play"></i><span>শো-রিল</span>
+        </button>
+        <a href="index.html#registration-section" class="btn-gold-pill">
+          <i class="fa-solid fa-circle-plus"></i><span>প্রোফাইল জমা দিন</span>
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" type="button" aria-label="Toggle Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== SUBPAGE HERO ==================== -->
+  <section class="page-hero">
+    <div class="page-hero-bg" style="background-image: url('assets/images/hero-studio.jpg');"></div>
+    <div class="container page-hero-inner">
+      <div class="breadcrumb-row">
+        <a href="index.html">হোম</a>
+        <i class="fa-solid fa-chevron-right"></i>
+        <span>নোটিশ বোর্ড</span>
+      </div>
+      <span class="eyebrow"><i class="fa-solid fa-bullhorn"></i> অফিসিয়াল সার্কুলার ও ঘোষণা</span>
+      <h1>জরুরি <span class="text-gold-gradient">নোটিশ ও অডিশন কল</span></h1>
+      <p>সর্বশেষ কাস্টিং বিজ্ঞপ্তি, অডিশনের সময়সূচি, রেজিস্ট্রেশন নীতিমালা ও প্রোডাকশন আপডেট নিয়মিত এখানে প্রকাশিত হয়।</p>
+    </div>
+  </section>
+
+  <!-- ==================== NOTICE BOARD SECTION ==================== -->
+  <section class="section-pad">
+    <div class="container">
+      <!-- Pinned Urgent Notice -->
+      <div class="notice-pinned" data-gsap="bottom">
+        <div>
+          <div class="notice-meta-row">
+            <span class="notice-urgency"><i class="fa-solid fa-circle-exclamation"></i> পিনড • জরুরি অডিশন কল</span>
+            <span class="notice-ref">REF: CN-2026-109</span>
+            <span><i class="fa-regular fa-calendar"></i> প্রকাশিত: ১২ নভেম্বর ২০২৬</span>
+          </div>
+          <h2>নতুন মেগা ওয়েব সিরিজ “ঢাকা মিডনাইট”-এর জন্য সরাসরি স্ক্রিন টেস্ট ও অডিশন</h2>
+          <p class="notice-summary mt-2">
+            ডিসেম্বরে শুটিং শুরু হতে যাওয়া ৮ পর্বের ক্রাইম-থ্রিলার ওয়েব সিরিজের জন্য মুখ্য ও পার্শ্বচরিত্রে ১৮ থেকে ৪৫ বছর বয়সী অভিনেতা-অভিনেত্রীদের আহ্বান করা হচ্ছে। নির্বাচিতদের সঙ্গে সরাসরি প্রযোজনা চুক্তি সম্পন্ন হবে।
+          </p>
+          <div class="notice-actions-bar">
+            <a href="index.html#registration-section" class="btn-gold-pill">
+              <i class="fa-solid fa-paper-plane"></i><span>অডিশনের জন্য আবেদন করুন</span>
+            </a>
+            <button class="btn-outline-gold" type="button" data-open-booking="সিনেমা / ওটিটি প্রোডাকশন">
+              <i class="fa-solid fa-phone-volume"></i><span>কল-টাইম বুক করুন</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="notice-pinned-box">
+          <h4><i class="fa-solid fa-clipboard-list"></i> অডিশন সারসংক্ষেপ</h4>
+          <ul class="notice-checklist">
+            <li><i class="fa-solid fa-check"></i> আবেদনের শেষ তারিখ: ২৫ নভেম্বর ২০২৬</li>
+            <li><i class="fa-solid fa-check"></i> অডিশন ভেন্যু: CINECAST স্টুডিও, রোড ১১, বনানী</li>
+            <li><i class="fa-solid fa-check"></i> প্রয়োজনীয় উপকরণ: ১ মিনিটের মনোলগ ভিডিও + ২ কপি পোর্টফোলিও ছবি</li>
+            <li><i class="fa-solid fa-check"></i> রেজিস্ট্রেশন ফি: সম্পূর্ণ বিনামূল্যে (১০০% স্বচ্ছ প্রক্রিয়া)</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Filter & Search -->
+      <div class="section-header-row">
+        <div>
+          <span class="eyebrow"><i class="fa-solid fa-list-check"></i> সব ঘোষণা</span>
+          <h2 class="section-title">প্রকাশিত <span class="text-gold-gradient">নোটিশ তালিকা</span></h2>
+        </div>
+        <div class="filter-pills" id="noticeFilters">
+          <button class="filter-pill active" data-filter="all" type="button">সব নোটিশ</button>
+          <button class="filter-pill" data-filter="audition" type="button">জরুরি অডিশন</button>
+          <button class="filter-pill" data-filter="production" type="button">প্রোডাকশন আপডেট</button>
+          <button class="filter-pill" data-filter="policy" type="button">নীতিমালা ও সতর্কতা</button>
+          <button class="filter-pill" data-filter="workshop" type="button">ওয়ার্কশপ</button>
+        </div>
+      </div>
+
+      <div class="subpage-toolbar">
+        <div class="search-box-dark">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" id="noticeSearch" placeholder="রেফারেন্স কোড বা নোটিশের বিষয় লিখে খুঁজুন..." />
+        </div>
+        <div class="result-count-pill">মোট নোটিশ: <strong id="noticeCountNum">6</strong> টি</div>
+      </div>
+
+      <div class="notice-list" id="noticesList">
+        <!-- Notice 1 -->
+        <article class="notice-card" data-category="audition" data-tags="টিভিসি টেলিকম বিজ্ঞাপন মডেল অডিশন">
+          <div class="notice-card-head">
+            <div>
+              <div class="notice-meta-row">
+                <span class="notice-urgency"><i class="fa-solid fa-bolt"></i> জরুরি অডিশন</span>
+                <span class="notice-ref">CN-2026-108</span>
+                <span><i class="fa-regular fa-calendar"></i> ১০ নভেম্বর ২০২৬</span>
+                <span><i class="fa-regular fa-hourglass-half"></i> শেষ সময়: ২০ নভেম্বর</span>
+              </div>
+              <h3>শীর্ষ টেলিকম ব্র্যান্ডের ঈদ ক্যাম্পেইন টিভিসি কাস্টিং কল</h3>
+              <p class="notice-summary">২২-২৮ বছর বয়সী প্রাণবন্ত তরুণ-তরুণী এবং ৪০+ বয়সী অভিভাবক চরিত্রের জন্য সেলফ-টেপ অডিশন নেওয়া হচ্ছে।</p>
+            </div>
+            <button class="btn-outline-gold btn-sm" type="button" data-toggle-notice>
+              <span>বিস্তারিত শর্তাবলি</span><i class="fa-solid fa-chevron-down"></i>
+            </button>
+          </div>
+          <div class="notice-details-panel">
+            <div class="notice-details-inner">
+              <ul class="notice-checklist">
+                <li><i class="fa-solid fa-circle-check"></i> শুটিং লোকেশন: ঢাকা ও গাজীপুর (২ দিন)</li>
+                <li><i class="fa-solid fa-circle-check"></i> ব্যবহার স্বত্ব: টিভি + ডিজিটাল (১ বছর)</li>
+                <li><i class="fa-solid fa-circle-check"></i> ক্যামেরা ফ্রেন্ডলি হাসি ও স্বাভাবিক এক্সপ্রেশন আবশ্যক</li>
+              </ul>
+              <div>
+                <a href="index.html#registration-section" class="btn-gold-pill btn-sm">
+                  <i class="fa-solid fa-paper-plane"></i><span>এখনই আবেদন করুন</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Notice 2 -->
+        <article class="notice-card" data-category="policy" data-tags="সতর্কতা প্রতারণা রেজিস্ট্রেশন ফি নীতিমালা">
+          <div class="notice-card-head">
+            <div>
+              <div class="notice-meta-row">
+                <span class="notice-urgency policy"><i class="fa-solid fa-shield-halved"></i> নীতিমালা ও সতর্কতা</span>
+                <span class="notice-ref">CN-2026-105</span>
+                <span><i class="fa-regular fa-calendar"></i> ০৬ নভেম্বর ২০২৬</span>
+              </div>
+              <h3>ভুয়া কাস্টিং এজেন্ট ও প্রতারণা থেকে সতর্ক থাকার অফিসিয়াল বিজ্ঞপ্তি</h3>
+              <p class="notice-summary">CINECAST Media কখনোই অডিশন বা প্রোফাইল নির্বাচনের জন্য অগ্রিম নগদ অর্থ বা বিকাশ চার্জ দাবি করে না।</p>
+            </div>
+            <button class="btn-outline-gold btn-sm" type="button" data-toggle-notice>
+              <span>বিস্তারিত শর্তাবলি</span><i class="fa-solid fa-chevron-down"></i>
+            </button>
+          </div>
+          <div class="notice-details-panel">
+            <div class="notice-details-inner">
+              <ul class="notice-checklist">
+                <li><i class="fa-solid fa-circle-check"></i> সব অফিশিয়াল যোগাযোগ কেবল @cinecastmedia.bd ইমেইল ও হটলাইন থেকে করা হয়</li>
+                <li><i class="fa-solid fa-circle-check"></i> সন্দেহজনক নম্বর পেলে সাথে সাথে আমাদের স্টুডিও ডেস্ককে জানান</li>
+              </ul>
+              <div>
+                <a href="opinions.html" class="btn-outline-gold btn-sm"><i class="fa-solid fa-pen-nib"></i><span>কাস্টিং এথিকস পড়ুন</span></a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Notice 3 -->
+        <article class="notice-card" data-category="workshop" data-tags="কর্মশালা অ্যাক্টিং ক্যামেরা প্রশিক্ষণ">
+          <div class="notice-card-head">
+            <div>
+              <div class="notice-meta-row">
+                <span class="notice-urgency info"><i class="fa-solid fa-graduation-cap"></i> ওয়ার্কশপ</span>
+                <span class="notice-ref">CN-2026-103</span>
+                <span><i class="fa-regular fa-calendar"></i> ০৩ নভেম্বর ২০২৬</span>
+                <span><i class="fa-regular fa-hourglass-half"></i> আসন: মাত্র ২৫ জন</span>
+              </div>
+              <h3>“ক্যামেরা অ্যাক্টিং ও অডিশন ক্র্যাক” — ২ দিনের মাস্টারক্লাস ওয়ার্কশপ</h3>
+              <p class="notice-summary">নতুন ও প্রতিশ্রুতিশীল অভিনয়শিল্পীদের জন্য মার্কিং, আই-লাইন, ক্লোজ-আপ এক্সপ্রেশন ও ভয়েস মড্যুলেশন নিয়ে প্র্যাকটিক্যাল সেশন।</p>
+            </div>
+            <button class="btn-outline-gold btn-sm" type="button" data-toggle-notice>
+              <span>বিস্তারিত শর্তাবলি</span><i class="fa-solid fa-chevron-down"></i>
+            </button>
+          </div>
+          <div class="notice-details-panel">
+            <div class="notice-details-inner">
+              <ul class="notice-checklist">
+                <li><i class="fa-solid fa-circle-check"></i> তারিখ: ২৮-২৯ নভেম্বর, সকাল ১০টা থেকে বিকেল ৫টা</li>
+                <li><i class="fa-solid fa-circle-check"></i> সনদপত্র ও ১টি প্রফেশনাল শো-রিল সিন শুট অন্তর্ভুক্ত</li>
+              </ul>
+              <div>
+                <button class="btn-gold-pill btn-sm" type="button" data-open-booking="অভিনয়শিল্পী / মডেল">আসন বুক করুন</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Notice 4 -->
+        <article class="notice-card" data-category="production" data-tags="শুটিং হাউজ পূর্বাচল আপগ্রেড ফ্লোর">
+          <div class="notice-card-head">
+            <div>
+              <div class="notice-meta-row">
+                <span class="notice-urgency info"><i class="fa-solid fa-building"></i> প্রোডাকশন আপডেট</span>
+                <span class="notice-ref">CN-2026-099</span>
+                <span><i class="fa-regular fa-calendar"></i> ২৮ অক্টোবর ২০২৬</span>
+              </div>
+              <h3>পূর্বাচল ৪ নম্বর সাউন্ডস্টেজে নতুন সাইক্লোরামা ও কর্পোরেট সেট চালু</h3>
+              <p class="notice-summary">এখন থেকে প্রোডাকশন হাউসগুলো ৪,৮০০ বর্গফুটের সাউন্ডপ্রুফ স্টুডিওতে প্রি-বিল্ট অফিস ও অ্যাপার্টমেন্ট সেট বুক করতে পারবেন।</p>
+            </div>
+            <button class="btn-outline-gold btn-sm" type="button" data-toggle-notice>
+              <span>বিস্তারিত শর্তাবলি</span><i class="fa-solid fa-chevron-down"></i>
+            </button>
+          </div>
+          <div class="notice-details-panel">
+            <div class="notice-details-inner">
+              <ul class="notice-checklist">
+                <li><i class="fa-solid fa-circle-check"></i> ১২০ কেভিএ সাইলেন্ট জেনারেটর ও এসি গ্রিনরুম সুবিধা</li>
+                <li><i class="fa-solid fa-circle-check"></i> এক মাসের মধ্যে বুকিংয়ে ১৫% প্রোডাকশন ছাড়</li>
+              </ul>
+              <div>
+                <a href="shooting-houses.html" class="btn-outline-gold btn-sm"><i class="fa-solid fa-building"></i><span>শুটিং হাউজ দেখুন</span></a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Notice 5 -->
+        <article class="notice-card" data-category="audition" data-tags="শিশু শিল্পী ফ্যামিলি ড্রামা ঈদ নাটক">
+          <div class="notice-card-head">
+            <div>
+              <div class="notice-meta-row">
+                <span class="notice-urgency"><i class="fa-solid fa-bolt"></i> জরুরি অডিশন</span>
+                <span class="notice-ref">CN-2026-096</span>
+                <span><i class="fa-regular fa-calendar"></i> ২৪ অক্টোবর ২০২৬</span>
+              </div>
+              <h3>পারিবারিক চলচ্চিত্রের জন্য ৬ থেকে ১২ বছর বয়সী শিশুশিল্পী আবশ্যক</h3>
+              <p class="notice-summary">স্বাভাবিক বাচনভঙ্গি ও ক্যামেরা-ফ্রেন্ডলি শিশুদের অভিভাবকের সম্মতিসহ প্রোফাইল পাঠানোর অনুরোধ করা হচ্ছে।</p>
+            </div>
+            <button class="btn-outline-gold btn-sm" type="button" data-toggle-notice>
+              <span>বিস্তারিত শর্তাবলি</span><i class="fa-solid fa-chevron-down"></i>
+            </button>
+          </div>
+          <div class="notice-details-panel">
+            <div class="notice-details-inner">
+              <ul class="notice-checklist">
+                <li><i class="fa-solid fa-circle-check"></i> কেবল সাপ্তাহিক ছুটির দিন ও স্কুল-পরবর্তী সময়ে শুটিং শিডিউল</li>
+                <li><i class="fa-solid fa-circle-check"></i> অভিভাবকের উপস্থিতি ও শিশু-সুরক্ষা নীতিমালা বাধ্যতামূলক</li>
+              </ul>
+              <div>
+                <a href="index.html#registration-section" class="btn-gold-pill btn-sm">অভিভাবক কর্তৃক আবেদন</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Notice 6 -->
+        <article class="notice-card" data-category="production" data-tags="বিদেশি শিল্পী কাস্টিং পোর্টফোলিও">
+          <div class="notice-card-head">
+            <div>
+              <div class="notice-meta-row">
+                <span class="notice-urgency info"><i class="fa-solid fa-globe"></i> প্রোডাকশন আপডেট</span>
+                <span class="notice-ref">CN-2026-092</span>
+                <span><i class="fa-regular fa-calendar"></i> ১৮ অক্টোবর ২০২৬</span>
+              </div>
+              <h3>আন্তর্জাতিক কো-প্রোডাকশনের জন্য গ্লোবাল আর্টিস্ট বুকিং ডেস্ক উন্মুক্ত</h3>
+              <p class="notice-summary">ভারত, তুরস্ক, থাইল্যান্ড ও ইউরোপ থেকে ভেরিফাইড অভিনয়শিল্পী বুকিংয়ের জন্য ওয়ান-স্টপ ভিসা ও লজিস্টিকস সেবা চালু হয়েছে।</p>
+            </div>
+            <button class="btn-outline-gold btn-sm" type="button" data-toggle-notice>
+              <span>বিস্তারিত শর্তাবলি</span><i class="fa-solid fa-chevron-down"></i>
+            </button>
+          </div>
+          <div class="notice-details-panel">
+            <div class="notice-details-inner">
+              <ul class="notice-checklist">
+                <li><i class="fa-solid fa-circle-check"></i> কাস্টিং রিকোয়েস্টের ৭ দিনের মধ্যে ভিসা ও টিকিট প্রসেসিং</li>
+              </ul>
+              <div>
+                <a href="international-artists.html" class="btn-outline-gold btn-sm">বিদেশি শিল্পী দেখুন</a>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="directory-empty" id="noticesEmpty" hidden>
+        <i class="fa-solid fa-bullhorn"></i>
+        <h3>এই ক্যাটাগরি বা কীওয়ার্ডে কোনো নোটিশ নেই</h3>
+        <p>“সব নোটিশ” ট্যাবে ফিরে সব বিজ্ঞপ্তি দেখুন।</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand">
+          <span class="brand-icon"><i class="fa-solid fa-clapperboard"></i></span>
+          <span class="brand-text"><span class="brand-title">CINECAST</span><span class="brand-sub">MEDIA &amp; PORTFOLIO</span></span>
+        </a>
+        <p class="footer-desc">বাংলাদেশের অন্যতম আধুনিক কাস্টিং এজেন্সি ও প্রোডাকশন পোর্টফোলিও হাউস। নাটক, সিনেমা, ওটিটি ও বিজ্ঞাপনের পূর্ণাঙ্গ সৃজনশীল অংশীদার।</p>
+        <div class="social-row">
+          <a href="index.html" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="index.html" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="index.html" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="index.html" aria-label="Vimeo"><i class="fa-brands fa-vimeo-v"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>ট্যালেন্ট ও মিডিয়া</h4>
+        <ul>
+          <li><a href="profiles.html">অভিনয়শিল্পী ও মডেল প্রোফাইল</a></li>
+          <li><a href="international-artists.html">বিদেশি অভিনয়শিল্পী</a></li>
+          <li><a href="shooting-houses.html">শুটিং হাউজ</a></li>
+          <li><a href="gallery.html">ফটো গ্যালারি</a></li>
+          <li><a href="videos.html">ভিডিও পোর্টফোলিও</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>ডায়েরি, নোটিশ ও মতামত</h4>
+        <ul>
+          <li><a href="notices.html">অফিসিয়াল নোটিশ</a></li>
+          <li><a href="directors-diary.html">পরিচালক ও প্রযোজক ডায়েরি</a></li>
+          <li><a href="artists-diary.html">অভিনয়শিল্পী ডাইরি</a></li>
+          <li><a href="opinions.html">আমাদের মতামত</a></li>
+          <li><a href="reviews.html">রিভিউ ও ফিডব্যাক</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>স্টুডিও যোগাযোগ</h4>
+        <ul class="contact-list">
+          <li><i class="fa-solid fa-location-dot"></i> রোড ১১, বনানী, ঢাকা-১২১৩</li>
+          <li><i class="fa-solid fa-phone"></i> +৮৮০ ১৭০০-০০০১২৩</li>
+          <li><i class="fa-solid fa-envelope"></i> casting@cinecastmedia.bd</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <span>© ২০২৬ CINECAST Media &amp; Portfolio. সর্বস্বত্ব সংরক্ষিত।</span>
+        <span>Designed with Classic IT</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modals -->
+  <div class="modal-backdrop" id="reelModal" aria-hidden="true">
+    <div class="modal-dialog modal-video">
+      <div class="reel-modal-topbar">
+        <div><span class="reel-badge" id="reelCategory">অফিসিয়াল শো-রিল</span><h3 id="reelTitle">CINECAST ২০২৬ মেগা শো-রিল</h3></div>
+        <button class="modal-close modal-close-inline" data-close-modal="reelModal" type="button" aria-label="Close Modal"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div class="reel-player-wrap">
+        <video id="reelVideo" class="reel-video-el" controls playsinline preload="metadata" poster="assets/images/hero-cinema.jpg" hidden></video>
+        <iframe id="reelIframe" class="reel-iframe-el" title="YouTube Video Player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <div class="reel-modal-footer">
+        <span class="reel-footer-note"><i class="fa-brands fa-youtube"></i> YouTube প্লেয়ার</span>
+        <a id="reelExternalLink" class="btn-outline-gold btn-sm" href="https://www.youtube.com/watch?v=aqz-KE-bpKQ" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i><span>YouTube-এ দেখুন</span></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-backdrop" id="submitModal" aria-hidden="true">
+    <div class="modal-dialog modal-form">
+      <button class="modal-close" data-close-modal="submitModal" type="button" aria-label="Close Modal"><i class="fa-solid fa-xmark"></i></button>
+      <div class="modal-header">
+        <span class="eyebrow"><i class="fa-solid fa-bullhorn"></i> CINECAST অডিশন ও বুকিং</span>
+        <h3>কল-টাইম বা ওয়ার্কশপ বুকিং</h3>
+        <p>আপনার তথ্য দিন, আমাদের কো-অর্ডিনেশন টিম শিডিউল কনফার্ম করবে।</p>
+      </div>
+      <form id="demoSubmitForm" class="demo-form">
+        <div class="form-row"><label>আপনার নাম</label><input type="text" placeholder="যেমন: আরিফুর রহমান" required /></div>
+        <div class="form-row-2">
+          <div class="form-row">
+            <label>বিষয়</label>
+            <select>
+              <option>সিনেমা / ওটিটি প্রোডাকশন</option>
+              <option>অভিনয়শিল্পী / মডেল</option>
+              <option>শুটিং হাউজ বুকিং</option>
+              <option>বিদেশি অভিনয়শিল্পী কাস্টিং</option>
+            </select>
+          </div>
+          <div class="form-row"><label>মোবাইল / ইমেইল</label><input type="text" placeholder="০১৭XX-XXXXXX" required /></div>
+        </div>
+        <div class="form-row"><label>নোটিশ রেফারেন্স (ঐচ্ছিক)</label><input type="text" placeholder="যেমন: CN-2026-109" /></div>
+        <button class="btn-gold-pill w-full btn-lg" type="submit"><i class="fa-solid fa-paper-plane"></i><span>জমা দিন</span></button>
+      </form>
+    </div>
+  </div>
+
+  <div class="toast-banner" id="toastBanner" role="status" aria-live="polite">
+    <i class="fa-solid fa-circle-check"></i><span id="toastMsg">আপনার তথ্য সফলভাবে গৃহীত হয়েছে!</span>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrambleTextPlugin.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.8/odometer.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="bn" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>আমাদের মতামত — CINECAST সম্পাদকীয় ও ইন্ডাস্ট্রি ভাবনা</title>
+  <meta name="description" content="বাংলাদেশের চলচ্চিত্র, ওটিটি, বিজ্ঞাপন ও স্বচ্ছ কাস্টিং সংস্কৃতি নিয়ে CINECAST-এর সম্পাদকীয় মতামত ও দিকনির্দেশনা।" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Hind+Siliguri:wght@300;400;500;600;700&family=Oswald:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.8/themes/odometer-theme-default.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <div class="ambient-glow ambient-glow-1" aria-hidden="true"></div>
+  <div class="ambient-glow ambient-glow-2" aria-hidden="true"></div>
+
+  <!-- ==================== NAVBAR ==================== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand" aria-label="CineCast Media Agency Home">
+        <span class="brand-icon"><i class="fa-solid fa-clapperboard"></i></span>
+        <span class="brand-text"><span class="brand-title">CINECAST</span><span class="brand-sub">MEDIA &amp; PORTFOLIO</span></span>
+      </a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Primary Navigation">
+        <a href="index.html" class="nav-link">হোম</a>
+        <div class="nav-dropdown">
+          <button class="nav-link nav-dropdown-toggle" type="button" aria-expanded="false">
+            <span>প্রোফাইল</span><i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="nav-dropdown-menu">
+            <a href="profiles.html" class="nav-dropdown-item"><i class="fa-solid fa-users"></i> অভিনয়শিল্পী ও মডেল প্রোফাইল</a>
+            <a href="international-artists.html" class="nav-dropdown-item"><i class="fa-solid fa-globe"></i> বিদেশি অভিনয়শিল্পী</a>
+            <a href="index.html#talent-directory" class="nav-dropdown-item"><i class="fa-solid fa-magnifying-glass"></i> লাইভ ট্যালেন্ট ডিরেক্টরি</a>
+          </div>
+        </div>
+        <div class="nav-dropdown">
+          <button class="nav-link nav-dropdown-toggle" type="button" aria-expanded="false">
+            <span>মিডিয়া ও স্টুডিও</span><i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="nav-dropdown-menu">
+            <a href="gallery.html" class="nav-dropdown-item"><i class="fa-solid fa-images"></i> ফটো গ্যালারি</a>
+            <a href="videos.html" class="nav-dropdown-item"><i class="fa-solid fa-clapperboard"></i> ভিডিও পোর্টফোলিও</a>
+            <a href="shooting-houses.html" class="nav-dropdown-item"><i class="fa-solid fa-building"></i> শুটিং হাউজ</a>
+          </div>
+        </div>
+        <div class="nav-dropdown">
+          <button class="nav-link nav-dropdown-toggle" type="button" aria-expanded="false">
+            <span>ডায়েরি ও নোটিশ</span><i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="nav-dropdown-menu">
+            <a href="notices.html" class="nav-dropdown-item"><i class="fa-solid fa-bullhorn"></i> নোটিশ বোর্ড</a>
+            <a href="directors-diary.html" class="nav-dropdown-item"><i class="fa-solid fa-film"></i> পরিচালক ও প্রযোজক ডায়েরি</a>
+            <a href="artists-diary.html" class="nav-dropdown-item"><i class="fa-solid fa-book-open"></i> অভিনয়শিল্পী ডাইরি</a>
+          </div>
+        </div>
+        <div class="nav-dropdown">
+          <button class="nav-link nav-dropdown-toggle active" type="button" aria-expanded="false">
+            <span>মতামত</span><i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="nav-dropdown-menu">
+            <a href="opinions.html" class="nav-dropdown-item active"><i class="fa-solid fa-pen-nib"></i> আমাদের মতামত</a>
+            <a href="reviews.html" class="nav-dropdown-item"><i class="fa-solid fa-star"></i> ক্লায়েন্ট ও শিল্পী রিভিউ</a>
+          </div>
+        </div>
+        <a href="index.html#registration-section" class="nav-link">আবেদন করুন</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn-outline-gold hidden-sm" id="openShowreelBtn" type="button">
+          <i class="fa-solid fa-play"></i><span>শো-রিল</span>
+        </button>
+        <a href="index.html#registration-section" class="btn-gold-pill">
+          <i class="fa-solid fa-circle-plus"></i><span>প্রোফাইল জমা দিন</span>
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" type="button" aria-label="Toggle Menu"><i class="fa-solid fa-bars"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== SUBPAGE HERO ==================== -->
+  <section class="page-hero">
+    <div class="page-hero-bg" style="background-image: url('assets/images/hero-cinema.jpg');"></div>
+    <div class="container page-hero-inner">
+      <div class="breadcrumb-row">
+        <a href="index.html">হোম</a>
+        <i class="fa-solid fa-chevron-right"></i>
+        <span>আমাদের মতামত</span>
+      </div>
+      <span class="eyebrow"><i class="fa-solid fa-pen-nib"></i> সম্পাদকীয় কলাম ও দৃষ্টিভঙ্গি</span>
+      <h1>আমাদের <span class="text-gold-gradient">মতামত ও ভাবনা</span></h1>
+      <p>সৃজনশীল কাস্টিং, পেশাদার শুটিং পরিবেশ, ওটিটি-সিনেমার মানোন্নয়ন ও নতুন শিল্পীদের সঠিক পথনির্দেশ নিয়ে আমাদের ভাবনা।</p>
+    </div>
+  </section>
+
+  <!-- ==================== CORE MANIFESTO & INTERACTIVE POLL ==================== -->
+  <section class="section-pad">
+    <div class="container">
+      <div class="manifesto-card" data-gsap="bottom">
+        <div>
+          <span class="eyebrow"><i class="fa-solid fa-compass"></i> CINECAST ম্যানিফেস্টো ২০২৬</span>
+          <h2>“সঠিক কাস্টিং হলো একটি ভালো চিত্রনাট্যের অর্ধেক সাফল্য”</h2>
+          <p class="notice-summary mt-2">
+            আমাদের বিশ্বাস—বাংলাদেশের মিডিয়া ইন্ডাস্ট্রিতে মেধার কোনো অভাব নেই, অভাব কেবল স্বচ্ছ ও পেশাদার সংযোগের। অডিশন থেকে সম্মানী চুক্তি পর্যন্ত প্রতিটি ধাপে মর্যাদা ও স্বচ্ছতা প্রতিষ্ঠাই আমাদের মূল লক্ষ্য।
+          </p>
+          <div class="notice-actions-bar">
+            <a href="notices.html" class="btn-outline-gold btn-sm"><i class="fa-solid fa-bullhorn"></i><span>নীতিমালা নোটিশ</span></a>
+            <a href="#opinionFormSection" class="btn-gold-pill btn-sm"><i class="fa-solid fa-comment-dots"></i><span>আপনার মতামত লিখুন</span></a>
+          </div>
+        </div>
+
+        <div class="poll-box" id="opinionPoll">
+          <h4><i class="fa-solid fa-square-poll-vertical"></i> পাঠক জরিপ: ইন্ডাস্ট্রিতে এখন কোন পরিবর্তনটি সবচেয়ে জরুরি?</h4>
+          <div class="poll-options">
+            <button class="poll-option" type="button" data-votes="48">
+              <span class="poll-option-bar"></span>
+              <span class="poll-option-row"><span>স্বচ্ছ ওপেন অডিশন ও ফ্রি রেজিস্ট্রেশন</span><span class="poll-pct">0%</span></span>
+            </button>
+            <button class="poll-option" type="button" data-votes="32">
+              <span class="poll-option-bar"></span>
+              <span class="poll-option-row"><span>লিখিত কন্ট্র্যাক্ট ও সময়মতো পারিশ্রমিক</span><span class="poll-pct">0%</span></span>
+            </button>
+            <button class="poll-option" type="button" data-votes="20">
+              <span class="poll-option-bar"></span>
+              <span class="poll-option-row"><span>আধুনিক ও সাউন্ডপ্রুফ শুটিং হাউজ</span><span class="poll-pct">0%</span></span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Editorial Columns -->
+      <div class="section-header-row">
+        <div>
+          <span class="eyebrow"><i class="fa-solid fa-newspaper"></i> সম্পাদকীয় কলাম</span>
+          <h2 class="section-title">বিশেষজ্ঞ ও টিমের <span class="text-gold-gradient">বিশ্লেষণ</span></h2>
+        </div>
+        <div class="filter-pills" id="opinionFilters">
+          <button class="filter-pill active" data-filter="all" type="button">সব মতামত</button>
+          <button class="filter-pill" data-filter="ethics" type="button">কাস্টিং এথিকস</button>
+          <button class="filter-pill" data-filter="ott" type="button">ওটিটি ও সিনেমা</button>
+          <button class="filter-pill" data-filter="guide" type="button">নতুনদের গাইডলাইন</button>
+          <button class="filter-pill" data-filter="brand" type="button">বিজ্ঞাপন ও ব্র্যান্ড</button>
+        </div>
+      </div>
+
+      <div class="diary-grid" id="opinionsGrid">
+        <!-- Opinion 1 -->
+        <article class="diary-card" data-category="ethics">
+          <div class="diary-media">
+            <img src="assets/images/portfolio-casting.jpg" alt="স্বচ্ছ কাস্টিং" />
+            <span class="diary-log-tag">কাস্টিং এথিকস</span>
+          </div>
+          <div class="diary-body">
+            <div class="diary-date-row"><span><i class="fa-regular fa-calendar"></i> ১০ নভেম্বর ২০২৬</span><span><i class="fa-regular fa-clock"></i> ৪ মিনিট পাঠ</span></div>
+            <h3>অডিশনে কেন কোনো ‘ফি’ থাকা উচিত নয় এবং কীভাবে প্রতারণা চিনবেন</h3>
+            <p class="diary-excerpt">মেধা যাচাইয়ের প্রক্রিয়া সবসময় বিনামূল্যে হওয়া উচিত। এজেন্সির আয় আসে প্রোডাকশন হাউসের প্রজেক্ট থেকে, নতুন শিল্পীর পকেট থেকে নয়।</p>
+            <blockquote class="diary-quote">“প্রতিভা কেনাবেচার বস্তু নয়; সুযোগ পাওয়ার পথ সবার জন্য সমান হওয়া দরকার।”</blockquote>
+            <div class="diary-author-bar">
+              <div class="diary-author-info"><div class="avatar-badge">না</div><div><strong>নাজমুল হাসান</strong><span>প্রধান কাস্টিং কিউরেটর</span></div></div>
+              <button class="btn-outline-gold btn-sm" type="button"
+                data-read-entry
+                data-tag="আমাদের মতামত • কাস্টিং এথিকস"
+                data-title="অডিশনে কেন কোনো ‘ফি’ থাকা উচিত নয় এবং কীভাবে প্রতারণা চিনবেন"
+                data-author="নাজমুল হাসান (কাস্টিং কিউরেটর)"
+                data-date="১০ নভেম্বর ২০২৬"
+                data-photo="assets/images/portfolio-casting.jpg"
+                data-quote="প্রতিভা কেনাবেচার বস্তু নয়; সুযোগ পাওয়ার পথ সবার জন্য সমান হওয়া দরকার।"
+                data-body="সামাজিক মাধ্যমে অনেকেই ‘কার্ড ফি’ বা ‘অডিশন ফি’-এর নামে তরুণ-তরুণীদের কাছ থেকে টাকা নিচ্ছেন। আমরা স্পষ্ট ভাষায় বলতে চাই—পেশাদার কাস্টিং এজেন্সি কখনোই কাজ দেওয়ার শর্তে টাকা নেয় না।||নিজের সেলফ-টেপ ভিডিও ও স্বাভাবিক পোর্টফোলিও তৈরি করে কেবল যাচাইকৃত প্ল্যাটফর্মেই আবেদন করুন।">
+                পড়ুন
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Opinion 2 -->
+        <article class="diary-card" data-category="ott">
+          <div class="diary-media">
+            <img src="assets/images/portfolio-film.jpg" alt="ওটিটি যুগের অভিনয়" />
+            <span class="diary-log-tag">ওটিটি ও সিনেমা</span>
+          </div>
+          <div class="diary-body">
+            <div class="diary-date-row"><span><i class="fa-regular fa-calendar"></i> ০৪ নভেম্বর ২০২৬</span><span><i class="fa-regular fa-clock"></i> ৫ মিনিট পাঠ</span></div>
+            <h3>ওটিটি-র ৪কে স্ক্রিনে অতিরঞ্জিত অভিনয়ের দিন শেষ, এখন চাই বাস্তবতার ছোঁয়া</h3>
+            <p class="diary-excerpt">বড় টিভি বা মোবাইল স্ক্রিন—সবখানেই দর্শক এখন স্বাভাবিক কথা বলা ও সত্যিকারের আবেগ দেখতে চায়।</p>
+            <blockquote class="diary-quote">“যখন অভিনয়কে অভিনয় মনে হয় না, ঠিক তখনই চরিত্রটি জীবন্ত হয়।”</blockquote>
+            <div class="diary-author-bar">
+              <div class="diary-author-info"><div class="avatar-badge">সা</div><div><strong>সামিয়া রহমান</strong><span>স্ক্রিপ্ট কনসালটেন্ট</span></div></div>
+              <button class="btn-outline-gold btn-sm" type="button"
+                data-read-entry
+                data-tag="আমাদের মতামত • ওটিটি ও সিনেমা"
+                data-title="ওটিটি-র ৪কে স্ক্রিনে অতিরঞ্জিত অভিনয়ের দিন শেষ, এখন চাই বাস্তবতার ছোঁয়া"
+                data-author="সামিয়া রহমান"
+                data-date="০৪ নভেম্বর ২০২৬"
+                data-photo="assets/images/portfolio-film.jpg"
+                data-quote="যখন অভিনয়কে অভিনয় মনে হয় না, ঠিক তখনই চরিত্রটি জীবন্ত হয়।"
+                data-body="আগের তুলনায় বাংলা ওয়েব কনটেন্ট এখন বিশ্বমঞ্চে প্রতিযোগিতা করছে। এর প্রধান কারণ হলো ডিরেক্ট সাউন্ড এবং রিয়েলিস্টিক অভিনয়ের চর্চা।">
+                পড়ুন
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Opinion 3 -->
+        <article class="diary-card" data-category="guide">
+          <div class="diary-media">
+            <img src="assets/images/hero-studio.jpg" alt="নতুন শিল্পীদের পোর্টফোলিও" />
+            <span class="diary-log-tag">নতুনদের গাইডলাইন</span>
+          </div>
+          <div class="diary-body">
+            <div class="diary-date-row"><span><i class="fa-regular fa-calendar"></i> ২৮ অক্টোবর ২০২৬</span><span><i class="fa-regular fa-clock"></i> ৪ মিনিট পাঠ</span></div>
+            <h3>ভারী মেকআপ বা ফিল্টার নয়—কাস্টিং ডিরেক্টররা কেমন ছবি দেখতে চান?</h3>
+            <p class="diary-excerpt">অতিরিক্ত এডিটেড ছবি বরং সুযোগ কমিয়ে দেয়। ন্যাচারাল ডে-লাইটে তোলা ফ্রন্ট ও সাইড প্রোফাইল ছবিই সবচেয়ে কার্যকর।</p>
+            <blockquote class="diary-quote">“অডিশনে ফিল্টার কাজ করে না, আপনার প্রকৃত মুখভঙ্গিই সবচেয়ে বড় সম্পদ।”</blockquote>
+            <div class="diary-author-bar">
+              <div class="diary-author-info"><div class="avatar-badge">রে</div><div><strong>রেজওয়ান কবির</strong><span>সিনিয়র ফটোগ্রাফার</span></div></div>
+              <button class="btn-outline-gold btn-sm" type="button"
+                data-read-entry
+                data-tag="আমাদের মতামত • নতুনদের গাইডলাইন"
+                data-title="ভারী মেকআপ বা ফিল্টার নয়—কাস্টিং ডিরেক্টররা কেমন ছবি দেখতে চান?"
+                data-author="রেজওয়ান কবির"
+                data-date="২৮ অক্টোবর ২০২৬"
+                data-photo="assets/images/hero-studio.jpg"
+                data-quote="অডিশনে ফিল্টার কাজ করে না, আপনার প্রকৃত মুখভঙ্গিই সবচেয়ে বড় সম্পদ।"
+                data-body="প্রোফাইল জমা দেওয়ার সময় ৪টি ছবি রাখা যথেষ্ট: ১টি হাসিমুখের ক্লোজআপ, ১টি গম্ভীর ক্লোজআপ, ১টি সাইড প্রোফাইল এবং ১টি ফুল-লেংথ সাধারণ পোশাকের ছবি।">
+                পড়ুন
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Opinion 4 -->
+        <article class="diary-card" data-category="brand">
+          <div class="diary-media">
+            <img src="assets/images/portfolio-music.jpg" alt="ব্র্যান্ড টিভিসি ও গল্প" />
+            <span class="diary-log-tag">বিজ্ঞাপন ও ব্র্যান্ড</span>
+          </div>
+          <div class="diary-body">
+            <div class="diary-date-row"><span><i class="fa-regular fa-calendar"></i> ২০ অক্টোবর ২০২৬</span><span><i class="fa-regular fa-clock"></i> ৪ মিনিট পাঠ</span></div>
+            <h3>শুধু পণ্য দেখানো নয়, মানুষের আবেগ স্পর্শ করলেই ব্র্যান্ড ফিল্ম সফল হয়</h3>
+            <p class="diary-excerpt">আজকের দর্শক সরাসরি সেলস পিচ পছন্দ করেন না; তারা ব্র্যান্ডের ভেতর নিজেদের জীবনের গল্প খুঁজতে চান।</p>
+            <blockquote class="diary-quote">“পণ্য যখন গল্পের অংশ হয়, দর্শক তখন ব্র্যান্ডকে মনে রাখে।”</blockquote>
+            <div class="diary-author-bar">
+              <div class="diary-author-info"><div class="avatar-badge">মা</div><div><strong>মাহমুদুল ইসলাম</strong><span>ক্রিয়েটিভ ডিরেক্টর</span></div></div>
+              <button class="btn-outline-gold btn-sm" type="button"
+                data-read-entry
+                data-tag="আমাদের মতামত • বিজ্ঞাপন ও ব্র্যান্ড"
+                data-title="শুধু পণ্য দেখানো নয়, মানুষের আবেগ স্পর্শ করলেই ব্র্যান্ড ফিল্ম সফল হয়"
+                data-author="মাহমুদুল ইসলাম"
+                data-date="২০ অক্টোবর ২০২৬"
+                data-photo="assets/images/portfolio-music.jpg"
+                data-quote="পণ্য যখন গল্পের অংশ হয়, দর্শক তখন ব্র্যান্ডকে মনে রাখে।"
+                data-body="আমাদের তৈরি সাম্প্রতিক ওভিসি-গুলো মিলিয়ন ভিউ পাওয়ার মূল কারণ হলো বাস্তব জীবন থেকে নেওয়া আবেগ ও সংক্ষিপ্ত অথচ গভীর স্টোরিটেলিং।">
+                পড়ুন
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Opinion 5 -->
+        <article class="diary-card" data-category="ethics">
+          <div class="diary-media">
+            <img src="assets/images/hero-cinema.jpg" alt="সময়ানুবর্তিতা ও পেশাদারিত্ব" />
+            <span class="diary-log-tag">কাস্টিং এথিকস</span>
+          </div>
+          <div class="diary-body">
+            <div class="diary-date-row"><span><i class="fa-regular fa-calendar"></i> ১৪ অক্টোবর ২০২৬</span><span><i class="fa-regular fa-clock"></i> ৩ মিনিট পাঠ</span></div>
+            <h3>কল-টাইম মেনে চলা এবং লিখিত চুক্তি: পেশাদার ইন্ডাস্ট্রির দুই ভিত্তি</h3>
+            <p class="diary-excerpt">সময়মতো সেটে আসা এবং পরিষ্কার চুক্তিনামায় সই করা শিল্পী ও প্রযোজক—উভয়ের সম্মান রক্ষা করে।</p>
+            <blockquote class="diary-quote">“প্রতিভা আপনাকে দরজায় আনবে, কিন্তু পেশাদারিত্ব আপনাকে স্থায়ী করবে।”</blockquote>
+            <div class="diary-author-bar">
+              <div class="diary-author-info"><div class="avatar-badge">সি</div><div><strong>CINECAST বোর্ড</strong><span>অপারেশনস</span></div></div>
+              <button class="btn-outline-gold btn-sm" type="button"
+                data-read-entry
+                data-tag="আমাদের মতামত • কাস্টিং এথিকস"
+                data-title="কল-টাইম মেনে চলা এবং লিখিত চুক্তি: পেশাদার ইন্ডাস্ট্রির দুই ভিত্তি"
+                data-author="CINECAST অপারেশনস"
+                data-date="১৪ অক্টোবর ২০২৬"
+                data-photo="assets/images/hero-cinema.jpg"
+                data-quote="প্রতিভা আপনাকে দরজায় আনবে, কিন্তু পেশাদারিত্ব আপনাকে স্থায়ী করবে।"
+                data-body="এক ঘণ্টার দেরি মানে ৪০ জন কলাকুশলী ও পুরো স্টুডিও শিফটের আর্থিক ক্ষতি। এজন্য CINECAST প্রতিটি প্রজেক্টে ডিজিটাল কল-শিট ও লিখিত চুক্তি অনুসরণ করে।">
+                পড়ুন
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Opinion 6 -->
+        <article class="diary-card" data-category="guide ott">
+          <div class="diary-media">
+            <img src="assets/images/portfolio-casting.jpg" alt="ভাষা ও উচ্চারণ" />
+            <span class="diary-log-tag">নতুনদের গাইডলাইন</span>
+          </div>
+          <div class="diary-body">
+            <div class="diary-date-row"><span><i class="fa-regular fa-calendar"></i> ০৮ অক্টোবর ২০২৬</span><span><i class="fa-regular fa-clock"></i> ৪ মিনিট পাঠ</span></div>
+            <h3>প্রমিত বাংলার পাশাপাশি আঞ্চলিক উচ্চারণ ও ইংরেজিতে দক্ষতার গুরুত্ব</h3>
+            <p class="diary-excerpt">আন্তর্জাতিক ওটিটি ও ব্র্যান্ড ক্যাম্পেইনে সুযোগ বাড়াতে চাইলে নিজের কণ্ঠস্বর ও ভাষার পরিধি বাড়ানো জরুরি।</p>
+            <blockquote class="diary-quote">“উচ্চারণের স্পষ্টতা অভিনয়ের আবেগকে দশগুণ শক্তিশালী করে।”</blockquote>
+            <div class="diary-author-bar">
+              <div class="diary-author-info"><div class="avatar-badge">আ</div><div><strong>আনোয়ার হোসেন</strong><span>ভয়েস ও অ্যাক্টিং মেন্টর</span></div></div>
+              <button class="btn-outline-gold btn-sm" type="button"
+                data-read-entry
+                data-tag="আমাদের মতামত • নতুনদের গাইডলাইন"
+                data-title="প্রমিত বাংলার পাশাপাশি আঞ্চলিক উচ্চারণ ও ইংরেজিতে দক্ষতার গুরুত্ব"
+                data-author="আনোয়ার হোসেন"
+                data-date="০৮ অক্টোবর ২০২৬"
+                data-photo="assets/images/portfolio-casting.jpg"
+                data-quote="উচ্চারণের স্পষ্টতা অভিনয়ের আবেগকে দশগুণ শক্তিশালী করে।"
+                data-body="নিয়মিত সংবাদপত্র জোরে পড়া, শ্বাস-প্রশ্বাসের ব্যায়াম এবং ডাবিং অনুশীলন একজন শিল্পীকে অনেক বেশি বহুমুখী করে তোলে।">
+                পড়ুন
+              </button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SUBMIT YOUR OPINION ==================== -->
+  <section class="section-pad" id="opinionFormSection">
+    <div class="container">
+      <div class="review-form-shell">
+        <div class="section-header-center">
+          <span class="eyebrow"><i class="fa-solid fa-comment-dots"></i> আপনার দৃষ্টিভঙ্গি শেয়ার করুন</span>
+          <h2 class="section-title">ইন্ডাস্ট্রি নিয়ে আপনার <span class="text-gold-gradient">মতামত লিখুন</span></h2>
+          <p class="section-sub">পরিচালক, শিল্পী বা দর্শক হিসেবে আপনার গঠনমূলক মতামত সরাসরি পাতায় যুক্ত হবে।</p>
+        </div>
+
+        <form id="opinionSubmitForm" class="reg-form-grid">
+          <div class="form-row-2">
+            <div class="form-row">
+              <label for="opName">আপনার নাম <span class="req">*</span></label>
+              <input id="opName" type="text" placeholder="যেমন: রফিকুল ইসলাম" required />
+            </div>
+            <div class="form-row">
+              <label for="opRole">পরিচিতি / পেশা</label>
+              <input id="opRole" type="text" placeholder="যেমন: থিয়েটার কর্মী / দর্শক / নির্মাতা" />
+            </div>
+          </div>
+          <div class="form-row-2">
+            <div class="form-row">
+              <label for="opCategory">বিষয়বস্তু</label>
+              <select id="opCategory">
+                <option value="ethics">কাস্টিং এথিকস</option>
+                <option value="ott">ওটিটি ও সিনেমা</option>
+                <option value="guide">নতুনদের গাইডলাইন</option>
+                <option value="brand">বিজ্ঞাপন ও ব্র্যান্ড</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <label for="opTitle">মতামতের শিরোনাম <span class="req">*</span></label>
+              <input id="opTitle" type="text" placeholder="যেমন: মফস্বল থেকে নতুন প্রতিভা তুলে আনার প্রস্তাব" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <label for="opBody">বিস্তারিত মতামত <span class="req">*</span></label>
+            <textarea id="opBody" rows="4" placeholder="আপনার মূল্যবান মতামত বা প্রস্তাবনা লিখুন..." required></textarea>
+          </div>
+          <button class="btn-gold-pill btn-lg w-full" type="submit">
+            <i class="fa-solid fa-paper-plane"></i><span>মতামত প্রকাশ করুন</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand">
+          <span class="brand-icon"><i class="fa-solid fa-clapperboard"></i></span>
+          <span class="brand-text"><span class="brand-title">CINECAST</span><span class="brand-sub">MEDIA &amp; PORTFOLIO</span></span>
+        </a>
+        <p class="footer-desc">বাংলাদেশের অন্যতম আধুনিক কাস্টিং এজেন্সি ও প্রোডাকশন পোর্টফোলিও হাউস। নাটক, সিনেমা, ওটিটি ও বিজ্ঞাপনের পূর্ণাঙ্গ সৃজনশীল অংশীদার।</p>
+        <div class="social-row">
+          <a href="index.html" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="index.html" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="index.html" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="index.html" aria-label="Vimeo"><i class="fa-brands fa-vimeo-v"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>ট্যালেন্ট ও মিডিয়া</h4>
+        <ul>
+          <li><a href="profiles.html">অভিনয়শিল্পী ও মডেল প্রোফাইল</a></li>
+          <li><a href="international-artists.html">বিদেশি অভিনয়শিল্পী</a></li>
+          <li><a href="shooting-houses.html">শুটিং হাউজ</a></li>
+          <li><a href="gallery.html">ফটো গ্যালারি</a></li>
+          <li><a href="videos.html">ভিডিও পোর্টফোলিও</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>ডায়েরি, নোটিশ ও মতামত</h4>
+        <ul>
+          <li><a href="notices.html">অফিসিয়াল নোটিশ</a></li>
+          <li><a href="directors-diary.html">পরিচালক ও প্রযোজক ডায়েরি</a></li>
+          <li><a href="artists-diary.html">অভিনয়শিল্পী ডাইরি</a></li>
+          <li><a href="opinions.html">আমাদের মতামত</a></li>
+          <li><a href="reviews.html">রিভিউ ও ফিডব্যাক</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>স্টুডিও যোগাযোগ</h4>
+        <ul class="contact-list">
+          <li><i class="fa-solid fa-location-dot"></i> রোড ১১, বনানী, ঢাকা-১২১৩</li>
+          <li><i class="fa-solid fa-phone"></i> +৮৮০ ১৭০০-০০০১২৩</li>
+          <li><i class="fa-solid fa-envelope"></i> casting@cinecastmedia.bd</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <span>© ২০২৬ CINECAST Media &amp; Portfolio. সর্বস্বত্ব সংরক্ষিত।</span>
+        <span>Designed with Classic IT</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modals -->
+  <div class="modal-backdrop" id="reelModal" aria-hidden="true">
+    <div class="modal-dialog modal-video">
+      <div class="reel-modal-topbar">
+        <div><span class="reel-badge" id="reelCategory">অফিসিয়াল শো-রিল</span><h3 id="reelTitle">CINECAST ২০২৬ মেগা শো-রিল</h3></div>
+        <button class="modal-close modal-close-inline" data-close-modal="reelModal" type="button" aria-label="Close Modal"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div class="reel-player-wrap">
+        <video id="reelVideo" class="reel-video-el" controls playsinline preload="metadata" poster="assets/images/hero-cinema.jpg" hidden></video>
+        <iframe id="reelIframe" class="reel-iframe-el" title="YouTube Video Player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <div class="reel-modal-footer">
+        <span class="reel-footer-note"><i class="fa-brands fa-youtube"></i> YouTube প্লেয়ার</span>
+        <a id="reelExternalLink" class="btn-outline-gold btn-sm" href="https://www.youtube.com/watch?v=aqz-KE-bpKQ" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i><span>YouTube-এ দেখুন</span></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-backdrop" id="diaryReaderModal" aria-hidden="true">
+    <div class="modal-dialog modal-diary">
+      <div class="reel-modal-topbar">
+        <div><span class="reel-badge" id="drTag">আমাদের মতামত</span><h3 id="drTitle">শিরোনাম</h3></div>
+        <button class="modal-close modal-close-inline" data-close-modal="diaryReaderModal" type="button" aria-label="Close Modal"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div class="diary-modal-scroll">
+        <div class="result-count-pill" id="drMeta">লেখক • তারিখ</div>
+        <img id="drPhoto" class="diary-modal-cover" src="assets/images/portfolio-casting.jpg" alt="কভার" />
+        <blockquote id="drQuote" class="diary-modal-quote"></blockquote>
+        <div id="drBody" class="diary-modal-text"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast-banner" id="toastBanner" role="status" aria-live="polite">
+    <i class="fa-solid fa-circle-check"></i><span id="toastMsg">আপনার মতামত সফলভাবে গৃহীত হয়েছে!</span>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrambleTextPlugin.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.8/odometer.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+

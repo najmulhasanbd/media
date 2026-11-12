@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="bn" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>অভিনয়শিল্পী ডাইরি — CINECAST শিল্পীদের গল্প</title>
+  <meta name="description" content="অভিনয়শিল্পী ও মডেলদের প্রথম অডিশন, চরিত্র ধারণের প্রস্তুতি, রাতের শুটিং ও সেটের ভেতরের ব্যক্তিগত ডাইরি।" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Hind+Siliguri:wght@300;400;500;600;700&family=Oswald:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.8/themes/odometer-theme-default.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <div class="ambient-glow ambient-glow-1" aria-hidden="true"></div>
+  <div class="ambient-glow ambient-glow-2" aria-hidden="true"></div>
+
+  <!-- ==================== NAVBAR ==================== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand" aria-label="CineCast Media Agency Home">
+        <span class="brand-icon"><i class="fa-solid fa-clapperboard"></i></span>
+        <span class="brand-text"><span class="brand-title">CINECAST</span><span class="brand-sub">MEDIA &amp; PORTFOLIO</span></span>
+      </a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Primary Navigation">
+        <a href="index.html" class="nav-link">হোম</a>
+        <div class="nav-dropdown">
+          <button class="nav-link nav-dropdown-toggle" type="button" aria-expanded="false">
+            <span>প্রোফাইল</span><i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="nav-dropdown-menu">
+            <a href="profiles.html" class="nav-dropdown-item"><i class="fa-solid fa-users"></i> অভিনয়শিল্পী ও মডেল প্রোফাইল</a>
+            <a href="international-artists.html" class="nav-dropdown-item"><i class="fa-solid fa-globe"></i> বিদেশি অভিনয়শিল্পী</a>
+            <a href="index.html#talent-directory" class="nav-dropdown-item"><i class="fa-solid fa-magnifying-glass"></i> লাইভ ট্যালেন্ট ডিরেক্টরি</a>
+          </div>
+        </div>
+        <div class="nav-dropdown">
+          <button class="nav-link nav-dropdown-toggle" type="button" aria-expanded="false">
+            <span>মিডিয়া ও স্টুডিও</span><i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="nav-dropdown-menu">
+            <a href="gallery.html" class="nav-dropdown-item"><i class="fa-solid fa-images"></i> ফটো গ্যালারি</a>
+            <a href="videos.html" class="nav-dropdown-item"><i class="fa-solid fa-clapperboard"></i> ভিডিও পোর্টফোলিও</a>
+            <a href="shooting-houses.html" class="nav-dropdown-item"><i class="fa-solid fa-building"></i> শুটিং হাউজ</a>
+          </div>
+        </div>
+        <div class="nav-dropdown">
+          <button class="nav-link nav-dropdown-toggle active" type="button" aria-expanded="false">
+            <span>ডায়েরি ও নোটিশ</span><i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="nav-dropdown-menu">
+            <a href="notices.html" class="nav-dropdown-item"><i class="fa-solid fa-bullhorn"></i> নোটিশ বোর্ড</a>
+            <a href="directors-diary.html" class="nav-dropdown-item"><i class="fa-solid fa-film"></i> পরিচালক ও প্রযোজক ডায়েরি</a>
+            <a href="artists-diary.html" class="nav-dropdown-item active"><i class="fa-solid fa-book-open"></i> অভিনয়শিল্পী ডাইরি</a>
+          </div>
+        </div>
+        <div class="nav-dropdown">
+          <button class="nav-link nav-dropdown-toggle" type="button" aria-expanded="false">
+            <span>মতামত</span><i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="nav-dropdown-menu">
+            <a href="opinions.html" class="nav-dropdown-item"><i class="fa-solid fa-pen-nib"></i> আমাদের মতামত</a>
+            <a href="reviews.html" class="nav-dropdown-item"><i class="fa-solid fa-star"></i> ক্লায়েন্ট ও শিল্পী রিভিউ</a>
+          </div>
+        </div>
+        <a href="index.html#registration-section" class="nav-link">আবেদন করুন</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn-outline-gold hidden-sm" id="openShowreelBtn" type="button">
+          <i class="fa-solid fa-play"></i><span>শো-রিল</span>
+        </button>
+        <a href="index.html#registration-section" class="btn-gold-pill">
+          <i class="fa-solid fa-circle-plus"></i><span>প্রোফাইল জমা দিন</span>
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" type="button" aria-label="Toggle Menu"><i class="fa-solid fa-bars"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== SUBPAGE HERO ==================== -->
+  <section class="page-hero">
+    <div class="page-hero-bg" style="background-image: url('assets/images/portfolio-casting.jpg');"></div>
+    <div class="container page-hero-inner">
+      <div class="breadcrumb-row">
+        <a href="index.html">হোম</a>
+        <i class="fa-solid fa-chevron-right"></i>
+        <span>অভিনয়শিল্পী ডাইরি</span>
+      </div>
+      <span class="eyebrow"><i class="fa-solid fa-book-open"></i> শিল্পীর আত্মকথা ও অনুশীলন</span>
+      <h1>অভিনয়শিল্পী <span class="text-gold-gradient">ডাইরি</span></h1>
+      <p>প্রথম ক্যামেরার সামনে দাঁড়ানোর অনুভূতি, চরিত্রের ভেতর প্রবেশের প্রস্তুতি ও শুটিং ফ্লোরের না-বলা গল্প।</p>
+    </div>
+  </section>
+
+  <!-- ==================== ARTISTS DIARY GRID ==================== -->
+  <section class="section-pad">
+    <div class="container">
+      <div class="section-header-row">
+        <div>
+          <span class="eyebrow"><i class="fa-solid fa-feather"></i> সেটের ভেতরের গল্প</span>
+          <h2 class="section-title">শিল্পীদের <span class="text-gold-gradient">স্মৃতিকথা ও অভিজ্ঞতা</span></h2>
+        </div>
+        <div class="filter-pills" id="artistDiaryFilters">
+          <button class="filter-pill active" data-filter="all" type="button">সব গল্প</button>
+          <button class="filter-pill" data-filter="audition" type="button">প্রথম অডিশন</button>
+          <button class="filter-pill" data-filter="prep" type="button">চরিত্র প্রস্তুতি</button>
+          <button class="filter-pill" data-filter="night" type="button">রাতের শুটিং</button>
+          <button class="filter-pill" data-filter="debut" type="button">প্রথম ক্যামেরা</button>
+        </div>
+      </div>
+
+      <div class="diary-grid" id="artistDiaryGrid">
+        <!-- Story 1 -->
+        <article class="diary-card" data-category="audition debut">
+          <div class="diary-media">
+            <img src="assets/images/portfolio-music.jpg" alt="প্রথম অডিশনের অভিজ্ঞতা" />
+            <span class="diary-log-tag">ডাইরি #২১ • প্রথম অডিশন</span>
+          </div>
+          <div class="diary-body">
+            <div class="diary-date-row">
+              <span><i class="fa-regular fa-calendar"></i> ১০ নভেম্বর ২০২৬</span>
+              <span><i class="fa-regular fa-clock"></i> ৩ মিনিট পাঠ</span>
+            </div>
+            <h3>“হাত কাঁপছিল, তবু প্রথম ক্ল্যাপের শব্দেই ভয়টা ভালোবাসায় বদলে গেল”</h3>
+            <p class="diary-excerpt">মফস্বল শহর থেকে ঢাকায় এসে প্রথম অডিশনের দিন কীভাবে নিজেকে সামলে নিয়েছিলাম—নতুনদের জন্য আমার ব্যক্তিগত নোট।</p>
+            <blockquote class="diary-quote">“নিজেকে নিখুঁত প্রমাণ নয়, সৎ থাকাটাই অডিশন জেতার আসল পথ।”</blockquote>
+            <div class="diary-author-bar">
+              <div class="diary-author-info">
+                <div class="avatar-badge">তা</div>
+                <div><strong>তাসনিয়া অহনা</strong><span>উদীয়মান অভিনেত্রী</span></div>
+              </div>
+              <button class="btn-outline-gold btn-sm" type="button"
+                data-read-entry
+                data-tag="শিল্পীর ডাইরি #২১ • প্রথম অডিশন"
+                data-title="হাত কাঁপছিল, তবু প্রথম ক্ল্যাপের শব্দেই ভয়টা ভালোবাসায় বদলে গেল"
+                data-author="তাসনিয়া করিম অহনা (অভিনেত্রী)"
+                data-date="১০ নভেম্বর ২০২৬"
+                data-photo="assets/images/portfolio-music.jpg"
+                data-quote="নিজেকে নিখুঁত প্রমাণ নয়, সৎ থাকাটাই অডিশন জেতার আসল পথ।"
+                data-body="আমার প্রথম অডিশন ছিল বৃষ্টির এক বিকেলে। ট্রাফিক জ্যাম পেরিয়ে স্টুডিওতে ঢুকে দেখি ২০ জন অভিজ্ঞ শিল্পী অপেক্ষা করছেন।||কিন্তু CINECAST-এর কাস্টিং টিম এক গ্লাস জল দিয়ে বললেন, ‘তাড়াহুড়ো নেই, ২ মিনিট শ্বাস নিয়ে নিজের মতো করো।’ সেই ভরসাতেই আজ আমি ৩টি ওয়েব সিরিজে কাজ করেছি।">
+                পড়ুন
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Story 2 -->
+        <article class="diary-card" data-category="prep">
+          <div class="diary-media">
+            <img src="assets/images/portfolio-casting.jpg" alt="চরিত্র প্রস্তুতি" />
+            <span class="diary-log-tag">ডাইরি #২০ • চরিত্র প্রস্তুতি</span>
+          </div>
+          <div class="diary-body">
+            <div class="diary-date-row">
+              <span><i class="fa-regular fa-calendar"></i> ০৫ নভেম্বর ২০২৬</span>
+              <span><i class="fa-regular fa-clock"></i> ৪ মিনিট পাঠ</span>
+            </div>
+            <h3>একজন বাসচালকের চরিত্রে ঢুকতে টানা ১০ দিন গাবতলী টার্মিনালে কাটিয়েছি</h3>
+            <p class="diary-excerpt">চরিত্রের হাঁটাচলা, চা খাওয়ার ভঙ্গি আর আঞ্চলিক টান শিখতে বই নয়—বাস্তব মানুষের মাঝেই মিশে যেতে হয়।</p>
+            <blockquote class="diary-quote">“দর্শক অভিনেতাকে নয়, চরিত্রকে বিশ্বাস করলে তবেই আমাদের জয়।”</blockquote>
+            <div class="diary-author-bar">
+              <div class="diary-author-info">
+                <div class="avatar-badge">রা</div>
+                <div><strong>রাফি আহমেদ</strong><span>লিড অভিনেতা</span></div>
+              </div>
+              <button class="btn-outline-gold btn-sm" type="button"
+                data-read-entry
+                data-tag="শিল্পীর ডাইরি #২০ • চরিত্র প্রস্তুতি"
+                data-title="একজন বাসচালকের চরিত্রে ঢুকতে টানা ১০ দিন গাবতলী টার্মিনালে কাটিয়েছি"
+                data-author="রাফি আহমেদ তূর্য (অভিনেতা)"
+                data-date="০৫ নভেম্বর ২০২৬"
+                data-photo="assets/images/portfolio-casting.jpg"
+                data-quote="দর্শক অভিনেতাকে নয়, চরিত্রকে বিশ্বাস করলে তবেই আমাদের জয়।"
+                data-body="চরিত্রটি ছিল হাইওয়ে ড্রাইভারের। প্রিয় মানুষের কাছে ফেরার আকুতি আর ক্লান্তির ছাপ চোখে ফুটিয়ে তুলতে আমি আসল চালকদের সাথে বসে কথা শুনেছি, তাদের হাতের ভঙ্গি নোট করেছি।">
+                পড়ুন
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Story 3 -->
+        <article class="diary-card" data-category="night">
+          <div class="diary-media">
+            <img src="assets/images/hero-cinema.jpg" alt="ভোররাতের শুট" />
+            <span class="diary-log-tag">ডাইরি #১৯ • রাতের শুটিং</span>
+          </div>
+          <div class="diary-body">
+            <div class="diary-date-row">
+              <span><i class="fa-regular fa-calendar"></i> ২৯ অক্টোবর ২০২৬</span>
+              <span><i class="fa-regular fa-clock"></i> ৪ মিনিট পাঠ</span>
+            </div>
+            <h3>রাত ৩টায় ৪ ডিগ্রি ঠান্ডায় কৃত্রিম বৃষ্টির নিচে দাঁড়িয়ে সংলাপ বলার রাত</h3>
+            <p class="diary-excerpt">গাজীপুরের শীতে রেইন মেশিনের নিচে দাঁড়িয়ে যখন পরিচালকের ‘কাট, পারফেক্ট!’ শোনা গেল, সমস্ত কাঁপুনি উধাও হয়ে গিয়েছিল।</p>
+            <blockquote class="diary-quote">“সেটের প্রতি ভালোবাসা না থাকলে রাতের শুটিংয়ের কষ্ট আনন্দ হতো না।”</blockquote>
+            <div class="diary-author-bar">
+              <div class="diary-author-info">
+                <div class="avatar-badge">মে</div>
+                <div><strong>মেহজাবিন ইরা</strong><span>অভিনেত্রী ও মডেল</span></div>
+              </div>
+              <button class="btn-outline-gold btn-sm" type="button"
+                data-read-entry
+                data-tag="শিল্পীর ডাইরি #১৯ • রাতের শুটিং"
+                data-title="রাত ৩টায় ঠান্ডায় কৃত্রিম বৃষ্টির নিচে দাঁড়িয়ে সংলাপ বলার রাত"
+                data-author="মেহজাবিন সুলতানা ইরা"
+                data-date="২৯ অক্টোবর ২০২৬"
+                data-photo="assets/images/hero-cinema.jpg"
+                data-quote="সেটের প্রতি ভালোবাসা না থাকলে রাতের শুটিংয়ের কষ্ট আনন্দ হতো না।"
+                data-body="পর্দায় রোমান্টিক বৃষ্টির দৃশ্য যতটা স্বপ্নময় মনে হয়, ফ্লোরে তার পেছনে থাকে ৪০ জন ক্রু আর শিল্পীর হাড়কাঁপানো পরিশ্রম। সেই রাতের এক কাপ গরম আদা-চা আজও জীবনের সেরা স্মৃতি।">
+                পড়ুন
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Story 4 -->
+        <article class="diary-card" data-category="prep">
+          <div class="diary-media">
+            <img src="assets/images/hero-studio.jpg" alt="মঞ্চ থেকে ক্যামেরা" />
+            <span class="diary-log-tag">ডাইরি #১৮ • মঞ্চ থেকে পর্দা</span>
+          </div>
+          <div class="diary-body">
+            <div class="diary-date-row">
+              <span><i class="fa-regular fa-calendar"></i> ২৩ অক্টোবর ২০২৬</span>
+              <span><i class="fa-regular fa-clock"></i> ৫ মিনিট পাঠ</span>
+            </div>
+            <h3>মঞ্চের লাউড ভয়েস থেকে ক্যামেরার ক্লোজ-আপ ফিসফিসানিতে রূপান্তর</h3>
+            <p class="diary-excerpt">থিয়েটারে শেষ সারির দর্শককে শোনানোর জন্য চড়া গলা প্রয়োজন, কিন্তু ক্লোজ-আপ লেন্স মনের সূক্ষ্মতম কম্পনও ধরে ফেলে।</p>
+            <blockquote class="diary-quote">“ক্যামেরার সামনে কম করাই অনেক সময় বেশি হয়ে ওঠে।”</blockquote>
+            <div class="diary-author-bar">
+              <div class="diary-author-info">
+                <div class="avatar-badge">আ</div>
+                <div><strong>আনোয়ার হোসেন</strong><span>সিনিয়র অভিনেতা</span></div>
+              </div>
+              <button class="btn-outline-gold btn-sm" type="button"
+                data-read-entry
+                data-tag="শিল্পীর ডাইরি #১৮ • চরিত্র প্রস্তুতি"
+                data-title="মঞ্চের লাউড ভয়েস থেকে ক্যামেরার ক্লোজ-আপ ফিসফিসানিতে রূপান্তর"
+                data-author="মোহাম্মদ আনোয়ার হোসেন"
+                data-date="২৩ অক্টোবর ২০২৬"
+                data-photo="assets/images/hero-studio.jpg"
+                data-quote="ক্যামেরার সামনে কম করাই অনেক সময় বেশি হয়ে ওঠে।"
+                data-body="মঞ্চে আমাদের শরীর পুরোটা ব্যবহার করতে হয়। অথচ চলচ্চিত্রে ৮৫এমএম লেন্সের সামনে কেবল ভ্রু-র সামান্য নড়াচড়াই পুরো সংলাপের চেয়ে শক্তিশালী হয়ে ওঠে।">
+                পড়ুন
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Story 5 -->
+        <article class="diary-card" data-category="debut">
+          <div class="diary-media">
+            <img src="assets/images/portfolio-film.jpg" alt="প্রথম টিভিসি" />
+            <span class="diary-log-tag">ডাইরি #১৭ • প্রথম ক্যামেরা</span>
+          </div>
+          <div class="diary-body">
+            <div class="diary-date-row">
+              <span><i class="fa-regular fa-calendar"></i> ১৮ অক্টোবর ২০২৬</span>
+              <span><i class="fa-regular fa-clock"></i> ৩ মিনিট পাঠ</span>
+            </div>
+            <h3>বিলবোর্ডে নিজের প্রথম ছবি দেখে মায়ের চোখে আনন্দাশ্রু</h3>
+            <p class="diary-excerpt">মডেলিং ক্যারিয়ার শুরু করার সময় অনেকেই সন্দেহ করেছিলেন; আজ দেশের প্রধান রাস্তায় নিজের ব্র্যান্ড ক্যাম্পেইন দেখার অনুভূতি।</p>
+            <blockquote class="diary-quote">“ধৈর্য ও সঠিক পোর্টফোলিওই একদিন আপনাকে সঠিক দরজায় পৌঁছে দেয়।”</blockquote>
+            <div class="diary-author-bar">
+              <div class="diary-author-info">
+                <div class="avatar-badge">নু</div>
+                <div><strong>নুসরাত রাইসা</strong><span>ব্রাইডাল ও ফ্যাশন মডেল</span></div>
+              </div>
+              <button class="btn-outline-gold btn-sm" type="button"
+                data-read-entry
+                data-tag="শিল্পীর ডাইরি #১৭ • প্রথম ক্যামেরা"
+                data-title="বিলবোর্ডে নিজের প্রথম ছবি দেখে মায়ের চোখে আনন্দাশ্রু"
+                data-author="নুসরাত জাহান রাইসা"
+                data-date="১৮ অক্টোবর ২০২৬"
+                data-photo="assets/images/portfolio-film.jpg"
+                data-quote="ধৈর্য ও সঠিক পোর্টফোলিওই একদিন আপনাকে সঠিক দরজায় পৌঁছে দেয়।"
+                data-body="শুরুর দিকে স্টুডিওতে গিয়ে শুধু পোর্টফোলিও তোলা আর রিজেকশন সামলানোই ছিল রুটিন। তবে প্রতিটি ভুল থেকে শিখে নিজের পোজ ও অভিব্যক্তি উন্নত করেছি।">
+                পড়ুন
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Story 6 -->
+        <article class="diary-card" data-category="audition night">
+          <div class="diary-media">
+            <img src="assets/images/portfolio-casting.jpg" alt="সহশিল্পীদের সাথে রসায়ন" />
+            <span class="diary-log-tag">ডাইরি #১৬ • ডায়েরি নোট</span>
+          </div>
+          <div class="diary-body">
+            <div class="diary-date-row">
+              <span><i class="fa-regular fa-calendar"></i> ১২ অক্টোবর ২০২৬</span>
+              <span><i class="fa-regular fa-clock"></i> ৩ মিনিট পাঠ</span>
+            </div>
+            <h3>গ্রে-শেড বা নেতিবাচক চরিত্র করার সময় দর্শকের ঘৃণাই যখন সেরা পুরস্কার</h3>
+            <p class="diary-excerpt">ক্রাইম থ্রিলারে খলচরিত্রকে কেবল চিৎকার করে নয়, শান্ত ভঙ্গিমায় আরও ভয়ংকর করে তোলা যায়।</p>
+            <blockquote class="diary-quote">“ভালো অভিনয় মানে নিজের চরিত্রকে কখনোই বিচার না করা।”</blockquote>
+            <div class="diary-author-bar">
+              <div class="diary-author-info">
+                <div class="avatar-badge">সা</div>
+                <div><strong>সাদমান অরণ্য</strong><span>অ্যাক্টর ও অ্যাকশন পারফর্মার</span></div>
+              </div>
+              <button class="btn-outline-gold btn-sm" type="button"
+                data-read-entry
+                data-tag="শিল্পীর ডাইরি #১৬ • অভিনয় কৌশল"
+                data-title="গ্রে-শেড চরিত্র করার সময় দর্শকের প্রতিক্রিয়াই সেরা পুরস্কার"
+                data-author="সাদমান সাকিব অরণ্য"
+                data-date="১২ অক্টোবর ২০২৬"
+                data-photo="assets/images/portfolio-casting.jpg"
+                data-quote="ভালো অভিনয় মানে নিজের চরিত্রকে কখনোই বিচার না করা।"
+                data-body="প্রতিটি চরিত্র তার নিজের যুক্তিতে সঠিক—এই বিশ্বাস নিয়ে অভিনয় না করলে চরিত্রটি কখনোই বিশ্বাসযোগ্য হয় না।">
+                পড়ুন
+              </button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CTA BANNER ==================== -->
+  <section class="cta-banner-section">
+    <div class="container">
+      <div class="cta-banner" data-gsap="bottom">
+        <div class="cta-content">
+          <span class="eyebrow"><i class="fa-solid fa-pen-to-square"></i> আপনার গল্পও শেয়ার করুন</span>
+          <h2>আপনার সেটের অভিজ্ঞতা কি <span class="text-gold-gradient">ডাইরিতে প্রকাশ করতে চান?</span></h2>
+          <p>আমাদের তালিকাভুক্ত শিল্পী হিসেবে আপনার অডিশন ও শুটিং অভিজ্ঞতা পাঠিয়ে দিন।</p>
+        </div>
+        <div class="cta-actions">
+          <button class="btn-gold-pill btn-lg" type="button" data-open-booking="অভিনয়শিল্পী / মডেল">
+            <i class="fa-solid fa-feather"></i><span>ডাইরি পাঠান</span>
+          </button>
+          <a href="profiles.html" class="btn-outline-gold btn-lg">
+            <i class="fa-solid fa-users"></i><span>শিল্পীদের প্রোফাইল</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand">
+          <span class="brand-icon"><i class="fa-solid fa-clapperboard"></i></span>
+          <span class="brand-text"><span class="brand-title">CINECAST</span><span class="brand-sub">MEDIA &amp; PORTFOLIO</span></span>
+        </a>
+        <p class="footer-desc">বাংলাদেশের অন্যতম আধুনিক কাস্টিং এজেন্সি ও প্রোডাকশন পোর্টফোলিও হাউস। নাটক, সিনেমা, ওটিটি ও বিজ্ঞাপনের পূর্ণাঙ্গ সৃজনশীল অংশীদার।</p>
+        <div class="social-row">
+          <a href="index.html" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="index.html" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="index.html" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="index.html" aria-label="Vimeo"><i class="fa-brands fa-vimeo-v"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>ট্যালেন্ট ও মিডিয়া</h4>
+        <ul>
+          <li><a href="profiles.html">অভিনয়শিল্পী ও মডেল প্রোফাইল</a></li>
+          <li><a href="international-artists.html">বিদেশি অভিনয়শিল্পী</a></li>
+          <li><a href="shooting-houses.html">শুটিং হাউজ</a></li>
+          <li><a href="gallery.html">ফটো গ্যালারি</a></li>
+          <li><a href="videos.html">ভিডিও পোর্টফোলিও</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>ডায়েরি, নোটিশ ও মতামত</h4>
+        <ul>
+          <li><a href="notices.html">অফিসিয়াল নোটিশ</a></li>
+          <li><a href="directors-diary.html">পরিচালক ও প্রযোজক ডায়েরি</a></li>
+          <li><a href="artists-diary.html">অভিনয়শিল্পী ডাইরি</a></li>
+          <li><a href="opinions.html">আমাদের মতামত</a></li>
+          <li><a href="reviews.html">রিভিউ ও ফিডব্যাক</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>স্টুডিও যোগাযোগ</h4>
+        <ul class="contact-list">
+          <li><i class="fa-solid fa-location-dot"></i> রোড ১১, বনানী, ঢাকা-১২১৩</li>
+          <li><i class="fa-solid fa-phone"></i> +৮৮০ ১৭০০-০০০১২৩</li>
+          <li><i class="fa-solid fa-envelope"></i> casting@cinecastmedia.bd</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <span>© ২০২৬ CINECAST Media &amp; Portfolio. সর্বস্বত্ব সংরক্ষিত।</span>
+        <span>Designed with Classic IT</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modals -->
+  <div class="modal-backdrop" id="reelModal" aria-hidden="true">
+    <div class="modal-dialog modal-video">
+      <div class="reel-modal-topbar">
+        <div><span class="reel-badge" id="reelCategory">অফিসিয়াল শো-রিল</span><h3 id="reelTitle">CINECAST ২০২৬ মেগা শো-রিল</h3></div>
+        <button class="modal-close modal-close-inline" data-close-modal="reelModal" type="button" aria-label="Close Modal"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div class="reel-player-wrap">
+        <video id="reelVideo" class="reel-video-el" controls playsinline preload="metadata" poster="assets/images/hero-cinema.jpg" hidden></video>
+        <iframe id="reelIframe" class="reel-iframe-el" title="YouTube Video Player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <div class="reel-modal-footer">
+        <span class="reel-footer-note"><i class="fa-brands fa-youtube"></i> YouTube প্লেয়ার</span>
+        <a id="reelExternalLink" class="btn-outline-gold btn-sm" href="https://www.youtube.com/watch?v=aqz-KE-bpKQ" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i><span>YouTube-এ দেখুন</span></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-backdrop" id="submitModal" aria-hidden="true">
+    <div class="modal-dialog modal-form">
+      <button class="modal-close" data-close-modal="submitModal" type="button" aria-label="Close Modal"><i class="fa-solid fa-xmark"></i></button>
+      <div class="modal-header">
+        <span class="eyebrow"><i class="fa-solid fa-book-open"></i> অভিনয়শিল্পী ডাইরি</span>
+        <h3>আপনার শুটিংয়ের গল্প পাঠান</h3>
+        <p>অডিশন বা শুটিং ফ্লোরের অনুপ্রেরণামূলক অভিজ্ঞতা লিখে আমাদের পাঠাতে পারেন।</p>
+      </div>
+      <form id="demoSubmitForm" class="demo-form">
+        <div class="form-row"><label>শিল্পীর নাম</label><input type="text" placeholder="যেমন: তাসনিয়া অহনা" required /></div>
+        <div class="form-row-2">
+          <div class="form-row"><label>বিভাগ</label><select><option>অভিনয়শিল্পী / মডেল</option><option>প্রথম অডিশন</option><option>রাতের শুটিং</option></select></div>
+          <div class="form-row"><label>মোবাইল / ইমেইল</label><input type="text" placeholder="০১৭XX-XXXXXX" required /></div>
+        </div>
+        <div class="form-row"><label>গল্পের শিরোনাম</label><input type="text" placeholder="আপনার অভিজ্ঞতার শিরোনাম" required /></div>
+        <button class="btn-gold-pill w-full btn-lg" type="submit"><i class="fa-solid fa-paper-plane"></i><span>গল্প জমা দিন</span></button>
+      </form>
+    </div>
+  </div>
+
+  <div class="modal-backdrop" id="diaryReaderModal" aria-hidden="true">
+    <div class="modal-dialog modal-diary">
+      <div class="reel-modal-topbar">
+        <div><span class="reel-badge" id="drTag">শিল্পীর ডাইরি</span><h3 id="drTitle">ডাইরি শিরোনাম</h3></div>
+        <button class="modal-close modal-close-inline" data-close-modal="diaryReaderModal" type="button" aria-label="Close Modal"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div class="diary-modal-scroll">
+        <div class="result-count-pill" id="drMeta">লেখক • তারিখ</div>
+        <img id="drPhoto" class="diary-modal-cover" src="assets/images/portfolio-music.jpg" alt="ডাইরি কভার" />
+        <blockquote id="drQuote" class="diary-modal-quote"></blockquote>
+        <div id="drBody" class="diary-modal-text"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast-banner" id="toastBanner" role="status" aria-live="polite">
+    <i class="fa-solid fa-circle-check"></i><span id="toastMsg">আপনার তথ্য সফলভাবে গৃহীত হয়েছে!</span>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrambleTextPlugin.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.8/odometer.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+

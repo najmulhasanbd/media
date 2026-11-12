@@ -46,10 +46,50 @@
 
       <nav class="nav-links" id="navLinks" aria-label="Primary Navigation">
         <a href="index.html" class="nav-link active">হোম</a>
-        <a href="gallery.html" class="nav-link">গ্যালারি</a>
-        <a href="videos.html" class="nav-link">ভিডিও</a>
-        <a href="reviews.html" class="nav-link">রিভিউ</a>
-        <a href="#talent-directory" class="nav-link">ট্যালেন্ট ডিরেক্টরি</a>
+
+        <div class="nav-dropdown">
+          <button class="nav-link nav-dropdown-toggle" type="button" aria-expanded="false">
+            <span>প্রোফাইল</span><i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="nav-dropdown-menu">
+            <a href="profiles.html" class="nav-dropdown-item"><i class="fa-solid fa-users"></i> অভিনয়শিল্পী ও মডেল প্রোফাইল</a>
+            <a href="international-artists.html" class="nav-dropdown-item"><i class="fa-solid fa-globe"></i> বিদেশি অভিনয়শিল্পী</a>
+            <a href="#talent-directory" class="nav-dropdown-item"><i class="fa-solid fa-magnifying-glass"></i> লাইভ ট্যালেন্ট ডিরেক্টরি</a>
+          </div>
+        </div>
+
+        <div class="nav-dropdown">
+          <button class="nav-link nav-dropdown-toggle" type="button" aria-expanded="false">
+            <span>মিডিয়া ও স্টুডিও</span><i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="nav-dropdown-menu">
+            <a href="gallery.html" class="nav-dropdown-item"><i class="fa-solid fa-images"></i> ফটো গ্যালারি</a>
+            <a href="videos.html" class="nav-dropdown-item"><i class="fa-solid fa-clapperboard"></i> ভিডিও পোর্টফোলিও</a>
+            <a href="shooting-houses.html" class="nav-dropdown-item"><i class="fa-solid fa-building"></i> শুটিং হাউজ</a>
+          </div>
+        </div>
+
+        <div class="nav-dropdown">
+          <button class="nav-link nav-dropdown-toggle" type="button" aria-expanded="false">
+            <span>ডায়েরি ও নোটিশ</span><i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="nav-dropdown-menu">
+            <a href="notices.html" class="nav-dropdown-item"><i class="fa-solid fa-bullhorn"></i> নোটিশ বোর্ড</a>
+            <a href="directors-diary.html" class="nav-dropdown-item"><i class="fa-solid fa-film"></i> পরিচালক ও প্রযোজক ডায়েরি</a>
+            <a href="artists-diary.html" class="nav-dropdown-item"><i class="fa-solid fa-book-open"></i> অভিনয়শিল্পী ডাইরি</a>
+          </div>
+        </div>
+
+        <div class="nav-dropdown">
+          <button class="nav-link nav-dropdown-toggle" type="button" aria-expanded="false">
+            <span>মতামত</span><i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="nav-dropdown-menu">
+            <a href="opinions.html" class="nav-dropdown-item"><i class="fa-solid fa-pen-nib"></i> আমাদের মতামত</a>
+            <a href="reviews.html" class="nav-dropdown-item"><i class="fa-solid fa-star"></i> ক্লায়েন্ট ও শিল্পী রিভিউ</a>
+          </div>
+        </div>
+
         <a href="#registration-section" class="nav-link">আবেদন করুন</a>
       </nav>
 
@@ -829,6 +869,75 @@
     </div>
   </section>
 
+  <!-- ==================== PORTAL EXPLORER HUB ==================== -->
+  <section class="section-pad" id="portal-hub">
+    <div class="container">
+      <div class="section-header-center">
+        <span class="eyebrow"><i class="fa-solid fa-compass"></i> CINECAST সম্পূর্ণ পোর্টাল</span>
+        <h2 class="section-title">এক ক্লিকে ঘুরে দেখুন <span class="text-gold-gradient">আমাদের সব বিভাগ</span></h2>
+        <p class="section-sub">অভিনয়শিল্পী ও বিদেশি আর্টিস্ট প্রোফাইল, শুটিং হাউজ ক্যাটালগ, জরুরি নোটিশ ও ডায়েরিসহ প্রোডাকশনের পূর্ণাঙ্গ জগত।</p>
+      </div>
+
+      <div class="portal-hub-grid">
+        <a href="profiles.html" class="portal-hub-card">
+          <span class="portal-hub-icon"><i class="fa-solid fa-users"></i></span>
+          <h3>অভিনয়শিল্পী ও মডেল প্রোফাইল</h3>
+          <p>ভেরিফাইড অভিনেতা, অভিনেত্রী, ফ্যাশন মডেল ও চরিত্রাভিনেতাদের সম্পূর্ণ পোর্টফোলিও।</p>
+          <span class="portal-hub-link">প্রোফাইল দেখুন <i class="fa-solid fa-arrow-right"></i></span>
+        </a>
+
+        <a href="international-artists.html" class="portal-hub-card">
+          <span class="portal-hub-icon"><i class="fa-solid fa-globe"></i></span>
+          <h3>বিদেশি অভিনয়শিল্পী</h3>
+          <p>যৌথ প্রযোজনা ও আন্তর্জাতিক ব্র্যান্ড শুটের জন্য ওয়ার্ক-পারমিট রেডি বিদেশি শিল্পীরা।</p>
+          <span class="portal-hub-link">গ্লোবাল রোস্টার <i class="fa-solid fa-arrow-right"></i></span>
+        </a>
+
+        <a href="shooting-houses.html" class="portal-hub-card">
+          <span class="portal-hub-icon"><i class="fa-solid fa-building"></i></span>
+          <h3>শুটিং হাউজ</h3>
+          <p>সাউন্ডস্টেজ, ডুপ্লেক্স ভিলা, হেরিটেজ বাড়ি ও কর্পোরেট সেট বুকিং ক্যাটালগ।</p>
+          <span class="portal-hub-link">লোকেশন খুঁজুন <i class="fa-solid fa-arrow-right"></i></span>
+        </a>
+
+        <a href="notices.html" class="portal-hub-card">
+          <span class="portal-hub-icon"><i class="fa-solid fa-bullhorn"></i></span>
+          <h3>নোটিশ বোর্ড</h3>
+          <p>চলমান অডিশন কল, নতুন ওটিটি প্রজেক্ট সার্কুলার ও অফিসিয়াল নীতিমালা।</p>
+          <span class="portal-hub-link">নোটিশ দেখুন <i class="fa-solid fa-arrow-right"></i></span>
+        </a>
+
+        <a href="directors-diary.html" class="portal-hub-card">
+          <span class="portal-hub-icon"><i class="fa-solid fa-film"></i></span>
+          <h3>পরিচালক ও প্রযোজক ডায়েরি</h3>
+          <p>অন-সেট শুটিং লগ, বাজেট প্ল্যানিং ও নির্মাতাদের সৃজনশীল অভিজ্ঞতার জার্নাল।</p>
+          <span class="portal-hub-link">ডায়েরি পড়ুন <i class="fa-solid fa-arrow-right"></i></span>
+        </a>
+
+        <a href="artists-diary.html" class="portal-hub-card">
+          <span class="portal-hub-icon"><i class="fa-solid fa-book-open"></i></span>
+          <h3>অভিনয়শিল্পী ডাইরি</h3>
+          <p>প্রথম অডিশন, চরিত্র প্রস্তুতি ও রাতের শুটিং নিয়ে শিল্পীদের ব্যক্তিগত গল্প।</p>
+          <span class="portal-hub-link">গল্প পড়ুন <i class="fa-solid fa-arrow-right"></i></span>
+        </a>
+
+        <a href="opinions.html" class="portal-hub-card">
+          <span class="portal-hub-icon"><i class="fa-solid fa-pen-nib"></i></span>
+          <h3>আমাদের মতামত</h3>
+          <p>স্বচ্ছ কাস্টিং সংস্কৃতি, ওটিটি অভিনয় ও নতুন শিল্পীদের গাইডলাইন নিয়ে সম্পাদকীয়।</p>
+          <span class="portal-hub-link">মতামত পড়ুন <i class="fa-solid fa-arrow-right"></i></span>
+        </a>
+
+        <a href="gallery.html" class="portal-hub-card">
+          <span class="portal-hub-icon"><i class="fa-solid fa-images"></i></span>
+          <h3>ফটো ও ভিডিও আর্কাইভ</h3>
+          <p>অটো-স্ক্রল শুটিং স্টিল গ্যালারি, শো-রিল ভিডিও ও ক্লায়েন্ট রিভিউ আর্কাইভ।</p>
+          <span class="portal-hub-link">গ্যালারি দেখুন <i class="fa-solid fa-arrow-right"></i></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
   <!-- ==================== FAQ ACCORDION SECTION ==================== -->
   <section class="faq-section section-pad" id="faq-section">
     <div class="container">
@@ -938,22 +1047,24 @@
       </div>
 
       <div class="footer-col">
-        <h4>দ্রুত লিংক</h4>
+        <h4>ট্যালেন্ট ও মিডিয়া</h4>
         <ul>
-          <li><a href="index.html">হোম</a></li>
+          <li><a href="profiles.html">অভিনয়শিল্পী ও মডেল প্রোফাইল</a></li>
+          <li><a href="international-artists.html">বিদেশি অভিনয়শিল্পী</a></li>
+          <li><a href="shooting-houses.html">শুটিং হাউজ</a></li>
           <li><a href="gallery.html">ফটো গ্যালারি</a></li>
           <li><a href="videos.html">ভিডিও পোর্টফোলিও</a></li>
-          <li><a href="reviews.html">রিভিউ ও ফিডব্যাক</a></li>
         </ul>
       </div>
 
       <div class="footer-col">
-        <h4>প্রোডাকশন বিভাগ</h4>
+        <h4>ডায়েরি, নোটিশ ও মতামত</h4>
         <ul>
-          <li><a href="#craft-section">ফিচার ফিল্ম ও ওটিটি</a></li>
-          <li><a href="#craft-section">টিভিসি ও ব্র্যান্ড ফিল্ম</a></li>
-          <li><a href="#craft-section">মডেল ও অ্যাক্টর কাস্টিং</a></li>
-          <li><a href="#craft-section">পোস্ট ও কালার গ্রেডিং</a></li>
+          <li><a href="notices.html">অফিসিয়াল নোটিশ</a></li>
+          <li><a href="directors-diary.html">পরিচালক ও প্রযোজক ডায়েরি</a></li>
+          <li><a href="artists-diary.html">অভিনয়শিল্পী ডাইরি</a></li>
+          <li><a href="opinions.html">আমাদের মতামত</a></li>
+          <li><a href="reviews.html">রিভিউ ও ফিডব্যাক</a></li>
         </ul>
       </div>
 
