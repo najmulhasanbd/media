@@ -30,6 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
     navLinks.querySelectorAll('a').forEach((link) => {
       link.addEventListener('click', () => {
         navLinks.classList.remove('open');
+        navLinks.querySelectorAll('.nav-dropdown.open').forEach((dd) => dd.classList.remove('open'));
         const icon = mobileToggle.querySelector('i');
         if (icon) {
           icon.classList.add('fa-bars');
@@ -38,6 +39,36 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   }
+
+  // Navbar Dropdown Accordion & Click-Outside Handler
+  const navDropdowns = document.querySelectorAll('.nav-dropdown');
+  navDropdowns.forEach((dd) => {
+    const toggleBtn = dd.querySelector('.nav-dropdown-toggle');
+    if (!toggleBtn) return;
+    toggleBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const willOpen = !dd.classList.contains('open');
+      navDropdowns.forEach((other) => {
+        other.classList.remove('open');
+        const btn = other.querySelector('.nav-dropdown-toggle');
+        if (btn) btn.setAttribute('aria-expanded', 'false');
+      });
+      if (willOpen) {
+        dd.classList.add('open');
+        toggleBtn.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('.nav-dropdown')) {
+      navDropdowns.forEach((dd) => {
+        dd.classList.remove('open');
+        const btn = dd.querySelector('.nav-dropdown-toggle');
+        if (btn) btn.setAttribute('aria-expanded', 'false');
+      });
+    }
+  });
 
   /* -------------------- 2. Multi-Slider Setup (Swiper.js) -------------------- */
   let heroSwiper = null;
@@ -1192,6 +1223,283 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  /* -------------------- 10B. Multi-Page Subpage Filters, Modals, Notices, Diaries & Polls -------------------- */
+  function initFilterableGrid({ filterSelector, searchInputId, gridId, itemSelector, countId, emptyId }) {
+    const pills = filterSelector ? document.querySelectorAll(filterSelector) : [];
+    const searchEl = searchInputId ? document.getElementById(searchInputId) : null;
+    const grid = document.getElementById(gridId);
+    if (!grid) return;
+
+    const items = Array.from(grid.querySelectorAll(itemSelector));
+    const countEl = countId ? document.getElementById(countId) : null;
+    const emptyEl = emptyId ? document.getElementById(emptyId) : null;
+    let activeFilter = 'all';
+
+    function applyFilters(animate) {
+      const q = (searchEl ? searchEl.value : '').trim().toLowerCase();
+      const visible = [];
+
+      items.forEach((item) => {
+        const cat = (item.dataset.category || '').split(/\s+/);
+        const matchesCat = activeFilter === 'all' || cat.includes(activeFilter);
+        const text = (item.textContent || '').toLowerCase() + ' ' + (item.dataset.tags || '').toLowerCase();
+        const matchesQuery = !q || text.includes(q);
+        const show = matchesCat && matchesQuery;
+        item.style.display = show ? '' : 'none';
+        if (show) visible.push(item);
+      });
+
+      if (countEl) countEl.textContent = String(visible.length);
+      if (emptyEl) emptyEl.hidden = visible.length > 0;
+
+      if (animate && typeof window.gsap !== 'undefined' && visible.length) {
+        window.gsap.fromTo(
+          visible,
+          { y: 22, opacity: 0 },
+          { y: 0, opacity: 1, duration: 0.42, stagger: 0.04, ease: 'power2.out', clearProps: 'transform,opacity' }
+        );
+      }
+      refreshScrollTriggers();
+    }
+
+    if (pills.length) {
+      pills.forEach((btn) => {
+        btn.addEventListener('click', () => {
+          pills.forEach((b) => b.classList.remove('active'));
+          btn.classList.add('active');
+          activeFilter = btn.dataset.filter || 'all';
+          applyFilters(true);
+        });
+      });
+    }
+
+    if (searchEl) {
+      searchEl.addEventListener('input', () => applyFilters(false));
+    }
+  }
+
+  initFilterableGrid({
+    filterSelector: '#profilesFilters .filter-pill',
+    searchInputId: 'profileSearch',
+    gridId: 'profilesGrid',
+    itemSelector: '.dir-card',
+    countId: 'profileCountNum',
+    emptyId: 'profilesEmpty',
+  });
+  initFilterableGrid({
+    filterSelector: '#intlFilters .filter-pill',
+    searchInputId: 'intlSearch',
+    gridId: 'intlGrid',
+    itemSelector: '.dir-card',
+    countId: 'intlCountNum',
+    emptyId: 'intlEmpty',
+  });
+  initFilterableGrid({
+    filterSelector: '#noticeFilters .filter-pill',
+    searchInputId: 'noticeSearch',
+    gridId: 'noticesList',
+    itemSelector: '.notice-card',
+    countId: 'noticeCountNum',
+    emptyId: 'noticesEmpty',
+  });
+  initFilterableGrid({
+    filterSelector: '#directorDiaryFilters .filter-pill',
+    gridId: 'directorDiaryGrid',
+    itemSelector: '.diary-card',
+  });
+  initFilterableGrid({
+    filterSelector: '#artistDiaryFilters .filter-pill',
+    gridId: 'artistDiaryGrid',
+    itemSelector: '.diary-card',
+  });
+  initFilterableGrid({
+    filterSelector: '#houseFilters .filter-pill',
+    searchInputId: 'houseSearch',
+    gridId: 'housesGrid',
+    itemSelector: '.house-card',
+    countId: 'houseCountNum',
+    emptyId: 'housesEmpty',
+  });
+  initFilterableGrid({
+    filterSelector: '#opinionFilters .filter-pill',
+    gridId: 'opinionsGrid',
+    itemSelector: '.diary-card',
+  });
+
+  // Static Profile / Artist Cards -> Talent Detail Modal
+  document.querySelectorAll('[data-open-talent]').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const ds = btn.dataset;
+      openTalentDetail({
+        name: ds.name || 'শিল্পী প্রোফাইল',
+        category: ds.category || 'অভিনয়শিল্পী',
+        specialty: ds.specialty || '',
+        age: ds.age || '২৬',
+        height: ds.height || "5' 9\"",
+        expLabel: ds.exp || '৪ বছর অভিজ্ঞতা',
+        photo: ds.photo || 'assets/images/portfolio-casting.jpg',
+        bio: ds.bio || 'ভেরিফাইড CINECAST শিল্পী ও মডেল প্রোফাইল।',
+        videoLink: ds.video || 'https://www.youtube.com/watch?v=aqz-KE-bpKQ',
+        driveLink: ds.drive || 'index.html#registration-section',
+      });
+    });
+  });
+
+  // Booking / Request Modal Shortcuts (Shooting Houses / Foreign Artists / Notices)
+  document.querySelectorAll('[data-open-booking]').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      if (submitModal) {
+        const selectEl = submitModal.querySelector('select');
+        const label = btn.dataset.openBooking || '';
+        if (selectEl && label) {
+          const opt = Array.from(selectEl.options).find((o) => o.text.includes(label));
+          if (opt) selectEl.value = opt.value;
+        }
+        openModal(submitModal);
+      }
+    });
+  });
+
+  // Expandable Notice Details
+  document.querySelectorAll('[data-toggle-notice]').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const card = btn.closest('.notice-card');
+      if (!card) return;
+      const expanded = card.classList.toggle('expanded');
+      const labelEl = btn.querySelector('span');
+      const iconEl = btn.querySelector('i');
+      if (labelEl) labelEl.textContent = expanded ? 'সংক্ষিপ্ত করুন' : 'বিস্তারিত শর্তাবলি';
+      if (iconEl) {
+        iconEl.classList.toggle('fa-chevron-down', !expanded);
+        iconEl.classList.toggle('fa-chevron-up', expanded);
+      }
+    });
+  });
+
+  // Diary & Editorial Full Reader Modal
+  const diaryReaderModal = document.getElementById('diaryReaderModal');
+  if (diaryReaderModal) {
+    const drTag = document.getElementById('drTag');
+    const drTitle = document.getElementById('drTitle');
+    const drMeta = document.getElementById('drMeta');
+    const drPhoto = document.getElementById('drPhoto');
+    const drQuote = document.getElementById('drQuote');
+    const drBody = document.getElementById('drBody');
+
+    document.querySelectorAll('[data-read-entry]').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const ds = btn.dataset;
+        if (drTag) drTag.textContent = ds.tag || 'সম্পাদকীয় নোট';
+        if (drTitle) drTitle.textContent = ds.title || '';
+        if (drMeta) drMeta.textContent = `${ds.author || ''} • ${ds.date || ''}`;
+        if (drPhoto) {
+          drPhoto.src = ds.photo || 'assets/images/hero-studio.jpg';
+          drPhoto.alt = ds.title || 'ডায়েরি কভার';
+        }
+        if (drQuote) {
+          drQuote.textContent = ds.quote || '';
+          drQuote.style.display = ds.quote ? '' : 'none';
+        }
+        if (drBody) {
+          drBody.innerHTML = '';
+          const parts = (ds.body || '').split('||').filter(Boolean);
+          parts.forEach((text) => {
+            const p = document.createElement('p');
+            p.textContent = text.trim();
+            drBody.appendChild(p);
+          });
+        }
+        openModal(diaryReaderModal);
+      });
+    });
+  }
+
+  // Interactive Industry Poll (Opinions Page)
+  const opinionPoll = document.getElementById('opinionPoll');
+  if (opinionPoll) {
+    const pollOptions = Array.from(opinionPoll.querySelectorAll('.poll-option'));
+    let hasVoted = false;
+
+    function renderPollResults() {
+      const total = pollOptions.reduce((sum, btn) => sum + Number(btn.dataset.votes || 0), 0) || 1;
+      pollOptions.forEach((btn) => {
+        const pct = Math.round((Number(btn.dataset.votes || 0) / total) * 100);
+        const bar = btn.querySelector('.poll-option-bar');
+        const pctEl = btn.querySelector('.poll-pct');
+        if (bar) bar.style.width = `${pct}%`;
+        if (pctEl) pctEl.textContent = `${pct}%`;
+      });
+    }
+
+    renderPollResults();
+    pollOptions.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        if (!hasVoted) {
+          btn.dataset.votes = String(Number(btn.dataset.votes || 0) + 1);
+          hasVoted = true;
+        }
+        pollOptions.forEach((o) => o.classList.remove('selected'));
+        btn.classList.add('selected');
+        renderPollResults();
+        showToast('আপনার মতামত পোল-এ যুক্ত হয়েছে!');
+      });
+    });
+  }
+
+  // Opinion Submission Form (Opinions Page)
+  const opinionSubmitForm = document.getElementById('opinionSubmitForm');
+  const opinionsGrid = document.getElementById('opinionsGrid');
+  if (opinionSubmitForm && opinionsGrid) {
+    opinionSubmitForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const nameVal = (document.getElementById('opName')?.value || '').trim();
+      const roleVal = (document.getElementById('opRole')?.value || '').trim();
+      const catVal = document.getElementById('opCategory')?.value || 'ethics';
+      const titleVal = (document.getElementById('opTitle')?.value || '').trim();
+      const bodyVal = (document.getElementById('opBody')?.value || '').trim();
+      if (!nameVal || !titleVal || !bodyVal) return;
+
+      const card = document.createElement('article');
+      card.className = 'diary-card';
+      card.dataset.category = catVal;
+      card.innerHTML = `
+        <div class="diary-media">
+          <img src="assets/images/hero-cinema.jpg" alt="" />
+          <span class="diary-log-tag">পাঠকের মতামত</span>
+        </div>
+        <div class="diary-body">
+          <div class="diary-date-row"><span><i class="fa-regular fa-calendar"></i> আজ</span><span><i class="fa-regular fa-clock"></i> ২ মিনিট পাঠ</span></div>
+          <h3></h3>
+          <p class="diary-excerpt"></p>
+          <div class="diary-author-bar">
+            <div class="diary-author-info">
+              <div class="avatar-badge">${nameVal.slice(0, 2)}</div>
+              <div><strong></strong><span></span></div>
+            </div>
+          </div>
+        </div>
+      `;
+      card.querySelector('img').alt = titleVal;
+      card.querySelector('h3').textContent = titleVal;
+      card.querySelector('.diary-excerpt').textContent = bodyVal;
+      card.querySelector('.diary-author-info strong').textContent = nameVal;
+      card.querySelector('.diary-author-info span').textContent = roleVal || 'অতিথি লেখক';
+
+      opinionsGrid.prepend(card);
+      opinionSubmitForm.reset();
+      if (typeof window.gsap !== 'undefined') {
+        window.gsap.fromTo(card, { y: -28, opacity: 0 }, { y: 0, opacity: 1, duration: 0.55, clearProps: 'transform,opacity' });
+      }
+      showToast(`ধন্যবাদ ${nameVal}! আপনার মতামত প্রকাশিত হয়েছে।`);
+      refreshScrollTriggers();
+    });
+  }
+
+  // Bind Fancybox on Shooting Houses Gallery if available
+  if (hasFancybox && document.querySelector('[data-fancybox="shooting-houses"]')) {
+    window.Fancybox.bind('[data-fancybox="shooting-houses"]', fancyboxOptions);
+  }
+
   /* -------------------- 11. Lenis Smooth Scroll, Hash Nav & GSAP Text/Image Reveals -------------------- */
   let lenisInstance = null;
 
@@ -1396,7 +1704,8 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
 
-    // B. Hero Entrance & Slide Transition ScrambleText + Smooth Reveal
+    // B. Hero Entrance (Initial load only — slide changes switch cleanly without re-animating)
+    let heroEntranceTl = null;
     function animateHeroSlideContent(slideEl) {
       if (!slideEl) return;
       const content = slideEl.querySelector('.hero-content');
@@ -1409,6 +1718,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const chips = content.querySelectorAll('.hero-meta-strip .meta-chip');
 
       const tl = gsap.timeline({ delay: 0.05 });
+      heroEntranceTl = tl;
 
       if (badge) {
         tl.fromTo(
@@ -1477,8 +1787,10 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     if (heroSwiper && typeof heroSwiper.on === 'function') {
       heroSwiper.on('slideChangeTransitionStart', () => {
-        const currentSlide = heroSwiper.slides[heroSwiper.activeIndex];
-        if (currentSlide) animateHeroSlideContent(currentSlide);
+        if (heroEntranceTl) {
+          heroEntranceTl.progress(1).kill();
+          heroEntranceTl = null;
+        }
       });
     }
 
@@ -1599,7 +1911,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const explicitNodes = Array.from(document.querySelectorAll('[data-gsap="top"], [data-gsap="bottom"]'));
       const autoNodes = Array.from(
         document.querySelectorAll(
-          '.stat-item, .dir-card, .faq-item, .registration-info, .registration-form-card, .reg-highlight-item, .video-spotlight, .review-form-shell, .cta-banner'
+          '.stat-item, .dir-card, .faq-item, .registration-info, .registration-form-card, .reg-highlight-item, .video-spotlight, .review-form-shell, .cta-banner, .portal-hub-card, .notice-card, .diary-card, .house-card, .checklist-card, .manifesto-card'
         )
       );
 
@@ -1635,7 +1947,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // F. Image Curtain-Wipe (Top->Bottom & Bottom->Top) + Zoom-Out + Gold Sheen
     function initImageAnimations() {
       const imageContainers = document.querySelectorAll(
-        '.img-reveal-top, .img-reveal-bottom, .card-media, .dir-photo, .gallery-img-wrap, .spotlight-media'
+        '.img-reveal-top, .img-reveal-bottom, .card-media, .dir-photo, .gallery-img-wrap, .spotlight-media, .diary-media'
       );
 
       imageContainers.forEach((wrap, idx) => {
