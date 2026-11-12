@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="bn" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ফটো গ্যালারি — CINECAST মিডিয়া ও কাস্টিং পোর্টফোলিও</title>
+  <meta name="description" content="নাটক, সিনেমা, বিজ্ঞাপন ও বিহাইন্ড-দ্য-সিনসের এক্সক্লুসিভ ফটো গ্যালারি।" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Hind+Siliguri:wght@300;400;500;600;700&family=Oswald:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <div class="ambient-glow ambient-glow-1" aria-hidden="true"></div>
+  <div class="ambient-glow ambient-glow-2" aria-hidden="true"></div>
+
+  <!-- ==================== NAVBAR ==================== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand" aria-label="CineCast Media Agency Home">
+        <span class="brand-icon"><i class="fa-solid fa-clapperboard"></i></span>
+        <span class="brand-text">
+          <span class="brand-title">CINECAST</span>
+          <span class="brand-sub">MEDIA &amp; PORTFOLIO</span>
+        </span>
+      </a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Primary Navigation">
+        <a href="index.html" class="nav-link">হোম</a>
+        <a href="gallery.html" class="nav-link active">গ্যালারি</a>
+        <a href="videos.html" class="nav-link">ভিডিও</a>
+        <a href="reviews.html" class="nav-link">রিভিউ</a>
+        <a href="index.html#talent-directory" class="nav-link">ট্যালেন্ট ডিরেক্টরি</a>
+        <a href="index.html#registration-section" class="nav-link">আবেদন করুন</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn-outline-gold hidden-sm" id="openShowreelBtn" type="button">
+          <i class="fa-solid fa-play"></i>
+          <span>শো-রিল</span>
+        </button>
+        <a href="index.html#registration-section" class="btn-gold-pill">
+          <i class="fa-solid fa-circle-plus"></i>
+          <span>প্রোফাইল জমা দিন</span>
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" type="button" aria-label="Toggle Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== SUBPAGE HERO ==================== -->
+  <section class="page-hero">
+    <div class="page-hero-bg" style="background-image: url('assets/images/hero-cinema.jpg');"></div>
+    <div class="container page-hero-inner">
+      <div class="breadcrumb-row">
+        <a href="index.html">হোম</a>
+        <i class="fa-solid fa-chevron-right"></i>
+        <span>ফটো গ্যালারি</span>
+      </div>
+      <span class="eyebrow"><i class="fa-regular fa-images"></i> বিটিএস ও স্টুডিও আর্কাইভ</span>
+      <h1>সিনেমা, শুটিং সেট ও <span class="text-gold-gradient">বিহাইন্ড-দ্য-সিনস গ্যালারি</span></h1>
+      <p>আমাদের সাম্প্রতিক চলচ্চিত্র, টিভিসি প্রোডাকশন, স্টুডিও লাইটিং এবং ট্যালেন্ট ফটোশুটের নির্বাচিত স্থিরচিত্র।</p>
+    </div>
+  </section>
+
+  <!-- ==================== AUTO-SCROLL CINEMATIC REEL (SPLIDE AUTOSCROLL) ==================== -->
+  <section class="autoscroll-gallery-section" id="gallery-autoscroll">
+    <div class="container">
+      <div class="autoscroll-header" data-gsap="bottom">
+        <div>
+          <span class="autoscroll-pill"><span class="live-dot"></span> অটো-স্ক্রল গ্যালারি রিল</span>
+          <h2 class="autoscroll-title">ক্লিক করলেই <span class="text-gold-gradient">ফুল-ইমেজ জুম ও স্লাইডশো</span></h2>
+        </div>
+        <div class="autoscroll-controls">
+          <button class="btn-outline-gold btn-sm" id="toggleAutoScrollBtn" type="button">
+            <i class="fa-solid fa-pause"></i>
+            <span>অটো-স্ক্রল পজ</span>
+          </button>
+          <button class="btn-gold-pill btn-sm" id="startFancySlideshowBtn" type="button">
+            <i class="fa-solid fa-expand"></i>
+            <span>ফুল-স্ক্রিন স্লাইডশো</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="splide gallery-auto-splide" id="galleryAutoSplide" aria-label="Auto Scrolling Photo Gallery">
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide">
+            <a class="autoscroll-card" href="assets/images/hero-cinema.jpg" data-fancybox="gallery-autoscroll" data-download-src="assets/images/hero-cinema.jpg" data-caption="শুটিং সেট (BTS) — মেইন সেট ক্ল্যাপারবোর্ড ও গোল্ডেন রিম লাইটিং সেটআপ">
+              <img src="assets/images/hero-cinema.jpg" alt="মেইন সেট ক্ল্যাপারবোর্ড ও ক্যামেরা রিগ" />
+              <span class="autoscroll-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+              <div class="autoscroll-caption">
+                <span>শুটিং সেট (BTS)</span>
+                <h4>৪কে অ্যানামরফিক ক্যামেরা সেটআপ</h4>
+              </div>
+            </a>
+          </li>
+          <li class="splide__slide">
+            <a class="autoscroll-card" href="assets/images/hero-studio.jpg" data-fancybox="gallery-autoscroll" data-download-src="assets/images/hero-studio.jpg" data-caption="টিভিসি স্টুডিও — সাউন্ডস্টেজ-২: ডলি ট্র্যাক ও মনিটর ভিলেজ">
+              <img src="assets/images/hero-studio.jpg" alt="সাউন্ডস্টেজ ও ডলি ট্র্যাক" />
+              <span class="autoscroll-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+              <div class="autoscroll-caption">
+                <span>টিভিসি স্টুডিও</span>
+                <h4>অরোরা ক্যাম্পেইন সাউন্ডস্টেজ</h4>
+              </div>
+            </a>
+          </li>
+          <li class="splide__slide">
+            <a class="autoscroll-card" href="assets/images/portfolio-film.jpg" data-fancybox="gallery-autoscroll" data-download-src="assets/images/portfolio-film.jpg" data-caption="সিনেমা স্টিল — “রাত্রির শহর” ঢাকার বর্ষা রাতের লোকেশন ফ্রেম">
+              <img src="assets/images/portfolio-film.jpg" alt="রাত্রির শহর রেইন নাইট সিন" />
+              <span class="autoscroll-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+              <div class="autoscroll-caption">
+                <span>সিনেমা স্টিল</span>
+                <h4>রাত্রির শহর — নিও-নয়্যার ফ্রেম</h4>
+              </div>
+            </a>
+          </li>
+          <li class="splide__slide">
+            <a class="autoscroll-card" href="assets/images/portfolio-casting.jpg" data-fancybox="gallery-autoscroll" data-download-src="assets/images/portfolio-casting.jpg" data-caption="ট্যালেন্ট পোর্ট্রেট — ডিরেক্টর ও লিড অ্যাক্টর এডিটোরিয়াল শুট">
+              <img src="assets/images/portfolio-casting.jpg" alt="ক্রিয়েটিভ ডিরেক্টর স্টুডিও পোর্ট্রেট" />
+              <span class="autoscroll-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+              <div class="autoscroll-caption">
+                <span>ট্যালেন্ট পোর্ট্রেট</span>
+                <h4>লিড অ্যাক্টর লুক টেস্ট</h4>
+              </div>
+            </a>
+          </li>
+          <li class="splide__slide">
+            <a class="autoscroll-card" href="assets/images/portfolio-music.jpg" data-fancybox="gallery-autoscroll" data-download-src="assets/images/portfolio-music.jpg" data-caption="শুটিং সেট — ভলিউমেট্রিক লাইট ও ক্যামেরা স্লেট ফ্রেম">
+              <img src="assets/images/portfolio-music.jpg" alt="সিনেমাটিক মিউজিক ভিডিও স্টেজ" />
+              <span class="autoscroll-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+              <div class="autoscroll-caption">
+                <span>মিউজিক ভিডিও</span>
+                <h4>ভলিউমেট্রিক স্টেজ লাইটিং</h4>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== GALLERY FILTER & MASONRY GRID ==================== -->
+  <section class="section-pad" id="gallery-main">
+    <div class="container">
+      <div class="section-header-row">
+        <div>
+          <span class="eyebrow"><i class="fa-solid fa-camera-retro"></i> কিউরেটেড ফটো কালেকশন</span>
+          <h2 class="section-title">প্রোডাকশন <span class="text-gold-gradient">ফটো শোকেস</span></h2>
+        </div>
+
+        <div class="filter-pills" id="galleryFilters">
+          <button class="filter-pill active" data-filter="all" type="button">সব ছবি</button>
+          <button class="filter-pill" data-filter="bts" type="button">শুটিং সেট (BTS)</button>
+          <button class="filter-pill" data-filter="film" type="button">সিনেমা স্টিল</button>
+          <button class="filter-pill" data-filter="studio" type="button">টিভিসি স্টুডিও</button>
+          <button class="filter-pill" data-filter="portrait" type="button">ট্যালেন্ট পোর্ট্রেট</button>
+        </div>
+      </div>
+
+      <div class="gallery-grid" id="galleryGrid">
+        <article class="gallery-card wide" data-category="bts" data-gsap="bottom">
+          <a class="gallery-img-wrap img-reveal-bottom" href="assets/images/hero-cinema.jpg" data-fancybox="gallery-grid" data-download-src="assets/images/hero-cinema.jpg" data-caption="শুটিং সেট (BTS) • ৪কে অ্যানামরফিক — মেইন সেট ক্ল্যাপারবোর্ড ও গোল্ডেন রিম লাইটিং সেটআপ">
+            <img src="assets/images/hero-cinema.jpg" alt="মেইন সেট ক্ল্যাপারবোর্ড ও ক্যামেরা রিগ" />
+            <span class="gallery-zoom-icon"><i class="fa-solid fa-expand"></i></span>
+          </a>
+          <div class="gallery-caption">
+            <span class="gallery-cat">শুটিং সেট (BTS) • ৪কে অ্যানামরফিক</span>
+            <h3>মেইন সেট ক্ল্যাপারবোর্ড ও গোল্ডেন রিম লাইটিং সেটআপ</h3>
+          </div>
+        </article>
+
+        <article class="gallery-card" data-category="portrait" data-gsap="top">
+          <a class="gallery-img-wrap img-reveal-top" href="assets/images/portfolio-casting.jpg" data-fancybox="gallery-grid" data-download-src="assets/images/portfolio-casting.jpg" data-caption="ট্যালেন্ট পোর্ট্রেট • স্টুডিও লুক টেস্ট — ডিরেক্টর ও লিড অ্যাক্টর এডিটোরিয়াল শুট">
+            <img src="assets/images/portfolio-casting.jpg" alt="ক্রিয়েটিভ ডিরেক্টর স্টুডিও পোর্ট্রেট" />
+            <span class="gallery-zoom-icon"><i class="fa-solid fa-expand"></i></span>
+          </a>
+          <div class="gallery-caption">
+            <span class="gallery-cat">ট্যালেন্ট পোর্ট্রেট • স্টুডিও লুক টেস্ট</span>
+            <h3>ডিরেক্টর ও লিড অ্যাক্টর এডিটোরিয়াল শুট</h3>
+          </div>
+        </article>
+
+        <article class="gallery-card" data-category="film" data-gsap="bottom">
+          <a class="gallery-img-wrap img-reveal-bottom" href="assets/images/portfolio-film.jpg" data-fancybox="gallery-grid" data-download-src="assets/images/portfolio-film.jpg" data-caption="সিনেমা স্টিল • নিও-নয়্যার — “রাত্রির শহর” ঢাকার বর্ষা রাতের লোকেশন ফ্রেম">
+            <img src="assets/images/portfolio-film.jpg" alt="রাত্রির শহর রেইন নাইট সিন" />
+            <span class="gallery-zoom-icon"><i class="fa-solid fa-expand"></i></span>
+          </a>
+          <div class="gallery-caption">
+            <span class="gallery-cat">সিনেমা স্টিল • নিও-নয়্যার</span>
+            <h3>“রাত্রির শহর” — ঢাকার বর্ষা রাতের লোকেশন ফ্রেম</h3>
+          </div>
+        </article>
+
+        <article class="gallery-card" data-category="studio" data-gsap="top">
+          <a class="gallery-img-wrap img-reveal-top" href="assets/images/hero-studio.jpg" data-fancybox="gallery-grid" data-download-src="assets/images/hero-studio.jpg" data-caption="টিভিসি স্টুডিও • অরোরা ক্যাম্পেইন — সাউন্ডস্টেজ-২: ডলি ট্র্যাক ও মনিটর ভিলেজ">
+            <img src="assets/images/hero-studio.jpg" alt="টিভিসি সাউন্ডস্টেজ ও ডলি ট্র্যাক" />
+            <span class="gallery-zoom-icon"><i class="fa-solid fa-expand"></i></span>
+          </a>
+          <div class="gallery-caption">
+            <span class="gallery-cat">টিভিসি স্টুডিও • অরোরা ক্যাম্পেইন</span>
+            <h3>সাউন্ডস্টেজ-২: ডলি ট্র্যাক ও মনিটর ভিলেজ</h3>
+          </div>
+        </article>
+
+        <article class="gallery-card" data-category="bts" data-gsap="bottom">
+          <a class="gallery-img-wrap img-reveal-bottom" href="assets/images/portfolio-music.jpg" data-fancybox="gallery-grid" data-download-src="assets/images/portfolio-music.jpg" data-caption="শুটিং সেট (BTS) • মেঘদূত রেকর্ডস — ভলিউমেট্রিক লাইট ও ক্যামেরা স্লেট ফ্রেম">
+            <img src="assets/images/portfolio-music.jpg" alt="সিনেমাটিক মিউজিক ভিডিও স্টেজ" />
+            <span class="gallery-zoom-icon"><i class="fa-solid fa-expand"></i></span>
+          </a>
+          <div class="gallery-caption">
+            <span class="gallery-cat">শুটিং সেট (BTS) • মেঘদূত রেকর্ডস</span>
+            <h3>ভলিউমেট্রিক লাইট ও ক্যামেরা স্লেট ফ্রেম</h3>
+          </div>
+        </article>
+
+        <article class="gallery-card wide" data-category="studio" data-gsap="top">
+          <a class="gallery-img-wrap img-reveal-top" href="assets/images/hero-studio.jpg" data-fancybox="gallery-grid" data-download-src="assets/images/hero-studio.jpg" data-caption="টিভিসি স্টুডিও • ফুল প্রোডাকশন — মেগা ব্র্যান্ড টিভিসি: লাইভ ডিরেকশন ও সিনেমাটোগ্রাফি টিম">
+            <img src="assets/images/hero-studio.jpg" alt="কমার্শিয়াল সেট লাইটিং ও ক্রু" />
+            <span class="gallery-zoom-icon"><i class="fa-solid fa-expand"></i></span>
+          </a>
+          <div class="gallery-caption">
+            <span class="gallery-cat">টিভিসি স্টুডিও • ফুল প্রোডাকশন</span>
+            <h3>মেগা ব্র্যান্ড টিভিসি: লাইভ ডিরেকশন ও সিনেমাটোগ্রাফি টিম</h3>
+          </div>
+        </article>
+
+        <article class="gallery-card" data-category="portrait" data-gsap="bottom">
+          <a class="gallery-img-wrap img-reveal-bottom" href="assets/images/portfolio-casting.jpg" data-fancybox="gallery-grid" data-download-src="assets/images/portfolio-casting.jpg" data-caption="ট্যালেন্ট পোর্ট্রেট • কাস্টিং — ক্লাসিক ভিউফাইন্ডার ও ওয়ার্ম টোন পোর্ট্রেট">
+            <img src="assets/images/portfolio-casting.jpg" alt="ভিউফাইন্ডার পোর্ট্রেট" />
+            <span class="gallery-zoom-icon"><i class="fa-solid fa-expand"></i></span>
+          </a>
+          <div class="gallery-caption">
+            <span class="gallery-cat">ট্যালেন্ট পোর্ট্রেট • কাস্টিং</span>
+            <h3>ক্লাসিক ভিউফাইন্ডার ও ওয়ার্ম টোন পোর্ট্রেট</h3>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== GALLERY LIGHTBOX MODAL ==================== -->
+  <div class="modal-backdrop" id="lightboxModal" aria-hidden="true">
+    <div class="modal-dialog modal-lightbox">
+      <button class="modal-close" data-close-modal="lightboxModal" type="button" aria-label="Close Lightbox">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="lightbox-stage">
+        <img id="lbImg" src="assets/images/hero-cinema.jpg" alt="Gallery Preview" />
+        <button class="lightbox-nav-btn lightbox-prev" id="lbPrev" type="button" aria-label="Previous Image">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button class="lightbox-nav-btn lightbox-next" id="lbNext" type="button" aria-label="Next Image">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+      <div class="lightbox-info">
+        <span id="lbCat">শুটিং সেট</span>
+        <h3 id="lbTitle">ছবির শিরোনাম</h3>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== SHOWREEL MODAL (SHARED) ==================== -->
+  <div class="modal-backdrop" id="reelModal" aria-hidden="true">
+    <div class="modal-dialog modal-video">
+      <div class="reel-modal-topbar">
+        <div>
+          <span class="reel-badge" id="reelCategory">অফিসিয়াল শো-রিল</span>
+          <h3 id="reelTitle">CINECAST ২০২৬ মেগা শো-রিল</h3>
+        </div>
+        <button class="modal-close modal-close-inline" data-close-modal="reelModal" type="button" aria-label="Close Modal">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <div class="reel-player-wrap">
+        <video id="reelVideo" class="reel-video-el" controls playsinline preload="metadata" poster="assets/images/hero-cinema.jpg" hidden></video>
+        <iframe id="reelIframe" class="reel-iframe-el" title="YouTube Video Player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <div class="reel-modal-footer">
+        <span class="reel-footer-note"><i class="fa-brands fa-youtube"></i> YouTube প্লেয়ার</span>
+        <a id="reelExternalLink" class="btn-outline-gold btn-sm" href="https://www.youtube.com/watch?v=aqz-KE-bpKQ" target="_blank" rel="noopener">
+          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          <span>YouTube-এ দেখুন</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand">
+          <span class="brand-icon"><i class="fa-solid fa-clapperboard"></i></span>
+          <span class="brand-text">
+            <span class="brand-title">CINECAST</span>
+            <span class="brand-sub">MEDIA &amp; PORTFOLIO</span>
+          </span>
+        </a>
+        <p class="footer-desc">
+          বাংলাদেশের অন্যতম আধুনিক কাস্টিং এজেন্সি ও প্রোডাকশন পোর্টফোলিও হাউস। নাটক, সিনেমা, ওটিটি ও বিজ্ঞাপনের পূর্ণাঙ্গ সৃজনশীল অংশীদার।
+        </p>
+        <div class="social-row">
+          <a href="index.html" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="index.html" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="index.html" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="index.html" aria-label="Vimeo"><i class="fa-brands fa-vimeo-v"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>দ্রুত লিংক</h4>
+        <ul>
+          <li><a href="index.html">হোম</a></li>
+          <li><a href="gallery.html">ফটো গ্যালারি</a></li>
+          <li><a href="videos.html">ভিডিও পোর্টফোলিও</a></li>
+          <li><a href="reviews.html">রিভিউ ও ফিডব্যাক</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>প্রোডাকশন বিভাগ</h4>
+        <ul>
+          <li><a href="videos.html">ফিচার ফিল্ম ও ওটিটি</a></li>
+          <li><a href="videos.html">টিভিসি ও ব্র্যান্ড ফিল্ম</a></li>
+          <li><a href="index.html#talent-directory">মডেল ও অ্যাক্টর কাস্টিং</a></li>
+          <li><a href="index.html#registration-section">শিল্পী রেজিস্ট্রেশন</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>স্টুডিও যোগাযোগ</h4>
+        <ul class="contact-list">
+          <li><i class="fa-solid fa-location-dot"></i> রোড ১১, বনানী, ঢাকা-১২১৩</li>
+          <li><i class="fa-solid fa-phone"></i> +৮৮০ ১৭০০-০০০১২৩</li>
+          <li><i class="fa-solid fa-envelope"></i> casting@cinecastmedia.bd</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <span>© ২০২৬ CINECAST Media &amp; Portfolio. সর্বস্বত্ব সংরক্ষিত।</span>
+        <span>Designed with Cinematic Precision</span>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast-banner" id="toastBanner" role="status" aria-live="polite">
+    <i class="fa-solid fa-circle-check"></i>
+    <span id="toastMsg">সফল হয়েছে!</span>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrambleTextPlugin.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+

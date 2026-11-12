@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="bn" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ভিডিও পোর্টফোলিও — CINECAST মিডিয়া ও কাস্টিং</title>
+  <meta name="description" content="সিনেমা, নাটক, ওয়েব সিরিজ, টিভিসি ও মিউজিক ভিডিওর সম্পূর্ণ ভিডিও পোর্টফোলিও।" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Hind+Siliguri:wght@300;400;500;600;700&family=Oswald:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <div class="ambient-glow ambient-glow-1" aria-hidden="true"></div>
+  <div class="ambient-glow ambient-glow-2" aria-hidden="true"></div>
+
+  <!-- ==================== NAVBAR ==================== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand" aria-label="CineCast Media Agency Home">
+        <span class="brand-icon"><i class="fa-solid fa-clapperboard"></i></span>
+        <span class="brand-text">
+          <span class="brand-title">CINECAST</span>
+          <span class="brand-sub">MEDIA &amp; PORTFOLIO</span>
+        </span>
+      </a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Primary Navigation">
+        <a href="index.html" class="nav-link">হোম</a>
+        <a href="gallery.html" class="nav-link">গ্যালারি</a>
+        <a href="videos.html" class="nav-link active">ভিডিও</a>
+        <a href="reviews.html" class="nav-link">রিভিউ</a>
+        <a href="index.html#talent-directory" class="nav-link">ট্যালেন্ট ডিরেক্টরি</a>
+        <a href="index.html#registration-section" class="nav-link">আবেদন করুন</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn-outline-gold hidden-sm" id="openShowreelBtn" type="button">
+          <i class="fa-solid fa-play"></i>
+          <span>শো-রিল</span>
+        </button>
+        <a href="index.html#registration-section" class="btn-gold-pill">
+          <i class="fa-solid fa-circle-plus"></i>
+          <span>প্রোফাইল জমা দিন</span>
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" type="button" aria-label="Toggle Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== SUBPAGE HERO ==================== -->
+  <section class="page-hero">
+    <div class="page-hero-bg" style="background-image: url('assets/images/hero-studio.jpg');"></div>
+    <div class="container page-hero-inner">
+      <div class="breadcrumb-row">
+        <a href="index.html">হোম</a>
+        <i class="fa-solid fa-chevron-right"></i>
+        <span>ভিডিও পোর্টফোলিও</span>
+      </div>
+      <span class="eyebrow"><i class="fa-solid fa-film"></i> ৪কে শো-রিল ও আর্কাইভ</span>
+      <h1>আমাদের সকল <span class="text-gold-gradient">ভিডিও প্রোডাকশন ও শো-রিল</span></h1>
+      <p>সিনেমা ট্রেলার, ওটিটি ওয়েব সিরিজ, কর্পোরেট টিভিসি ও মিউজিক ভিডিও সরাসরি YouTube প্লেয়ারে দেখুন।</p>
+    </div>
+  </section>
+
+  <!-- ==================== SPOTLIGHT & VIDEO GRID ==================== -->
+  <section class="section-pad" id="videos-main">
+    <div class="container">
+      <!-- Featured Spotlight Video -->
+      <div class="video-spotlight" data-gsap="bottom">
+        <div class="spotlight-media img-reveal-bottom">
+          <img src="assets/images/hero-cinema.jpg" alt="CINECAST ২০২৬ অফিসিয়াল মাস্টার শো-রিল" />
+          <button class="card-play-btn js-play-reel" data-title="CINECAST ২০২৬ অফিসিয়াল মাস্টার শো-রিল" data-category="মাস্টার শো-রিল • 4K UHD" data-poster="assets/images/hero-cinema.jpg" data-video="https://www.youtube.com/watch?v=aqz-KE-bpKQ" type="button" aria-label="Play Master Showreel">
+            <i class="fa-solid fa-play"></i>
+          </button>
+        </div>
+        <div>
+          <span class="eyebrow"><i class="fa-solid fa-star"></i> স্পটলাইট শো-রিল</span>
+          <h2 class="section-title">CINECAST ২০২৬ <span class="text-gold-gradient">মাস্টার শো-রিল</span></h2>
+          <p class="section-sub">গত এক বছরে আমাদের স্টুডিও থেকে নির্মিত সেরা সিনেমা, নাটক ও বিজ্ঞাপনের ২ মিনিট ৪৫ সেকেন্ডের হাইলাইট রিল।</p>
+          <div class="hero-cta-row">
+            <button class="btn-gold-pill js-play-reel" data-title="CINECAST ২০২৬ অফিসিয়াল মাস্টার শো-রিল" data-category="মাস্টার শো-রিল • 4K UHD" data-poster="assets/images/hero-cinema.jpg" data-video="https://www.youtube.com/watch?v=aqz-KE-bpKQ" type="button">
+              <i class="fa-solid fa-circle-play"></i>
+              <span>YouTube-এ প্লে করুন</span>
+            </button>
+            <a href="index.html#registration-section" class="btn-outline-gold">প্রজেক্ট বুকিং করুন</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Filterable Video Grid -->
+      <div class="section-header-row">
+        <div>
+          <span class="eyebrow"><i class="fa-solid fa-video"></i> ক্যাটাগরি অনুযায়ী দেখুন</span>
+          <h2 class="section-title">সাম্প্রতিক <span class="text-gold-gradient">ভিডিও প্রজেক্টসমূহ</span></h2>
+        </div>
+
+        <div class="filter-pills" id="videoPageFilters">
+          <button class="filter-pill active" data-filter="all" type="button">সব ভিডিও</button>
+          <button class="filter-pill" data-filter="film" type="button">সিনেমা</button>
+          <button class="filter-pill" data-filter="drama" type="button">নাটক ও ওটিটি</button>
+          <button class="filter-pill" data-filter="tvc" type="button">বিজ্ঞাপন (TVC)</button>
+          <button class="filter-pill" data-filter="music" type="button">মিউজিক ভিডিও</button>
+        </div>
+      </div>
+
+      <div class="videos-grid" id="videoPageGrid">
+        <article class="portfolio-card" data-category="film" data-gsap="bottom">
+          <div class="card-media img-reveal-bottom">
+            <img src="assets/images/portfolio-film.jpg" alt="রাত্রির শহর — ফিচার ফিল্ম" />
+            <span class="card-badge">সিনেমা • 4K</span>
+            <span class="card-duration"><i class="fa-regular fa-clock"></i> ২:১৫</span>
+            <button class="card-play-btn js-play-reel" data-title="রাত্রির শহর (The Night City)" data-category="ফিচার ফিল্ম • পরিচালক: রাফি আহমেদ" data-poster="assets/images/portfolio-film.jpg" data-video="https://www.youtube.com/watch?v=HomAZcKm3fk" type="button" aria-label="Play রাত্রির শহর">
+              <i class="fa-solid fa-play"></i>
+            </button>
+          </div>
+          <div class="card-body">
+            <div class="card-meta-top"><span><i class="fa-solid fa-clapperboard"></i> রাফি আহমেদ</span><span>২০২৬</span></div>
+            <h3 class="card-title">রাত্রির শহর — নিও-নয়্যার থ্রিলার</h3>
+            <p class="card-desc">ঢাকার বর্ষার রাতের পটভূমিতে নির্মিত অ্যাকশন-থ্রিলার পূর্ণদৈর্ঘ্য চলচ্চিত্র।</p>
+          </div>
+        </article>
+
+        <article class="portfolio-card" data-category="tvc" data-gsap="top">
+          <div class="card-media img-reveal-top">
+            <img src="assets/images/hero-studio.jpg" alt="অরোরা গোল্ড — মেগা টিভিসি" />
+            <span class="card-badge">বিজ্ঞাপন (TVC)</span>
+            <span class="card-duration"><i class="fa-regular fa-clock"></i> ০:৪৫</span>
+            <button class="card-play-btn js-play-reel" data-title="অরোরা গোল্ড লাক্সারি টিভিসি" data-category="ব্র্যান্ড ক্যাম্পেইন • ডিরেক্টর: তানভীর হাসান" data-poster="assets/images/hero-studio.jpg" data-video="https://www.youtube.com/watch?v=mN0zPOpADL4" type="button" aria-label="Play অরোরা গোল্ড">
+              <i class="fa-solid fa-play"></i>
+            </button>
+          </div>
+          <div class="card-body">
+            <div class="card-meta-top"><span><i class="fa-solid fa-bullhorn"></i> অরোরা গ্রুপ</span><span>২০২৬</span></div>
+            <h3 class="card-title">অরোরা গোল্ড — ফেস্টিভ টিভিসি</h3>
+            <p class="card-desc">মোশন কন্ট্রোল ক্যামেরা ও ১২ জন শীর্ষ মডেলের অংশগ্রহণে নির্মিত ব্র্যান্ড টিভিসি।</p>
+          </div>
+        </article>
+
+        <article class="portfolio-card" data-category="music" data-gsap="bottom">
+          <div class="card-media img-reveal-bottom">
+            <img src="assets/images/portfolio-music.jpg" alt="সোনালি রোদ — মিউজিক ভিডিও" />
+            <span class="card-badge">মিউজিক ভিডিও</span>
+            <span class="card-duration"><i class="fa-regular fa-clock"></i> ৪:১০</span>
+            <button class="card-play-btn js-play-reel" data-title="সোনালি রোদ — অফিসিয়াল মিউজিক ফিল্ম" data-category="মিউজিক ভিডিও • ১.২ কোটি+ ভিউ" data-poster="assets/images/portfolio-music.jpg" data-video="https://www.youtube.com/watch?v=YE7VzlLtp-4" type="button" aria-label="Play সোনালি রোদ">
+              <i class="fa-solid fa-play"></i>
+            </button>
+          </div>
+          <div class="card-body">
+            <div class="card-meta-top"><span><i class="fa-solid fa-music"></i> মেঘদূত রেকর্ডস</span><span>২০২৬</span></div>
+            <h3 class="card-title">সোনালি রোদ — সিন্থ-রক মিউজিক ফিল্ম</h3>
+            <p class="card-desc">অ্যানামরফিক লেন্স ও গোল্ডেন ভলিউমেট্রিক লাইটিংয়ে নির্মিত জনপ্রিয় মিউজিক ভিডিও।</p>
+          </div>
+        </article>
+
+        <article class="portfolio-card" data-category="drama" data-gsap="top">
+          <div class="card-media img-reveal-top">
+            <img src="assets/images/hero-cinema.jpg" alt="মায়াজাল — ওটিটি ওয়েব সিরিজ" />
+            <span class="card-badge">নাটক ও ওটিটি</span>
+            <span class="card-duration"><i class="fa-regular fa-clock"></i> ১:৫৫</span>
+            <button class="card-play-btn js-play-reel" data-title="মায়াজাল — ৮ পর্বের ওটিটি সিরিজ" data-category="ওয়েব সিরিজ • কাস্টিং ও প্রোডাকশন" data-poster="assets/images/hero-cinema.jpg" data-video="https://www.youtube.com/watch?v=eRsGyueVLvQ" type="button" aria-label="Play মায়াজাল">
+              <i class="fa-solid fa-play"></i>
+            </button>
+          </div>
+          <div class="card-body">
+            <div class="card-meta-top"><span><i class="fa-solid fa-tv"></i> প্রাইম ওটিটি</span><span>২০২৫</span></div>
+            <h3 class="card-title">মায়াজাল — ক্রাইম মিস্ট্রি সিরিজ</h3>
+            <p class="card-desc">সম্পূর্ণ কাস্টিং, লোকেশন স্কাউটিং এবং ৪কে পোস্ট-প্রোডাকশন সম্পন্ন করেছে CineCast।</p>
+          </div>
+        </article>
+
+        <article class="portfolio-card" data-category="tvc" data-gsap="bottom">
+          <div class="card-media img-reveal-bottom">
+            <img src="assets/images/portfolio-casting.jpg" alt="ভেলভেট অটাম — ফ্যাশন ফিল্ম" />
+            <span class="card-badge">বিজ্ঞাপন (TVC)</span>
+            <span class="card-duration"><i class="fa-regular fa-clock"></i> ১:০৫</span>
+            <button class="card-play-btn js-play-reel" data-title="ভেলভেট অটাম — ফ্যাশন ফিল্ম" data-category="কমার্শিয়াল • কালার ও এডিটিং" data-poster="assets/images/portfolio-casting.jpg" data-video="https://www.youtube.com/watch?v=aqz-KE-bpKQ" type="button" aria-label="Play ভেলভেট অটাম">
+              <i class="fa-solid fa-play"></i>
+            </button>
+          </div>
+          <div class="card-body">
+            <div class="card-meta-top"><span><i class="fa-solid fa-shirt"></i> ভেলভেট লাইফস্টাইল</span><span>২০২৬</span></div>
+            <h3 class="card-title">ভেলভেট অটাম — ফ্যাশন ফিল্ম</h3>
+            <p class="card-desc">মিনিমাল ডার্ক-গোল্ড এস্থেটিক ও পোর্ট্রেট সিনেমাটোগ্রাফিতে নির্মিত ব্র্যান্ড লঞ্চ ফিল্ম।</p>
+          </div>
+        </article>
+
+        <article class="portfolio-card" data-category="film" data-gsap="top">
+          <div class="card-media img-reveal-top">
+            <img src="assets/images/hero-cinema.jpg" alt="মেঘের ওপারে — শর্ট ফিল্ম" />
+            <span class="card-badge">শর্ট ফিল্ম</span>
+            <span class="card-duration"><i class="fa-regular fa-clock"></i> ১২:৩০</span>
+            <button class="card-play-btn js-play-reel" data-title="মেঘের ওপারে — ফেস্টিভ্যাল শর্ট ফিল্ম" data-category="শর্ট ফিল্ম • জুরি অ্যাওয়ার্ড" data-poster="assets/images/hero-cinema.jpg" data-video="https://www.youtube.com/watch?v=eRsGyueVLvQ" type="button" aria-label="Play মেঘের ওপারে">
+              <i class="fa-solid fa-play"></i>
+            </button>
+          </div>
+          <div class="card-body">
+            <div class="card-meta-top"><span><i class="fa-solid fa-award"></i> ঢাকা ফিল্ম ফেস্ট</span><span>২০২৫</span></div>
+            <h3 class="card-title">মেঘের ওপারে — শর্ট ফিল্ম</h3>
+            <p class="card-desc">আন্তর্জাতিক শর্ট ফিল্ম ফেস্টিভ্যালে সেরা সিনেমাটোগ্রাফি বিভাগে পুরস্কৃত প্রজেক্ট।</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SHOWREEL MODAL (YOUTUBE PLAYER) ==================== -->
+  <div class="modal-backdrop" id="reelModal" aria-hidden="true">
+    <div class="modal-dialog modal-video">
+      <div class="reel-modal-topbar">
+        <div>
+          <span class="reel-badge" id="reelCategory">অফিসিয়াল শো-রিল</span>
+          <h3 id="reelTitle">CINECAST ২০২৬ মেগা শো-রিল</h3>
+        </div>
+        <button class="modal-close modal-close-inline" data-close-modal="reelModal" type="button" aria-label="Close Modal">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <div class="reel-player-wrap">
+        <video id="reelVideo" class="reel-video-el" controls playsinline preload="metadata" poster="assets/images/hero-cinema.jpg" hidden></video>
+        <iframe id="reelIframe" class="reel-iframe-el" title="YouTube Video Player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <div class="reel-modal-footer">
+        <span class="reel-footer-note"><i class="fa-brands fa-youtube"></i> YouTube প্লেয়ার (যদি লোকাল ফাইল থেকে প্লে না হয়, পাশের বাটনে দেখুন)</span>
+        <a id="reelExternalLink" class="btn-outline-gold btn-sm" href="https://www.youtube.com/watch?v=aqz-KE-bpKQ" target="_blank" rel="noopener">
+          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          <span>YouTube-এ দেখুন</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand">
+          <span class="brand-icon"><i class="fa-solid fa-clapperboard"></i></span>
+          <span class="brand-text">
+            <span class="brand-title">CINECAST</span>
+            <span class="brand-sub">MEDIA &amp; PORTFOLIO</span>
+          </span>
+        </a>
+        <p class="footer-desc">
+          বাংলাদেশের অন্যতম আধুনিক কাস্টিং এজেন্সি ও প্রোডাকশন পোর্টফোলিও হাউস। নাটক, সিনেমা, ওটিটি ও বিজ্ঞাপনের পূর্ণাঙ্গ সৃজনশীল অংশীদার।
+        </p>
+        <div class="social-row">
+          <a href="index.html" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="index.html" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="index.html" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="index.html" aria-label="Vimeo"><i class="fa-brands fa-vimeo-v"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>দ্রুত লিংক</h4>
+        <ul>
+          <li><a href="index.html">হোম</a></li>
+          <li><a href="gallery.html">ফটো গ্যালারি</a></li>
+          <li><a href="videos.html">ভিডিও পোর্টফোলিও</a></li>
+          <li><a href="reviews.html">রিভিউ ও ফিডব্যাক</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>প্রোডাকশন বিভাগ</h4>
+        <ul>
+          <li><a href="videos.html">ফিচার ফিল্ম ও ওটিটি</a></li>
+          <li><a href="videos.html">টিভিসি ও ব্র্যান্ড ফিল্ম</a></li>
+          <li><a href="index.html#talent-directory">মডেল ও অ্যাক্টর কাস্টিং</a></li>
+          <li><a href="index.html#registration-section">শিল্পী রেজিস্ট্রেশন</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>স্টুডিও যোগাযোগ</h4>
+        <ul class="contact-list">
+          <li><i class="fa-solid fa-location-dot"></i> রোড ১১, বনানী, ঢাকা-১২১৩</li>
+          <li><i class="fa-solid fa-phone"></i> +৮৮০ ১৭০০-০০০১২৩</li>
+          <li><i class="fa-solid fa-envelope"></i> casting@cinecastmedia.bd</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <span>© ২০২৬ CINECAST Media &amp; Portfolio. সর্বস্বত্ব সংরক্ষিত।</span>
+        <span>Designed with Cinematic Precision</span>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast-banner" id="toastBanner" role="status" aria-live="polite">
+    <i class="fa-solid fa-circle-check"></i>
+    <span id="toastMsg">সফল হয়েছে!</span>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrambleTextPlugin.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+

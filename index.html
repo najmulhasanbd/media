@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+<html lang="bn" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CINECAST — মিডিয়া, প্রোডাকশন ও কাস্টিং পোর্টফোলিও</title>
+  <meta name="description" content="নাটক, সিনেমা, ওয়েব সিরিজ ও বিজ্ঞাপনের প্রিমিয়ার মিডিয়া পোর্টফোলিও এবং কাস্টিং প্ল্যাটফর্ম।" />
+
+  <!-- Google Fonts: Hind Siliguri (Bengali) + Plus Jakarta Sans + Cinzel + Oswald -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Hind+Siliguri:wght@300;400;500;600;700&family=Oswald:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Swiper, Fancybox & Lenis CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.css" />
+
+  <!-- HubSpot Odometer CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.8/themes/odometer-theme-default.min.css" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- Top Ambient Film Grain & Spotlight Glow -->
+  <div class="ambient-glow ambient-glow-1" aria-hidden="true"></div>
+  <div class="ambient-glow ambient-glow-2" aria-hidden="true"></div>
+
+  <!-- ==================== NAVBAR ==================== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#hero" class="brand" aria-label="CineCast Media Agency Home">
+        <span class="brand-icon">
+          <i class="fa-solid fa-clapperboard"></i>
+        </span>
+        <span class="brand-text">
+          <span class="brand-title">CINECAST</span>
+          <span class="brand-sub">MEDIA &amp; PORTFOLIO</span>
+        </span>
+      </a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Primary Navigation">
+        <a href="index.html" class="nav-link active">হোম</a>
+        <a href="gallery.html" class="nav-link">গ্যালারি</a>
+        <a href="videos.html" class="nav-link">ভিডিও</a>
+        <a href="reviews.html" class="nav-link">রিভিউ</a>
+        <a href="#talent-directory" class="nav-link">ট্যালেন্ট ডিরেক্টরি</a>
+        <a href="#registration-section" class="nav-link">আবেদন করুন</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn-outline-gold hidden-sm" id="openShowreelBtn" type="button">
+          <i class="fa-solid fa-play"></i>
+          <span>শো-রিল</span>
+        </button>
+        <a href="#registration-section" class="btn-gold-pill">
+          <i class="fa-solid fa-circle-plus"></i>
+          <span>প্রোফাইল জমা দিন</span>
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" type="button" aria-label="Toggle Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== HERO SECTION (SLIDER #1 + THUMBS) ==================== -->
+  <section class="hero-section" id="hero">
+    <div class="swiper hero-swiper" id="heroSlider">
+      <div class="swiper-wrapper">
+        <!-- Slide 1 -->
+        <div class="swiper-slide hero-slide">
+          <div class="hero-bg" style="background-image: url('assets/images/hero-cinema.jpg');"></div>
+          <div class="hero-overlay"></div>
+          <div class="container hero-content">
+            <div class="hero-badge">
+              <i class="fa-solid fa-star"></i>
+              <span>বাংলাদেশের সেরা কাস্টিং ও মিডিয়া পোর্টফোলিও প্ল্যাটফর্ম</span>
+            </div>
+            <h1 class="hero-title">
+              নাটক, সিনেমা ও বিজ্ঞাপনের
+              <span class="text-gold-gradient">সৃজনশীল মিডিয়া ও প্রোডাকশন হাউস</span>
+            </h1>
+            <p class="hero-desc">
+              গল্পের গভীরতা, ৪কে সিনেমাটোগ্রাফি এবং দেশের সেরা অভিনয়শিল্পীদের সমন্বয়ে আমরা তৈরি করি কালজয়ী ভিজ্যুয়াল অভিজ্ঞতা।
+            </p>
+            <div class="hero-cta-row">
+              <a href="#portfolio-section" class="btn-gold-pill btn-lg">
+                <i class="fa-solid fa-film"></i>
+                <span>পোর্টফোলিও দেখুন</span>
+              </a>
+              <button class="btn-glass btn-lg js-play-reel" data-title="CINECAST ২০২৬ মেগা শো-রিল" data-category="অফিসিয়াল শো-রিল • ২:৪৫ মিনিট" data-poster="assets/images/hero-cinema.jpg" data-video="https://www.youtube.com/watch?v=aqz-KE-bpKQ" type="button">
+                <i class="fa-solid fa-circle-play"></i>
+                <span>শো-রিল চালু করুন</span>
+              </button>
+            </div>
+            <div class="hero-meta-strip">
+              <div class="meta-chip"><i class="fa-solid fa-video"></i> 4K HDR Cinema</div>
+              <div class="meta-chip"><i class="fa-solid fa-users"></i> ১৮৫০+ ট্যালেন্ট রোস্টার</div>
+              <div class="meta-chip"><i class="fa-solid fa-award"></i> ১৮+ জাতীয় ও আন্তর্জাতিক অ্যাওয়ার্ড</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="swiper-slide hero-slide">
+          <div class="hero-bg" style="background-image: url('assets/images/hero-studio.jpg');"></div>
+          <div class="hero-overlay"></div>
+          <div class="container hero-content">
+            <div class="hero-badge">
+              <i class="fa-solid fa-bolt"></i>
+              <span>হাই-ভোল্টেজ টিভিসি ও ব্র্যান্ড স্টোরিটেলিং</span>
+            </div>
+            <h1 class="hero-title">
+              ব্র্যান্ডের গল্পকে দিন
+              <span class="text-gold-gradient">বিশ্বমানের ভিজ্যুয়াল ও কাস্টিং</span>
+            </h1>
+            <p class="hero-desc">
+              কনসেপ্ট ডেভেলপমেন্ট থেকে শুরু করে লাইটিং, সেট ডিজাইন ও কালার গ্রেডিং—প্রতিটি ফ্রেমে পেশাদারিত্বের ছাপ।
+            </p>
+            <div class="hero-cta-row">
+              <a href="#craft-section" class="btn-gold-pill btn-lg">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                <span>প্রোডাকশন সার্ভিস</span>
+              </a>
+              <button class="btn-glass btn-lg js-play-reel" data-title="গ্লোবাল ব্র্যান্ড টিভিসি কমপাইলেশন" data-category="বিজ্ঞাপন • ১:৫০ মিনিট" data-poster="assets/images/hero-studio.jpg" data-video="https://www.youtube.com/watch?v=eRsGyueVLvQ" type="button">
+                <i class="fa-solid fa-circle-play"></i>
+                <span>টিভিসি রিল দেখুন</span>
+              </button>
+            </div>
+            <div class="hero-meta-strip">
+              <div class="meta-chip"><i class="fa-solid fa-bullhorn"></i> ৬৫+ টপ ব্র্যান্ড</div>
+              <div class="meta-chip"><i class="fa-solid fa-camera-retro"></i> ARRI &amp; RED সেটআপ</div>
+              <div class="meta-chip"><i class="fa-solid fa-palette"></i> DaVinci কালার ল্যাব</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="swiper-slide hero-slide">
+          <div class="hero-bg" style="background-image: url('assets/images/portfolio-film.jpg');"></div>
+          <div class="hero-overlay"></div>
+          <div class="container hero-content">
+            <div class="hero-badge">
+              <i class="fa-solid fa-masks-theater"></i>
+              <span>ওটিটি অরিজিনাল ও মেগা ফিল্ম প্রজেক্ট</span>
+            </div>
+            <h1 class="hero-title">
+              নতুন প্রজন্মের নির্মাতা ও
+              <span class="text-gold-gradient">তারকা শিল্পীদের মিলনমেলা</span>
+            </h1>
+            <p class="hero-desc">
+              ওটিটি প্ল্যাটফর্ম, থিয়েটার ফিল্ম এবং মিউজিক ভিডিওর জন্য নিখুঁত কাস্টিং ও এন্ড-টু-এন্ড প্রোডাকশন সল্যুশন।
+            </p>
+            <div class="hero-cta-row">
+              <a href="#talent-directory" class="btn-gold-pill btn-lg">
+                <i class="fa-solid fa-users-viewfinder"></i>
+                <span>ট্যালেন্ট ডিরেক্টরি দেখুন</span>
+              </a>
+              <button class="btn-glass btn-lg js-play-reel" data-title="নিশিগন্ধা — ওটিটি থ্রিলার টিজার" data-category="ওয়েব ফিল্ম • ১:৩০ মিনিট" data-poster="assets/images/portfolio-film.jpg" data-video="https://www.youtube.com/watch?v=HomAZcKm3fk" type="button">
+                <i class="fa-solid fa-circle-play"></i>
+                <span>টিজার দেখুন</span>
+              </button>
+            </div>
+            <div class="hero-meta-strip">
+              <div class="meta-chip"><i class="fa-solid fa-tv"></i> ওটিটি ও সিনেমা</div>
+              <div class="meta-chip"><i class="fa-solid fa-microphone-lines"></i> ডলবি সাউন্ড ডিজাইন</div>
+              <div class="meta-chip"><i class="fa-solid fa-star"></i> ফ্রেশ ও সিনিয়র ট্যালেন্ট</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Controls & Synced Thumbnail Strip -->
+      <div class="hero-bottom-bar">
+        <div class="container hero-bottom-inner">
+          <div class="hero-controls">
+            <button class="slider-circle-btn hero-prev" type="button" aria-label="Previous Slide">
+              <i class="fa-solid fa-arrow-left"></i>
+            </button>
+            <div class="hero-pagination"></div>
+            <button class="slider-circle-btn hero-next" type="button" aria-label="Next Slide">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+
+          <div class="swiper hero-thumbs-swiper" id="heroThumbSlider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide thumb-card">
+                <img src="assets/images/hero-cinema.jpg" alt="সিনেমা ও নাটক শো-রিল" />
+                <div class="thumb-info">
+                  <span class="thumb-num">০১</span>
+                  <span class="thumb-label">সিনেমা ও প্রোডাকশন</span>
+                </div>
+              </div>
+              <div class="swiper-slide thumb-card">
+                <img src="assets/images/hero-studio.jpg" alt="টিভিসি ও ব্র্যান্ড স্টুডিও" />
+                <div class="thumb-info">
+                  <span class="thumb-num">০২</span>
+                  <span class="thumb-label">টিভিসি ও ব্র্যান্ড ক্যাম্পেইন</span>
+                </div>
+              </div>
+              <div class="swiper-slide thumb-card">
+                <img src="assets/images/portfolio-film.jpg" alt="ওটিটি ও থ্রিলার" />
+                <div class="thumb-info">
+                  <span class="thumb-num">০৩</span>
+                  <span class="thumb-label">ওটিটি ওয়েব অরিজিনাল</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ODOMETER IMPACT STATS BAR ==================== -->
+  <section class="stats-section" id="stats-section">
+    <div class="container">
+      <div class="stats-odometer-card" id="statsStrip">
+        <div class="stat-item">
+          <div class="stat-icon"><i class="fa-solid fa-clapperboard"></i></div>
+          <div class="stat-num-row">
+            <span class="odometer stat-odo" data-target="248">0</span><span class="stat-plus">+</span>
+          </div>
+          <p class="stat-label">সফল মিডিয়া প্রজেক্ট</p>
+        </div>
+
+        <div class="stat-item">
+          <div class="stat-icon"><i class="fa-solid fa-users"></i></div>
+          <div class="stat-num-row">
+            <span class="odometer stat-odo" data-target="1850">0</span><span class="stat-plus">+</span>
+          </div>
+          <p class="stat-label">নিবন্ধিত মডেল ও শিল্পী</p>
+        </div>
+
+        <div class="stat-item">
+          <div class="stat-icon"><i class="fa-solid fa-bullhorn"></i></div>
+          <div class="stat-num-row">
+            <span class="odometer stat-odo" data-target="65">0</span><span class="stat-plus">+</span>
+          </div>
+          <p class="stat-label">টপ কর্পোরেট ব্র্যান্ড</p>
+        </div>
+
+        <div class="stat-item">
+          <div class="stat-icon"><i class="fa-solid fa-award"></i></div>
+          <div class="stat-num-row">
+            <span class="odometer stat-odo" data-target="18">0</span><span class="stat-plus">+</span>
+          </div>
+          <p class="stat-label">জাতীয় ও ফিল্ম অ্যাওয়ার্ড</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PORTFOLIO SECTION (SLIDER #2 — FILTERABLE MULTI-SLIDER) ==================== -->
+  <section class="portfolio-section section-pad" id="portfolio-section">
+    <div class="container">
+      <div class="section-header-row">
+        <div>
+          <span class="eyebrow"><i class="fa-solid fa-film"></i> নির্বাচিত পোর্টফোলিও</span>
+          <h2 class="section-title">আমাদের সাম্প্রতিক <span class="text-gold-gradient">মিডিয়া প্রোডাকশন</span></h2>
+        </div>
+
+        <div class="filter-pills" id="portfolioFilters" role="tablist">
+          <button class="filter-pill active" data-filter="all" type="button">সবগুলো</button>
+          <button class="filter-pill" data-filter="film" type="button">সিনেমা</button>
+          <button class="filter-pill" data-filter="drama" type="button">নাটক ও ওটিটি</button>
+          <button class="filter-pill" data-filter="tvc" type="button">বিজ্ঞাপন (TVC)</button>
+          <button class="filter-pill" data-filter="music" type="button">মিউজিক ভিডিও</button>
+        </div>
+      </div>
+
+      <div class="slider-wrapper">
+        <div class="swiper portfolio-swiper" id="portfolioSlider">
+          <div class="swiper-wrapper" id="portfolioWrapper">
+            <!-- Slide Cards (Dynamically filterable via JS, rendered cleanly in HTML too) -->
+            <article class="swiper-slide portfolio-card" data-category="film">
+              <div class="card-media">
+                <img src="assets/images/portfolio-film.jpg" alt="রাত্রির শহর — ফিচার ফিল্ম" />
+                <span class="card-badge">সিনেমা • 4K</span>
+                <span class="card-duration"><i class="fa-regular fa-clock"></i> ২:১৫</span>
+                <button class="card-play-btn js-play-reel" data-title="রাত্রির শহর (The Night City)" data-category="ফিচার ফিল্ম • পরিচালক: রাফি আহমেদ" data-poster="assets/images/portfolio-film.jpg" data-video="https://www.youtube.com/watch?v=HomAZcKm3fk" type="button" aria-label="Play রাত্রির শহর">
+                  <i class="fa-solid fa-play"></i>
+                </button>
+              </div>
+              <div class="card-body">
+                <div class="card-meta-top">
+                  <span><i class="fa-solid fa-clapperboard"></i> রাফি আহমেদ</span>
+                  <span>২০২৬</span>
+                </div>
+                <h3 class="card-title">রাত্রির শহর — নিও-নয়্যার থ্রিলার</h3>
+                <p class="card-desc">ঢাকার বর্ষার রাতের পটভূমিতে নির্মিত অ্যাকশন-থ্রিলার পূর্ণদৈর্ঘ্য চলচ্চিত্র ও কাস্টিং প্রজেক্ট।</p>
+              </div>
+            </article>
+
+            <article class="swiper-slide portfolio-card" data-category="tvc">
+              <div class="card-media">
+                <img src="assets/images/hero-studio.jpg" alt="অরোরা গোল্ড — মেগা টিভিসি" />
+                <span class="card-badge">বিজ্ঞাপন (TVC)</span>
+                <span class="card-duration"><i class="fa-regular fa-clock"></i> ০:৪৫</span>
+                <button class="card-play-btn js-play-reel" data-title="অরোরা গোল্ড লাক্সারি টিভিসি" data-category="ব্র্যান্ড ক্যাম্পেইন • ডিরেক্টর: তানভীর হাসান" data-poster="assets/images/hero-studio.jpg" data-video="https://www.youtube.com/watch?v=mN0zPOpADL4" type="button" aria-label="Play অরোরা গোল্ড">
+                  <i class="fa-solid fa-play"></i>
+                </button>
+              </div>
+              <div class="card-body">
+                <div class="card-meta-top">
+                  <span><i class="fa-solid fa-bullhorn"></i> অরোরা গ্রুপ</span>
+                  <span>২০২৬</span>
+                </div>
+                <h3 class="card-title">অরোরা গোল্ড — ফেস্টিভ টিভিসি ক্যাম্পেইন</h3>
+                <p class="card-desc">উচ্চমানের স্টুডিও সেট ডিজাইন, মোশন কন্ট্রোল ক্যামেরা ও ১২ জন শীর্ষ মডেলের অংশগ্রহণে নির্মিত টিভিসি।</p>
+              </div>
+            </article>
+
+            <article class="swiper-slide portfolio-card" data-category="music">
+              <div class="card-media">
+                <img src="assets/images/portfolio-music.jpg" alt="সোনালি রোদ — মিউজিক ভিডিও" />
+                <span class="card-badge">মিউজিক ভিডিও</span>
+                <span class="card-duration"><i class="fa-regular fa-clock"></i> ৪:১০</span>
+                <button class="card-play-btn js-play-reel" data-title="সোনালি রোদ — অফিসিয়াল মিউজিক ফিল্ম" data-category="মিউজিক ভিডিও • ১.২ কোটি+ ভিউ" data-poster="assets/images/portfolio-music.jpg" data-video="https://www.youtube.com/watch?v=YE7VzlLtp-4" type="button" aria-label="Play সোনালি রোদ">
+                  <i class="fa-solid fa-play"></i>
+                </button>
+              </div>
+              <div class="card-body">
+                <div class="card-meta-top">
+                  <span><i class="fa-solid fa-music"></i> মেঘদূত রেকর্ডস</span>
+                  <span>২০২৬</span>
+                </div>
+                <h3 class="card-title">সোনালি রোদ — সিন্থ-রক মিউজিক ফিল্ম</h3>
+                <p class="card-desc">অ্যানামরফিক লেন্স ও গোল্ডেন ভলিউমেট্রিক লাইটিংয়ে নির্মিত দেশের অন্যতম জনপ্রিয় মিউজিক ভিডিও।</p>
+              </div>
+            </article>
+
+            <article class="swiper-slide portfolio-card" data-category="drama">
+              <div class="card-media">
+                <img src="assets/images/hero-cinema.jpg" alt="মায়াজাল — ওটিটি ওয়েব সিরিজ" />
+                <span class="card-badge">নাটক ও ওটিটি</span>
+                <span class="card-duration"><i class="fa-regular fa-clock"></i> ১:৫৫</span>
+                <button class="card-play-btn js-play-reel" data-title="মায়াজাল — ৮ পর্বের ওটিটি সিরিজ" data-category="ওয়েব সিরিজ • কাস্টিং ও প্রোডাকশন" data-poster="assets/images/hero-cinema.jpg" data-video="https://www.youtube.com/watch?v=eRsGyueVLvQ" type="button" aria-label="Play মায়াজাল">
+                  <i class="fa-solid fa-play"></i>
+                </button>
+              </div>
+              <div class="card-body">
+                <div class="card-meta-top">
+                  <span><i class="fa-solid fa-tv"></i> প্রাইম ওটিটি</span>
+                  <span>২০২৫</span>
+                </div>
+                <h3 class="card-title">মায়াজাল — ক্রাইম মিস্ট্রি ওয়েব সিরিজ</h3>
+                <p class="card-desc">সম্পূর্ণ কাস্টিং, লোকেশন স্কাউটিং এবং ৪কে পোস্ট-প্রোডাকশন সম্পন্ন করেছে CineCast টিম।</p>
+              </div>
+            </article>
+
+            <article class="swiper-slide portfolio-card" data-category="tvc">
+              <div class="card-media">
+                <img src="assets/images/portfolio-casting.jpg" alt="ভেলভেট স্টুডিও — ফ্যাশন ফিল্ম" />
+                <span class="card-badge">বিজ্ঞাপন (TVC)</span>
+                <span class="card-duration"><i class="fa-regular fa-clock"></i> ১:০৫</span>
+                <button class="card-play-btn js-play-reel" data-title="ভেলভেট অটাম — ফ্যাশন ফিল্ম" data-category="কমার্শিয়াল • কালার ও এডিটিং" data-poster="assets/images/portfolio-casting.jpg" data-video="https://www.youtube.com/watch?v=aqz-KE-bpKQ" type="button" aria-label="Play ভেলভেট অটাম">
+                  <i class="fa-solid fa-play"></i>
+                </button>
+              </div>
+              <div class="card-body">
+                <div class="card-meta-top">
+                  <span><i class="fa-solid fa-shirt"></i> ভেলভেট লাইফস্টাইল</span>
+                  <span>২০২৬</span>
+                </div>
+                <h3 class="card-title">ভেলভেট অটাম — এডিটোরিয়াল ফ্যাশন ফিল্ম</h3>
+                <p class="card-desc">মিনিমাল ডার্ক-গোল্ড এস্থেটিক ও পোর্ট্রেট সিনেমাটোগ্রাফিতে নির্মিত ব্র্যান্ড লঞ্চ ক্যাম্পেইন।</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="slider-nav-bar">
+          <button class="slider-circle-btn port-prev" type="button" aria-label="Previous Portfolio">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <div class="port-pagination custom-dots"></div>
+          <button class="slider-circle-btn port-next" type="button" aria-label="Next Portfolio">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+
+        <div class="section-view-all">
+          <a href="videos.html" class="btn-outline-gold">
+            <i class="fa-solid fa-circle-play"></i>
+            <span>সকল ভিডিও পোর্টফোলিও দেখুন</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PRODUCTION CRAFT & SERVICES (SLIDER #3 — 3D COVERFLOW) ==================== -->
+  <section class="craft-section section-pad" id="craft-section">
+    <div class="container">
+      <div class="section-header-center">
+        <span class="eyebrow"><i class="fa-solid fa-sliders"></i> আমাদের দক্ষতা ও বিটিএস</span>
+        <h2 class="section-title">ক্যামেরার পেছনের <span class="text-gold-gradient">ক্রাফট ও প্রোডাকশন সার্ভিস</span></h2>
+        <p class="section-sub">স্ক্রিপ্ট থেকে বড় পর্দা—প্রতিটি ধাপে সর্বাধুনিক প্রযুক্তি ও অভিজ্ঞ ক্রিয়েটিভ ডিরেক্টরদের তত্ত্বাবধান</p>
+      </div>
+
+      <div class="swiper craft-swiper" id="btsSlider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide craft-slide">
+            <div class="craft-img-wrap">
+              <img src="assets/images/hero-cinema.jpg" alt="সিনেমাটোগ্রাফি ও ৪কে শুটিং" />
+              <span class="craft-step">০১</span>
+            </div>
+            <div class="craft-content">
+              <h3>সিনেমাটোগ্রাফি ও ৪কে/৮কে শুটিং</h3>
+              <p>RED V-Raptor, ARRI Alexa Mini ও অ্যানামরফিক প্রাইম লেন্সের মাধ্যমে প্রিমিয়াম ভিজ্যুয়াল ক্যাপচার।</p>
+            </div>
+          </div>
+
+          <div class="swiper-slide craft-slide">
+            <div class="craft-img-wrap">
+              <img src="assets/images/portfolio-casting.jpg" alt="ট্যালেন্ট ও মডেল কাস্টিং" />
+              <span class="craft-step">০২</span>
+            </div>
+            <div class="craft-content">
+              <h3>ট্যালেন্ট ও মডেল কাস্টিং ডিরেকশন</h3>
+              <p>নাটক, সিনেমা ও ব্র্যান্ডের চরিত্র অনুযায়ী ১৮৫০+ অডিশন-ভেরিফাইড শিল্পী থেকে নিখুঁত নির্বাচন।</p>
+            </div>
+          </div>
+
+          <div class="swiper-slide craft-slide">
+            <div class="craft-img-wrap">
+              <img src="assets/images/hero-studio.jpg" alt="স্টুডিও লাইটিং ও সেট ডিজাইন" />
+              <span class="craft-step">০৩</span>
+            </div>
+            <div class="craft-content">
+              <h3>প্রফেশনাল স্টুডিও ও সেট ডিজাইন</h3>
+              <p>নিজস্ব সাইক্লোরামা স্টুডিও, ডলি ট্র্যাক, জিব আর্ম ও ডিএমএক্স মুভিং লাইটিং সেটআপ।</p>
+            </div>
+          </div>
+
+          <div class="swiper-slide craft-slide">
+            <div class="craft-img-wrap">
+              <img src="assets/images/portfolio-film.jpg" alt="কালার গ্রেডিং ও ভিএফএক্স" />
+              <span class="craft-step">০৪</span>
+            </div>
+            <div class="craft-content">
+              <h3>DaVinci কালার গ্রেডিং ও ভিএফএক্স</h3>
+              <p>আন্তর্জাতিক সিনেমা স্ট্যান্ডার্ড ডিআই কালার গ্রেডিং, কম্পোজিটিং ও হাই-এন্ড মোশন গ্রাফিক্স।</p>
+            </div>
+          </div>
+
+          <div class="swiper-slide craft-slide">
+            <div class="craft-img-wrap">
+              <img src="assets/images/portfolio-music.jpg" alt="অডিও ডিজাইন ও মাস্টারিং" />
+              <span class="craft-step">০৫</span>
+            </div>
+            <div class="craft-content">
+              <h3>সাউন্ড ডিজাইন ও ডলবি মিক্সিং</h3>
+              <p>অরিজিনাল ব্যাকগ্রাউন্ড স্কোর, ফলি সাউন্ড, ডাবিং ও সিনেমা হল স্ট্যান্ডার্ড অডিও মাস্টারিং।</p>
+            </div>
+          </div>
+        </div>
+        <div class="craft-pagination custom-dots mt-6"></div>
+      </div>
+
+      <div class="section-view-all">
+        <a href="gallery.html" class="btn-outline-gold">
+          <i class="fa-regular fa-images"></i>
+          <span>সম্পূর্ণ শুটিং ও ফটো গ্যালারি দেখুন</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== OPEN CASTING CALLS SLIDER ==================== -->
+  <section class="casting-calls-section section-pad" id="casting-calls">
+    <div class="container">
+      <div class="section-header-row">
+        <div>
+          <span class="eyebrow"><i class="fa-solid fa-bullhorn"></i> রানিং কাস্টিং কল</span>
+          <h2 class="section-title">চলমান <span class="text-gold-gradient">ওপেন অডিশন ও চরিত্র</span></h2>
+          <p class="section-sub">আমাদের আসন্ন নাটক, ওটিটি ও বিজ্ঞাপনের জন্য নির্ধারিত চরিত্রগুলোতে সরাসরি আবেদন করুন</p>
+        </div>
+        <div class="talent-nav-top">
+          <button class="slider-circle-btn casting-prev" type="button" aria-label="Previous Casting Call">
+            <i class="fa-solid fa-arrow-left"></i>
+          </button>
+          <button class="slider-circle-btn casting-next" type="button" aria-label="Next Casting Call">
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="swiper casting-swiper" id="castingCallsSlider">
+        <div class="swiper-wrapper">
+          <article class="swiper-slide casting-card">
+            <div class="casting-top">
+              <span class="casting-status status-urgent"><i class="fa-solid fa-fire"></i> জরুরি কাস্টিং</span>
+              <span class="casting-deadline">ডেডলাইন: ২৫ নভেম্বর</span>
+            </div>
+            <h3>লিড ফিমেল — রোমান্টিক ওয়েব ফিল্ম</h3>
+            <p class="casting-desc">প্রাইম ওটিটির ৯০ মিনিটের রোমান্টিক-ড্রামা ফিল্মের প্রধান নারী চরিত্রের জন্য সাবলীল অভিনেত্রী প্রয়োজন।</p>
+            <ul class="casting-specs">
+              <li><i class="fa-solid fa-user-tag"></i> ক্যাটাগরি: <strong>অভিনেত্রী</strong></li>
+              <li><i class="fa-solid fa-cake-candles"></i> বয়স: <strong>২১-২৬ বছর</strong></li>
+              <li><i class="fa-solid fa-location-dot"></i> শ্যুট: <strong>ঢাকা ও কক্সবাজার</strong></li>
+              <li><i class="fa-solid fa-wallet"></i> সম্মানী: <strong>পেইড প্রজেক্ট</strong></li>
+            </ul>
+            <button class="btn-gold-pill btn-sm w-full js-apply-casting" data-category="অভিনেত্রী" data-role="লিড ফিমেল (রোমান্টিক ওয়েব ফিল্ম)" type="button">
+              <i class="fa-solid fa-paper-plane"></i>
+              <span>এই চরিত্রে আবেদন করুন</span>
+            </button>
+          </article>
+
+          <article class="swiper-slide casting-card">
+            <div class="casting-top">
+              <span class="casting-status status-open"><i class="fa-solid fa-circle-dot"></i> ওপেন অডিশন</span>
+              <span class="casting-deadline">ডেডলাইন: ৩০ নভেম্বর</span>
+            </div>
+            <h3>অ্যাকশন লিড — থ্রিলার ফিচার ফিল্ম</h3>
+            <p class="casting-desc">“রাত্রির শহর ২” সিনেমার অ্যাকশন-নির্ভর চরিত্রের জন্য ফিট এবং স্ক্রিন-টেস্ট রেডি অভিনেতা খোঁজা হচ্ছে।</p>
+            <ul class="casting-specs">
+              <li><i class="fa-solid fa-user-tag"></i> ক্যাটাগরি: <strong>অভিনেতা</strong></li>
+              <li><i class="fa-solid fa-cake-candles"></i> বয়স: <strong>২৫-৩৪ বছর</strong></li>
+              <li><i class="fa-solid fa-location-dot"></i> শ্যুট: <strong>ঢাকা ও সিলেট</strong></li>
+              <li><i class="fa-solid fa-wallet"></i> সম্মানী: <strong>পেইড প্রজেক্ট</strong></li>
+            </ul>
+            <button class="btn-gold-pill btn-sm w-full js-apply-casting" data-category="অভিনেতা" data-role="অ্যাকশন লিড (থ্রিলার ফিচার ফিল্ম)" type="button">
+              <i class="fa-solid fa-paper-plane"></i>
+              <span>এই চরিত্রে আবেদন করুন</span>
+            </button>
+          </article>
+
+          <article class="swiper-slide casting-card">
+            <div class="casting-top">
+              <span class="casting-status status-urgent"><i class="fa-solid fa-star"></i> মেগা টিভিসি</span>
+              <span class="casting-deadline">ডেডলাইন: ২২ নভেম্বর</span>
+            </div>
+            <h3>ব্র্যান্ড ফেস — ফেস্টিভ ফ্যাশন টিভিসি</h3>
+            <p class="casting-desc">জাতীয় টেলিকম ও লাইফস্টাইল ব্র্যান্ডের টিভিসি এবং বিলবোর্ড ক্যাম্পেইনের জন্য স্মার্ট ও ক্যামেরা-ফ্রেন্ডলি মডেল।</p>
+            <ul class="casting-specs">
+              <li><i class="fa-solid fa-user-tag"></i> ক্যাটাগরি: <strong>মডেল</strong></li>
+              <li><i class="fa-solid fa-cake-candles"></i> বয়স: <strong>১৯-২৮ বছর</strong></li>
+              <li><i class="fa-solid fa-location-dot"></i> শ্যুট: <strong>বনানী স্টুডিও, ঢাকা</strong></li>
+              <li><i class="fa-solid fa-wallet"></i> সম্মানী: <strong>চুক্তিভিত্তিক</strong></li>
+            </ul>
+            <button class="btn-gold-pill btn-sm w-full js-apply-casting" data-category="মডেল" data-role="ব্র্যান্ড ফেস (ফেস্টিভ ফ্যাশন টিভিসি)" type="button">
+              <i class="fa-solid fa-paper-plane"></i>
+              <span>এই চরিত্রে আবেদন করুন</span>
+            </button>
+          </article>
+
+          <article class="swiper-slide casting-card">
+            <div class="casting-top">
+              <span class="casting-status status-open"><i class="fa-solid fa-sparkles"></i> ফ্রেশার স্বাগতম</span>
+              <span class="casting-deadline">ডেডলাইন: ০৫ ডিসেম্বর</span>
+            </div>
+            <h3>ভয়েস আর্টিস্ট ও ডাবিং পারফর্মার</h3>
+            <p class="casting-desc">ওটিটি সিরিজ, ডকুমেন্টারি এবং টিভিসি ভয়েস-ওভারের জন্য স্পষ্ট বাংলা ও ইংরেজি উচ্চারণসম্পন্ন নতুন কণ্ঠ।</p>
+            <ul class="casting-specs">
+              <li><i class="fa-solid fa-user-tag"></i> ক্যাটাগরি: <strong>ভয়েস আর্টিস্ট</strong></li>
+              <li><i class="fa-solid fa-cake-candles"></i> বয়স: <strong>১৮-৪০ বছর</strong></li>
+              <li><i class="fa-solid fa-location-dot"></i> স্টুডিও: <strong>তেজগাঁও অডিও ল্যাব</strong></li>
+              <li><i class="fa-solid fa-wallet"></i> সম্মানী: <strong>পেইড প্রজেক্ট</strong></li>
+            </ul>
+            <button class="btn-gold-pill btn-sm w-full js-apply-casting" data-category="ভয়েস আর্টিস্ট" data-role="ভয়েস আর্টিস্ট ও ডাবিং পারফর্মার" type="button">
+              <i class="fa-solid fa-paper-plane"></i>
+              <span>এই চরিত্রে আবেদন করুন</span>
+            </button>
+          </article>
+        </div>
+        <div class="casting-pagination custom-dots mt-6"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FILTERABLE TALENT DIRECTORY ==================== -->
+  <section class="directory-section section-pad" id="talent-directory">
+    <div class="container">
+      <div class="section-header-row">
+        <div>
+          <span class="eyebrow"><i class="fa-solid fa-users-viewfinder"></i> কাস্টিং ও শিল্পী অনুসন্ধান</span>
+          <h2 class="section-title">ট্যালেন্ট <span class="text-gold-gradient">ডিরেক্টরি</span></h2>
+          <p class="section-sub">আপনার প্রজেক্টের বিভিন্ন চরিত্রের জন্য উপযুক্ত শিল্পী ফিল্টার করে খুঁজুন</p>
+        </div>
+        <div class="directory-count-pill" id="directoryCountPill">
+          <i class="fa-solid fa-user-check"></i>
+          <span><strong id="directoryCountNum">6</strong> টি প্রোফাইল দেখাচ্ছে</span>
+        </div>
+      </div>
+
+      <!-- 4-Filter Search Toolbar -->
+      <div class="directory-filter-bar">
+        <div class="filter-field">
+          <label for="dirSearch">নাম বা কি-ওয়ার্ড</label>
+          <div class="input-icon-wrap">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" id="dirSearch" placeholder="শিল্পীর নাম খুঁজুন..." />
+          </div>
+        </div>
+
+        <div class="filter-field">
+          <label for="dirCategory">ক্যাটাগরি</label>
+          <select id="dirCategory">
+            <option value="all">সকল ক্যাটাগরি</option>
+            <option value="অভিনেতা">অভিনেতা</option>
+            <option value="অভিনেত্রী">অভিনেত্রী</option>
+            <option value="মডেল">মডেল</option>
+            <option value="শিশু শিল্পী">শিশু শিল্পী</option>
+            <option value="ভয়েস আর্টিস্ট">ভয়েস আর্টিস্ট</option>
+          </select>
+        </div>
+
+        <div class="filter-field">
+          <label for="dirAge">বয়সসীমা</label>
+          <select id="dirAge">
+            <option value="all">সব বয়স</option>
+            <option value="18-25">১৮-২৫ বছর</option>
+            <option value="26-35">২৬-৩৫ বছর</option>
+            <option value="35+">৩৫+ বছর</option>
+          </select>
+        </div>
+
+        <div class="filter-field">
+          <label for="dirExperience">অভিজ্ঞতা</label>
+          <select id="dirExperience">
+            <option value="all">সকল লেভেল</option>
+            <option value="fresher">নতুন / ফ্রেশার (০-১ বছর)</option>
+            <option value="mid">১-৩ বছর</option>
+            <option value="senior">৪+ বছর</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Directory Cards Grid (Rendered / Managed by JS) -->
+      <div class="directory-grid" id="directoryGrid">
+        <!-- Populated by main.js so filters & new registrations sync live -->
+      </div>
+
+      <div class="directory-empty" id="directoryEmpty" hidden>
+        <i class="fa-regular fa-face-meh"></i>
+        <p>দুঃখিত! আপনার ফিল্টার অনুযায়ী কোনো শিল্পীর প্রোফাইল পাওয়া যায়নি।</p>
+        <button class="btn-outline-gold btn-sm" id="resetDirFiltersBtn" type="button">সব ফিল্টার রিসেট করুন</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== NEW ARTIST REGISTRATION FORM ==================== -->
+  <section class="registration-section section-pad" id="registration-section">
+    <div class="container">
+      <div class="registration-shell">
+        <div class="registration-info">
+          <span class="eyebrow"><i class="fa-solid fa-user-plus"></i> নতুন শিল্পীদের রেজিস্ট্রেশন</span>
+          <h2 class="section-title">আপনার <span class="text-gold-gradient">প্রোফাইল জমা দিন</span></h2>
+          <p class="section-sub">
+            আপনি কি অভিনয় বা মডেলিংয়ে আগ্রহী? নিচের ফরমে সঠিক তথ্য দিয়ে আপনার পোর্টফোলিও আমাদের পাঠিয়ে দিন।
+          </p>
+
+          <div class="reg-highlights">
+            <div class="reg-highlight-item">
+              <span class="reg-icon"><i class="fa-brands fa-whatsapp"></i></span>
+              <div>
+                <h4>সরাসরি হোয়াটসঅ্যাপ কলব্যাক</h4>
+                <p>প্রোজেক্টের সাথে চরিত্র মিলে গেলে আমাদের কাস্টিং টিম সরাসরি হোয়াটসঅ্যাপে যোগাযোগ করবে।</p>
+              </div>
+            </div>
+            <div class="reg-highlight-item">
+              <span class="reg-icon"><i class="fa-solid fa-shield-halved"></i></span>
+              <div>
+                <h4>১০০% ভেরিফাইড মিডিয়া প্রজেক্ট</h4>
+                <p>নাটক, সিনেমা, ওটিটি এবং শীর্ষস্থানীয় ব্র্যান্ড টিভিসি প্রোডাকশনে কাজের সুযোগ।</p>
+              </div>
+            </div>
+            <div class="reg-highlight-item">
+              <span class="reg-icon"><i class="fa-solid fa-bolt"></i></span>
+              <div>
+                <h4>তাৎক্ষণিক ডিরেক্টরি প্রিভিউ</h4>
+                <p>ফর্ম সাবমিট করার সাথে সাথেই উপরের ট্যালেন্ট ডিরেক্টরিতে আপনার প্রোফাইল যুক্ত হয়ে যাবে (লাইভ ডেমো)।</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <form class="registration-form-card" id="artistRegistrationForm">
+          <div class="reg-form-grid">
+            <div class="form-row">
+              <label for="regName">পূর্ণ নাম <span class="req">*</span></label>
+              <input type="text" id="regName" placeholder="আপনার নাম লিখুন" required />
+            </div>
+
+            <div class="form-row">
+              <label for="regPhone">ফোন / হোয়াটসঅ্যাপ নম্বর <span class="req">*</span></label>
+              <input type="tel" id="regPhone" placeholder="০1XXXXXXXXX" required />
+              <small class="field-hint">আমরা মূলত হোয়াটসঅ্যাপের মাধ্যমে যোগাযোগের জন্য মেসেজ পাঠাবো।</small>
+            </div>
+
+            <div class="form-row">
+              <label for="regCategory">ক্যাটাগরি <span class="req">*</span></label>
+              <select id="regCategory" required>
+                <option value="">নির্বাচন করুন</option>
+                <option value="অভিনেতা">অভিনেতা</option>
+                <option value="অভিনেত্রী">অভিনেত্রী</option>
+                <option value="মডেল">মডেল</option>
+                <option value="শিশু শিল্পী">শিশু শিল্পী</option>
+                <option value="ভয়েস আর্টিস্ট">ভয়েস আর্টিস্ট</option>
+              </select>
+            </div>
+
+            <div class="form-row-2">
+              <div class="form-row">
+                <label for="regAge">বয়স <span class="req">*</span></label>
+                <input type="number" id="regAge" min="5" max="85" placeholder="বয়স" required />
+              </div>
+              <div class="form-row">
+                <label for="regHeight">উচ্চতা (ফুট/ইঞ্চি)</label>
+                <input type="text" id="regHeight" placeholder="যেমন: 5' 8&quot;" />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <label for="regDriveLink">ছবি / পোর্টফোলিও লিংক (Google Drive)</label>
+              <input type="url" id="regDriveLink" placeholder="https://drive.google.com/..." />
+            </div>
+
+            <div class="form-row">
+              <label for="regVideoLink">অডিশন ভিডিও / শো-রিল লিংক (YouTube/Facebook)</label>
+              <input type="url" id="regVideoLink" placeholder="https://youtube.com/watch?v=..." />
+            </div>
+
+            <div class="form-row">
+              <label for="regExperience">পূর্বের কাজের অভিজ্ঞতা (যদি থাকে)</label>
+              <textarea id="regExperience" rows="3" placeholder="নাটক, শর্ট ফিল্ম বা বিজ্ঞাপনে কাজের সংক্ষিপ্ত বিবরণ লিখুন..."></textarea>
+            </div>
+          </div>
+
+          <button class="btn-gold-pill btn-lg w-full mt-4" type="submit">
+            <i class="fa-solid fa-paper-plane"></i>
+            <span>সাবমিট করুন</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== BRAND MARQUEE & TESTIMONIALS (SLIDER #5 & #6) ==================== -->
+  <section class="testimonials-section section-pad" id="testimonials-section">
+    <div class="container">
+      <div class="section-header-center">
+        <span class="eyebrow"><i class="fa-solid fa-handshake"></i> পার্টনার ও ক্লায়েন্ট অভিজ্ঞতা</span>
+        <h2 class="section-title">যাদের আস্থায় <span class="text-gold-gradient">আমাদের পথচলা</span></h2>
+      </div>
+
+      <!-- Brand Marquee Slider -->
+      <div class="swiper brand-swiper" id="brandSlider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide brand-pill"><i class="fa-solid fa-film"></i> DHAKA CINEMA</div>
+          <div class="swiper-slide brand-pill"><i class="fa-solid fa-tv"></i> CHORKI ORIGINALS</div>
+          <div class="swiper-slide brand-pill"><i class="fa-solid fa-bolt"></i> AURORA TELECOM</div>
+          <div class="swiper-slide brand-pill"><i class="fa-solid fa-crown"></i> VELVET STUDIO</div>
+          <div class="swiper-slide brand-pill"><i class="fa-solid fa-music"></i> MEGHDOOT RECORDS</div>
+          <div class="swiper-slide brand-pill"><i class="fa-solid fa-video"></i> BENGAL PICTURES</div>
+          <div class="swiper-slide brand-pill"><i class="fa-solid fa-star"></i> PRIME STREAM</div>
+        </div>
+      </div>
+
+      <!-- Client Testimonials Slider -->
+      <div class="swiper testimonial-swiper mt-8" id="testimonialSlider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide testimonial-card">
+            <div class="quote-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="quote-text">
+              “CineCast আমাদের ঈদ স্পেশাল টিভিসি ক্যাম্পেইনের জন্য মাত্র ৪৮ ঘণ্টায় যে কাস্টিং ও শুটিং কোয়ালিটি উপহার দিয়েছে, তা সত্যিই আন্তর্জাতিক মানের।”
+            </p>
+            <div class="quote-author">
+              <div class="author-avatar">না</div>
+              <div>
+                <h4>নাফিস ইকবাল</h4>
+                <span>ব্র্যান্ড ডিরেক্টর, অরোরা গ্রুপ</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide testimonial-card">
+            <div class="quote-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="quote-text">
+              “একজন নতুন অভিনয়শিল্পী হিসেবে CineCast-এর অডিশন প্ল্যাটফর্ম আমাকে দেশের সেরা ওয়েব সিরিজে কাজ করার সুযোগ করে দিয়েছে।”
+            </p>
+            <div class="quote-author">
+              <div class="author-avatar">রি</div>
+              <div>
+                <h4>রাইসা তাবাসসুম</h4>
+                <span>ফিচার্ড অ্যাক্ট্রেস, মায়াজাল সিরিজ</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide testimonial-card">
+            <div class="quote-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="quote-text">
+              “তাদের ৪কে সিনেমাটোগ্রাফি টিম এবং কালার গ্রেডিং ল্যাব আমাদের মিউজিক ফিল্মকে ইউটিউবে ১ কোটি ভিউয়ের মাইলফলকে পৌঁছে দিয়েছে।”
+            </p>
+            <div class="quote-author">
+              <div class="author-avatar">শা</div>
+              <div>
+                <h4>শায়ান রহমান</h4>
+                <span>এক্সিকিউটিভ প্রডিউসার, মেঘদূত রেকর্ডস</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-pagination custom-dots mt-6"></div>
+      </div>
+
+      <div class="section-view-all">
+        <a href="reviews.html" class="btn-outline-gold">
+          <i class="fa-solid fa-star"></i>
+          <span>সকল ক্লায়েন্ট ও শিল্পী রিভিউ দেখুন</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FAQ ACCORDION SECTION ==================== -->
+  <section class="faq-section section-pad" id="faq-section">
+    <div class="container">
+      <div class="section-header-center">
+        <span class="eyebrow"><i class="fa-regular fa-circle-question"></i> সাধারণ জিজ্ঞাসা</span>
+        <h2 class="section-title">সচরাচর <span class="text-gold-gradient">জিজ্ঞাসিত প্রশ্ন (FAQ)</span></h2>
+        <p class="section-sub">অডিশন, রেজিস্ট্রেশন ও প্রোডাকশন বুকিং সম্পর্কে শিল্পী এবং ক্লায়েন্টদের সবচেয়ে সাধারণ প্রশ্নগুলোর উত্তর</p>
+      </div>
+
+      <div class="faq-list" id="faqList">
+        <div class="faq-item active">
+          <button class="faq-trigger" type="button" aria-expanded="true">
+            <span>নতুন শিল্পী হিসেবে প্রোফাইল জমা দিতে কি কোনো রেজিস্ট্রেশন ফি লাগে?</span>
+            <i class="fa-solid fa-plus"></i>
+          </button>
+          <div class="faq-panel">
+            <p>না, CINECAST-এ নতুন শিল্পীদের প্রোফাইল জমা দেওয়া ও কাস্টিং অডিশনে অংশগ্রহণ করা সম্পূর্ণ বিনামূল্যে। আমরা কোনো ধরনের অগ্রিম রেজিস্ট্রেশন ফি গ্রহণ করি না।</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-trigger" type="button" aria-expanded="false">
+            <span>আগে অভিনয়ের কোনো অভিজ্ঞতা না থাকলে কি আবেদন করা যাবে?</span>
+            <i class="fa-solid fa-plus"></i>
+          </button>
+          <div class="faq-panel">
+            <p>অবশ্যই! আমাদের অনেক টিভিসি, ক্যাম্পাস ড্রামা ও নতুন ওটিটি প্রজেক্টে ফ্রেশ মুখ খোঁজা হয়। আপনি মোবাইল ক্যামেরায় তোলা ১ মিনিটের একটি ইন্ট্রো বা অভিনয়ের সেলফ-টেপ ভিডিও লিংক দিয়েই আবেদন করতে পারবেন।</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-trigger" type="button" aria-expanded="false">
+            <span>ফর্ম সাবমিট করার পর কীভাবে ও কতদিনের মধ্যে যোগাযোগ করা হয়?</span>
+            <i class="fa-solid fa-plus"></i>
+          </button>
+          <div class="faq-panel">
+            <p>আমাদের কাস্টিং টিম প্রতিটি প্রোফাইল যাচাই করে ডেটাবেজে সংরক্ষণ করে। চলমান কোনো চরিত্রের সাথে আপনার প্রোফাইল মিলে গেলে ৩-৭ কার্যদিবসের মধ্যে আপনার দেওয়া হোয়াটসঅ্যাপ নম্বরে অডিশন কলব্যাক পাঠানো হয়।</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-trigger" type="button" aria-expanded="false">
+            <span>ব্র্যান্ড টিভিসি, মিউজিক ভিডিও বা কর্পোরেট প্রোডাকশন বুকিং কীভাবে করবো?</span>
+            <i class="fa-solid fa-plus"></i>
+          </button>
+          <div class="faq-panel">
+            <p>উপরের “প্রোফাইল জমা দিন” বাটনে ক্লিক করে অথবা স্টুডিওর ফোন/ইমেইলে প্রজেক্টের সংক্ষিপ্ত বিবরণ দিলে ২৪ ঘণ্টার মধ্যে আমাদের প্রোডাকশন ডিরেক্টর বাজেট ও শুটিং শিডিউলসহ যোগাযোগ করবেন।</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-trigger" type="button" aria-expanded="false">
+            <span>Google Drive ছবি ও YouTube শো-রিল লিংক কীভাবে তৈরি করবো?</span>
+            <i class="fa-solid fa-plus"></i>
+          </button>
+          <div class="faq-panel">
+            <p>আপনার ৩-৫টি স্পষ্ট ক্লোজ-আপ ও ফুল-লেন্থ ছবি Google Drive ফোল্ডারে আপলোড করে “Anyone with the link” ভিউ পারমিশন দিন এবং ১-২ মিনিটের অভিনয়ের ভিডিও YouTube-এ Unlisted/Public হিসেবে আপলোড করে লিংকটি ফর্মে দিন।</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CTA BANNER ==================== -->
+  <section class="cta-section section-pad">
+    <div class="container">
+      <div class="cta-banner">
+        <div class="cta-content">
+          <span class="eyebrow"><i class="fa-solid fa-rocket"></i> চলুন একসাথে তৈরি করি</span>
+          <h2>আপনার পরবর্তী <span class="text-gold-gradient">সিনেমা, নাটক বা ব্র্যান্ড টিভিসি</span> শুরু করতে প্রস্তুত?</h2>
+          <p>শিল্পী হিসেবে প্রোফাইল জমা দিন অথবা প্রোডাকশন বুকিংয়ের জন্য সরাসরি আমাদের ক্রিয়েটিভ টিমের সাথে যুক্ত হোন।</p>
+        </div>
+        <div class="cta-actions">
+          <a href="#registration-section" class="btn-gold-pill btn-lg">
+            <i class="fa-solid fa-circle-plus"></i>
+            <span>প্রোফাইল / প্রজেক্ট জমা দিন</span>
+          </a>
+          <a href="#talent-directory" class="btn-glass btn-lg">
+            <i class="fa-solid fa-users"></i>
+            <span>ট্যালেন্ট ডিরেক্টরি</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#hero" class="brand">
+          <span class="brand-icon"><i class="fa-solid fa-clapperboard"></i></span>
+          <span class="brand-text">
+            <span class="brand-title">CINECAST</span>
+            <span class="brand-sub">MEDIA &amp; PORTFOLIO</span>
+          </span>
+        </a>
+        <p class="footer-desc">
+          বাংলাদেশের অন্যতম আধুনিক কাস্টিং এজেন্সি ও প্রোডাকশন পোর্টফোলিও হাউস। নাটক, সিনেমা, ওটিটি ও বিজ্ঞাপনের পূর্ণাঙ্গ সৃজনশীল অংশীদার।
+        </p>
+        <div class="social-row">
+          <a href="#hero" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#hero" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#hero" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#hero" aria-label="Vimeo"><i class="fa-brands fa-vimeo-v"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>দ্রুত লিংক</h4>
+        <ul>
+          <li><a href="index.html">হোম</a></li>
+          <li><a href="gallery.html">ফটো গ্যালারি</a></li>
+          <li><a href="videos.html">ভিডিও পোর্টফোলিও</a></li>
+          <li><a href="reviews.html">রিভিউ ও ফিডব্যাক</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>প্রোডাকশন বিভাগ</h4>
+        <ul>
+          <li><a href="#craft-section">ফিচার ফিল্ম ও ওটিটি</a></li>
+          <li><a href="#craft-section">টিভিসি ও ব্র্যান্ড ফিল্ম</a></li>
+          <li><a href="#craft-section">মডেল ও অ্যাক্টর কাস্টিং</a></li>
+          <li><a href="#craft-section">পোস্ট ও কালার গ্রেডিং</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>স্টুডিও যোগাযোগ</h4>
+        <ul class="contact-list">
+          <li><i class="fa-solid fa-location-dot"></i> রোড ১১, বনানী, ঢাকা-১২১৩</li>
+          <li><i class="fa-solid fa-phone"></i> +৮৮০ ১৭০০-০০০১২৩</li>
+          <li><i class="fa-solid fa-envelope"></i> casting@cinecastmedia.bd</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <span>© ২০২৬ CINECAST Media &amp; Portfolio. সর্বস্বত্ব সংরক্ষিত।</span>
+        <span>Designed with Cinematic Precision</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== SHOWREEL / VIDEO PLAYER MODAL ==================== -->
+  <div class="modal-backdrop" id="reelModal" aria-hidden="true">
+    <div class="modal-dialog modal-video">
+      <div class="reel-modal-topbar">
+        <div>
+          <span class="reel-badge" id="reelCategory">অফিসিয়াল শো-রিল</span>
+          <h3 id="reelTitle">CINECAST ২০২৬ মেগা শো-রিল</h3>
+        </div>
+        <button class="modal-close modal-close-inline" data-close-modal="reelModal" type="button" aria-label="Close Modal">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <div class="reel-player-wrap">
+        <video id="reelVideo" class="reel-video-el" controls playsinline preload="metadata" poster="assets/images/hero-cinema.jpg" hidden></video>
+        <iframe id="reelIframe" class="reel-iframe-el" title="YouTube Video Player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <div class="reel-modal-footer">
+        <span class="reel-footer-note"><i class="fa-brands fa-youtube"></i> YouTube প্লেয়ার (যদি লোকাল ফাইল থেকে প্লে না হয়, পাশের বাটনে দেখুন)</span>
+        <a id="reelExternalLink" class="btn-outline-gold btn-sm" href="https://www.youtube.com/watch?v=aqz-KE-bpKQ" target="_blank" rel="noopener">
+          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          <span>YouTube-এ দেখুন</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== SUBMIT PROFILE / PROJECT MODAL ==================== -->
+  <div class="modal-backdrop" id="submitModal" aria-hidden="true">
+    <div class="modal-dialog modal-form">
+      <button class="modal-close" data-close-modal="submitModal" type="button" aria-label="Close Modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="modal-header">
+        <span class="eyebrow"><i class="fa-solid fa-clapperboard"></i> CINECAST রেজিস্ট্রেশন</span>
+        <h3>প্রোফাইল বা প্রজেক্ট জমা দিন</h3>
+        <p>শিল্পী, মডেল অথবা প্রোডাকশন বুকিংয়ের জন্য তথ্য দিন (ডিজাইন ডেমো)।</p>
+      </div>
+      <form id="demoSubmitForm" class="demo-form">
+        <div class="form-row">
+          <label>আপনার নাম</label>
+          <input type="text" placeholder="যেমন: আরিফুর রহমান" required />
+        </div>
+        <div class="form-row-2">
+          <div class="form-row">
+            <label>ক্যাটাগরি</label>
+            <select>
+              <option>অভিনয়শিল্পী / মডেল</option>
+              <option>টিভিসি ও ব্র্যান্ড প্রজেক্ট</option>
+              <option>সিনেমা / ওটিটি প্রোডাকশন</option>
+              <option>পরিচালক / সিনেমাটোগ্রাফার</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label>মোবাইল / ইমেইল</label>
+            <input type="text" placeholder="০১৭XX-XXXXXX" required />
+          </div>
+        </div>
+        <div class="form-row">
+          <label>পোর্টফোলিও / শো-রিল লিংক</label>
+          <input type="url" placeholder="https://youtube.com/..." />
+        </div>
+        <button class="btn-gold-pill w-full btn-lg" type="submit">
+          <i class="fa-solid fa-paper-plane"></i>
+          <span>আবেদন সম্পন্ন করুন</span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ==================== TALENT PROFILE & AUDITION MODAL ==================== -->
+  <div class="modal-backdrop" id="talentDetailModal" aria-hidden="true">
+    <div class="modal-dialog modal-talent">
+      <button class="modal-close" data-close-modal="talentDetailModal" type="button" aria-label="Close Modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="talent-modal-layout">
+        <div class="talent-modal-photo">
+          <img id="tmPhoto" src="assets/images/portfolio-casting.jpg" alt="Artist Photo" />
+          <span class="talent-verified" id="tmBadge"><i class="fa-solid fa-circle-check"></i> ভেরিফাইড</span>
+        </div>
+        <div class="talent-modal-body">
+          <span class="eyebrow" id="tmCategory">অভিনেতা</span>
+          <h3 id="tmName">আরিফুর রহমান</h3>
+          <p class="tm-specialty" id="tmSpecialty">রোমান্টিক ও ড্রামা লিড রোল</p>
+
+          <div class="tm-specs">
+            <div><span>বয়স</span><strong id="tmAge">28 বছর</strong></div>
+            <div><span>উচ্চতা</span><strong id="tmHeight">5' 10"</strong></div>
+            <div><span>অভিজ্ঞতা</span><strong id="tmExperience">৪ বছর</strong></div>
+          </div>
+
+          <p class="tm-bio" id="tmBio">অভিজ্ঞতার বিস্তারিত বিবরণ এখানে দেখা যাবে।</p>
+
+          <div class="tm-actions">
+            <button class="btn-gold-pill" id="tmWatchAuditionBtn" type="button">
+              <i class="fa-solid fa-circle-play"></i>
+              <span>অডিশন রিল দেখুন</span>
+            </button>
+            <a class="btn-outline-gold" id="tmDriveLink" href="#registration-section" target="_blank" rel="noopener">
+              <i class="fa-brands fa-google-drive"></i>
+              <span>পোর্টফোলিও লিংক</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast-banner" id="toastBanner" role="status" aria-live="polite">
+    <i class="fa-solid fa-circle-check"></i>
+    <span id="toastMsg">আপনার তথ্য সফলভাবে গৃহীত হয়েছে (ডেমো)!</span>
+  </div>
+
+  <!-- Scripts: GSAP 3.13 + ScrollTrigger + ScrambleText + Lenis + Swiper + Fancybox + Odometer + Main JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrambleTextPlugin.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.8/odometer.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

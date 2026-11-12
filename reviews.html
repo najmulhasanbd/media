@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="bn" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>রিভিউ ও অভিজ্ঞতা — CINECAST মিডিয়া ও কাস্টিং</title>
+  <meta name="description" content="কর্পোরেট ব্র্যান্ড, চলচ্চিত্র পরিচালক এবং অভিনয়শিল্পীদের বাস্তব রিভিউ ও ভিডিও ফিডব্যাক।" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Hind+Siliguri:wght@300;400;500;600;700&family=Oswald:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.8/themes/odometer-theme-default.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <div class="ambient-glow ambient-glow-1" aria-hidden="true"></div>
+  <div class="ambient-glow ambient-glow-2" aria-hidden="true"></div>
+
+  <!-- ==================== NAVBAR ==================== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand" aria-label="CineCast Media Agency Home">
+        <span class="brand-icon"><i class="fa-solid fa-clapperboard"></i></span>
+        <span class="brand-text">
+          <span class="brand-title">CINECAST</span>
+          <span class="brand-sub">MEDIA &amp; PORTFOLIO</span>
+        </span>
+      </a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Primary Navigation">
+        <a href="index.html" class="nav-link">হোম</a>
+        <a href="gallery.html" class="nav-link">গ্যালারি</a>
+        <a href="videos.html" class="nav-link">ভিডিও</a>
+        <a href="reviews.html" class="nav-link active">রিভিউ</a>
+        <a href="index.html#talent-directory" class="nav-link">ট্যালেন্ট ডিরেক্টরি</a>
+        <a href="index.html#registration-section" class="nav-link">আবেদন করুন</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn-outline-gold hidden-sm" id="openShowreelBtn" type="button">
+          <i class="fa-solid fa-play"></i>
+          <span>শো-রিল</span>
+        </button>
+        <a href="index.html#registration-section" class="btn-gold-pill">
+          <i class="fa-solid fa-circle-plus"></i>
+          <span>প্রোফাইল জমা দিন</span>
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" type="button" aria-label="Toggle Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== SUBPAGE HERO ==================== -->
+  <section class="page-hero">
+    <div class="page-hero-bg" style="background-image: url('assets/images/portfolio-music.jpg');"></div>
+    <div class="container page-hero-inner">
+      <div class="breadcrumb-row">
+        <a href="index.html">হোম</a>
+        <i class="fa-solid fa-chevron-right"></i>
+        <span>রিভিউ ও অভিজ্ঞতা</span>
+      </div>
+      <span class="eyebrow"><i class="fa-solid fa-star"></i> ক্লায়েন্ট ও শিল্পীদের মতামত</span>
+      <h1>যাদের আস্থায় তৈরি হয়েছে <span class="text-gold-gradient">আমাদের সাফল্যের গল্প</span></h1>
+      <p>দেশের শীর্ষ ব্র্যান্ড, প্রোডাকশন হাউস এবং অভিনয়শিল্পীদের বাস্তব অভিজ্ঞতা ও ভিডিও রিভিউ।</p>
+    </div>
+  </section>
+
+  <!-- ==================== ODOMETER REVIEW STATS ==================== -->
+  <section class="stats-section" id="stats-section">
+    <div class="container">
+      <div class="stats-odometer-card" id="statsStrip">
+        <div class="stat-item" data-gsap="bottom">
+          <div class="stat-icon"><i class="fa-solid fa-face-smile"></i></div>
+          <div class="stat-num-row"><span class="odometer stat-odo" data-target="99">0</span><span class="stat-plus">%</span></div>
+          <p class="stat-label">ক্লায়েন্ট সন্তুষ্টি</p>
+        </div>
+        <div class="stat-item" data-gsap="top">
+          <div class="stat-icon"><i class="fa-solid fa-comments"></i></div>
+          <div class="stat-num-row"><span class="odometer stat-odo" data-target="145">0</span><span class="stat-plus">+</span></div>
+          <p class="stat-label">ভেরিফাইড রিভিউ</p>
+        </div>
+        <div class="stat-item" data-gsap="bottom">
+          <div class="stat-icon"><i class="fa-solid fa-handshake"></i></div>
+          <div class="stat-num-row"><span class="odometer stat-odo" data-target="65">0</span><span class="stat-plus">+</span></div>
+          <p class="stat-label">রিপিট কর্পোরেট ব্র্যান্ড</p>
+        </div>
+        <div class="stat-item" data-gsap="top">
+          <div class="stat-icon"><i class="fa-solid fa-award"></i></div>
+          <div class="stat-num-row"><span class="odometer stat-odo" data-target="18">0</span><span class="stat-plus">+</span></div>
+          <p class="stat-label">ইন্ডাস্ট্রি অ্যাওয়ার্ড</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== VIDEO REVIEWS SLIDER ==================== -->
+  <section class="section-pad">
+    <div class="container">
+      <div class="section-header-row">
+        <div>
+          <span class="eyebrow"><i class="fa-brands fa-youtube"></i> ভিডিও টেস্টিমোনিয়াল</span>
+          <h2 class="section-title">ক্লায়েন্ট ও শিল্পীদের <span class="text-gold-gradient">ভিডিও রিভিউ</span></h2>
+        </div>
+      </div>
+
+      <div class="swiper" id="videoReviewSlider">
+        <div class="swiper-wrapper">
+          <article class="swiper-slide video-review-card" data-gsap="bottom">
+            <div class="card-media img-reveal-bottom">
+              <img src="assets/images/hero-studio.jpg" alt="অরোরা গ্রুপ ব্র্যান্ড রিভিউ" />
+              <span class="card-badge">ব্র্যান্ড রিভিউ</span>
+              <button class="card-play-btn js-play-reel" data-title="নাফিস ইকবাল (অরোরা গ্রুপ) — ভিডিও রিভিউ" data-category="ব্র্যান্ড টিভিসি এক্সপেরিয়েন্স" data-poster="assets/images/hero-studio.jpg" data-video="https://www.youtube.com/watch?v=mN0zPOpADL4" type="button" aria-label="Play Review">
+                <i class="fa-solid fa-play"></i>
+              </button>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">“দ্রুত কাস্টিং ও নিখুঁত টিভিসি ডেলিভারি”</h3>
+              <p class="card-desc">নাফিস ইকবাল — ব্র্যান্ড ডিরেক্টর, অরোরা গ্রুপ</p>
+            </div>
+          </article>
+
+          <article class="swiper-slide video-review-card" data-gsap="top">
+            <div class="card-media img-reveal-top">
+              <img src="assets/images/portfolio-casting.jpg" alt="আরিফুর রহমান অ্যাক্টর রিভিউ" />
+              <span class="card-badge">শিল্পী রিভিউ</span>
+              <button class="card-play-btn js-play-reel" data-title="আরিফুর রহমান — শিল্পী অভিজ্ঞতা" data-category="অডিশন ও কাস্টিং স্টোরি" data-poster="assets/images/portfolio-casting.jpg" data-video="https://www.youtube.com/watch?v=aqz-KE-bpKQ" type="button" aria-label="Play Review">
+                <i class="fa-solid fa-play"></i>
+              </button>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">“নতুন শিল্পীদের জন্য সবচেয়ে বিশ্বস্ত প্ল্যাটফর্ম”</h3>
+              <p class="card-desc">আরিফুর রহমান — লিড অ্যাক্টর, মায়াজাল ওয়েব সিরিজ</p>
+            </div>
+          </article>
+
+          <article class="swiper-slide video-review-card" data-gsap="bottom">
+            <div class="card-media img-reveal-bottom">
+              <img src="assets/images/portfolio-film.jpg" alt="রাফি আহমেদ ডিরেক্টর রিভিউ" />
+              <span class="card-badge">পরিচালক রিভিউ</span>
+              <button class="card-play-btn js-play-reel" data-title="রাফি আহমেদ — ফিল্ম ডিরেক্টর রিভিউ" data-category="রাত্রির শহর প্রোডাকশন" data-poster="assets/images/portfolio-film.jpg" data-video="https://www.youtube.com/watch?v=HomAZcKm3fk" type="button" aria-label="Play Review">
+                <i class="fa-solid fa-play"></i>
+              </button>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">“৪কে সিনেমাটোগ্রাফি ও প্রোডাকশন সাপোর্ট অসাধারণ”</h3>
+              <p class="card-desc">রাফি আহমেদ — চলচ্চিত্র ও ওটিটি পরিচালক</p>
+            </div>
+          </article>
+        </div>
+        <div class="video-rev-pagination custom-dots mt-6"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FILTERABLE TEXT REVIEWS + SUBMIT REVIEW ==================== -->
+  <section class="section-pad" id="written-reviews">
+    <div class="container">
+      <div class="section-header-row">
+        <div>
+          <span class="eyebrow"><i class="fa-solid fa-quote-left"></i> লিখিত মতামত</span>
+          <h2 class="section-title">ক্লায়েন্ট ও শিল্পীদের <span class="text-gold-gradient">লিখিত রিভিউ</span></h2>
+        </div>
+
+        <div class="filter-pills" id="reviewFilters">
+          <button class="filter-pill active" data-filter="all" type="button">সব রিভিউ</button>
+          <button class="filter-pill" data-filter="brand" type="button">কর্পোরেট ব্র্যান্ড</button>
+          <button class="filter-pill" data-filter="director" type="button">পরিচালক ও প্রডিউসার</button>
+          <button class="filter-pill" data-filter="artist" type="button">অভিনয়শিল্পী ও মডেল</button>
+        </div>
+      </div>
+
+      <div class="reviews-grid" id="reviewsGrid">
+        <article class="testimonial-card" data-category="brand" data-gsap="bottom">
+          <div class="quote-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <p class="quote-text">“CineCast আমাদের ঈদ স্পেশাল টিভিসি ক্যাম্পেইনের জন্য মাত্র ৪৮ ঘণ্টায় যে কাস্টিং ও শুটিং কোয়ালিটি উপহার দিয়েছে, তা সত্যিই আন্তর্জাতিক মানের।”</p>
+          <div class="quote-author">
+            <div class="author-avatar">না</div>
+            <div><h4>নাফিস ইকবাল</h4><span>ব্র্যান্ড ডিরেক্টর, অরোরা গ্রুপ</span></div>
+          </div>
+        </article>
+
+        <article class="testimonial-card" data-category="artist" data-gsap="top">
+          <div class="quote-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <p class="quote-text">“কোনো অডিশন ফি ছাড়াই এখানে রেজিস্ট্রেশন করে ওয়েব সিরিজে কাজ করার সুযোগ পেয়েছি। তাদের কাস্টিং টিম খুবই পেশাদার।”</p>
+          <div class="quote-author">
+            <div class="author-avatar">নু</div>
+            <div><h4>নুসরাত জাহান</h4><span>মডেল ও অভিনেত্রী</span></div>
+          </div>
+        </article>
+
+        <article class="testimonial-card" data-category="director" data-gsap="bottom">
+          <div class="quote-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <p class="quote-text">“তাদের ৪কে সিনেমাটোগ্রাফি টিম এবং কালার গ্রেডিং ল্যাব আমাদের মিউজিক ফিল্মকে ইউটিউবে ১ কোটি ভিউয়ের মাইলফলকে পৌঁছে দিয়েছে।”</p>
+          <div class="quote-author">
+            <div class="author-avatar">শা</div>
+            <div><h4>শায়ান রহমান</h4><span>এক্সিকিউটিভ প্রডিউসার, মেঘদূত রেকর্ডস</span></div>
+          </div>
+        </article>
+
+        <article class="testimonial-card" data-category="brand" data-gsap="top">
+          <div class="quote-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <p class="quote-text">“ভেলভেট অটাম ফ্যাশন ফিল্মের সেট ডিজাইন, লাইটিং ও মডেল সিলেকশন ছিল একদম নিখুঁত। টাইমলাইন মেনেই ডেলিভারি পেয়েছি।”</p>
+          <div class="quote-author">
+            <div class="author-avatar">ফা</div>
+            <div><h4>ফারহানা হক</h4><span>মার্কেটিং হেড, ভেলভেট লাইফস্টাইল</span></div>
+          </div>
+        </article>
+
+        <article class="testimonial-card" data-category="artist" data-gsap="bottom">
+          <div class="quote-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <p class="quote-text">“শুটিং সেটে সময়মতো পেমেন্ট ও পেশাদার পরিবেশ বজায় রাখার জন্য নতুন শিল্পীদের কাছে CineCast প্রথম পছন্দ।”</p>
+          <div class="quote-author">
+            <div class="author-avatar">সা</div>
+            <div><h4>সাদমান সাকিব</h4><span>অভিনেতা, ঢাকা</span></div>
+          </div>
+        </article>
+
+        <article class="testimonial-card" data-category="director" data-gsap="top">
+          <div class="quote-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <p class="quote-text">“ট্যালেন্ট ডিরেক্টরি থেকে বয়স ও অভিজ্ঞতা অনুযায়ী শিল্পী ফিল্টার করে নেওয়াটা আমাদের প্রি-প্রোডাকশন সময় অর্ধেক কমিয়ে দিয়েছে।”</p>
+          <div class="quote-author">
+            <div class="author-avatar">রা</div>
+            <div><h4>রাফি আহমেদ</h4><span>থ্রিলার ফিল্ম ডিরেক্টর</span></div>
+          </div>
+        </article>
+      </div>
+
+      <!-- Submit a New Review Form -->
+      <div class="review-form-shell mt-8" data-gsap="bottom">
+        <div class="section-header-center" style="margin-bottom: 24px;">
+          <span class="eyebrow"><i class="fa-solid fa-pen-to-square"></i> আপনার অভিজ্ঞতা শেয়ার করুন</span>
+          <h2 class="section-title">নতুন <span class="text-gold-gradient">রিভিউ লিখুন</span></h2>
+        </div>
+
+        <form id="reviewSubmitForm" class="demo-form">
+          <div class="form-row-2">
+            <div class="form-row">
+              <label for="revName">আপনার নাম *</label>
+              <input type="text" id="revName" placeholder="যেমন: তানজিম আহমেদ" required />
+            </div>
+            <div class="form-row">
+              <label for="revRole">পদবি / পরিচয় *</label>
+              <input type="text" id="revRole" placeholder="যেমন: মডেল / প্রডিউসার" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <label for="revCategory">বিভাগ</label>
+            <select id="revCategory">
+              <option value="artist">অভিনয়শিল্পী ও মডেল</option>
+              <option value="brand">কর্পোরেট ব্র্যান্ড</option>
+              <option value="director">পরিচালক ও প্রডিউসার</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="revText">আপনার রিভিউ *</label>
+            <textarea id="revText" rows="3" placeholder="CineCast-এর সাথে আপনার কাজের অভিজ্ঞতা লিখুন..." style="background:#080a0f;border:1px solid rgba(255,255,255,0.14);border-radius:10px;padding:12px 14px;color:#f8fafc;font-family:inherit;" required></textarea>
+          </div>
+          <button class="btn-gold-pill btn-lg w-full" type="submit">
+            <i class="fa-solid fa-paper-plane"></i>
+            <span>রিভিউ সাবমিট করুন</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SHOWREEL MODAL (YOUTUBE PLAYER) ==================== -->
+  <div class="modal-backdrop" id="reelModal" aria-hidden="true">
+    <div class="modal-dialog modal-video">
+      <div class="reel-modal-topbar">
+        <div>
+          <span class="reel-badge" id="reelCategory">অফিসিয়াল শো-রিল</span>
+          <h3 id="reelTitle">CINECAST ২০২৬ মেগা শো-রিল</h3>
+        </div>
+        <button class="modal-close modal-close-inline" data-close-modal="reelModal" type="button" aria-label="Close Modal">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <div class="reel-player-wrap">
+        <video id="reelVideo" class="reel-video-el" controls playsinline preload="metadata" poster="assets/images/hero-cinema.jpg" hidden></video>
+        <iframe id="reelIframe" class="reel-iframe-el" title="YouTube Video Player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <div class="reel-modal-footer">
+        <span class="reel-footer-note"><i class="fa-brands fa-youtube"></i> YouTube প্লেয়ার</span>
+        <a id="reelExternalLink" class="btn-outline-gold btn-sm" href="https://www.youtube.com/watch?v=aqz-KE-bpKQ" target="_blank" rel="noopener">
+          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          <span>YouTube-এ দেখুন</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand">
+          <span class="brand-icon"><i class="fa-solid fa-clapperboard"></i></span>
+          <span class="brand-text">
+            <span class="brand-title">CINECAST</span>
+            <span class="brand-sub">MEDIA &amp; PORTFOLIO</span>
+          </span>
+        </a>
+        <p class="footer-desc">
+          বাংলাদেশের অন্যতম আধুনিক কাস্টিং এজেন্সি ও প্রোডাকশন পোর্টফোলিও হাউস। নাটক, সিনেমা, ওটিটি ও বিজ্ঞাপনের পূর্ণাঙ্গ সৃজনশীল অংশীদার।
+        </p>
+        <div class="social-row">
+          <a href="index.html" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="index.html" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="index.html" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="index.html" aria-label="Vimeo"><i class="fa-brands fa-vimeo-v"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>দ্রুত লিংক</h4>
+        <ul>
+          <li><a href="index.html">হোম</a></li>
+          <li><a href="gallery.html">ফটো গ্যালারি</a></li>
+          <li><a href="videos.html">ভিডিও পোর্টফোলিও</a></li>
+          <li><a href="reviews.html">রিভিউ ও ফিডব্যাক</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>প্রোডাকশন বিভাগ</h4>
+        <ul>
+          <li><a href="videos.html">ফিচার ফিল্ম ও ওটিটি</a></li>
+          <li><a href="videos.html">টিভিসি ও ব্র্যান্ড ফিল্ম</a></li>
+          <li><a href="index.html#talent-directory">মডেল ও অ্যাক্টর কাস্টিং</a></li>
+          <li><a href="index.html#registration-section">শিল্পী রেজিস্ট্রেশন</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>স্টুডিও যোগাযোগ</h4>
+        <ul class="contact-list">
+          <li><i class="fa-solid fa-location-dot"></i> রোড ১১, বনানী, ঢাকা-১২১৩</li>
+          <li><i class="fa-solid fa-phone"></i> +৮৮০ ১৭০০-০০০১২৩</li>
+          <li><i class="fa-solid fa-envelope"></i> casting@cinecastmedia.bd</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <span>© ২০২৬ CINECAST Media &amp; Portfolio. সর্বস্বত্ব সংরক্ষিত।</span>
+        <span>Designed with Cinematic Precision</span>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast-banner" id="toastBanner" role="status" aria-live="polite">
+    <i class="fa-solid fa-circle-check"></i>
+    <span id="toastMsg">সফল হয়েছে!</span>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrambleTextPlugin.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.8/odometer.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+
