@@ -1,5 +1,5 @@
 /* ==========================================================================
-   CINECAST — Media, Production & Casting Portfolio
+   Mind Blowing MEDIA — Casting & Media House
    Interactive Multi-Sliders (Swiper) + Odometer Live Countdown + Modals
    ========================================================================== */
 
@@ -101,10 +101,6 @@ document.addEventListener('DOMContentLoaded', () => {
           nextEl: '.hero-next',
           prevEl: '.hero-prev',
         },
-        pagination: {
-          el: '.hero-pagination',
-          clickable: true,
-        },
         thumbs: heroThumbs ? { swiper: heroThumbs } : undefined,
       });
     }
@@ -129,10 +125,6 @@ document.addEventListener('DOMContentLoaded', () => {
         navigation: {
           nextEl: '.port-next',
           prevEl: '.port-prev',
-        },
-        pagination: {
-          el: '.port-pagination',
-          clickable: true,
         },
         breakpoints: {
           680: { slidesPerView: 2 },
@@ -185,9 +177,9 @@ document.addEventListener('DOMContentLoaded', () => {
           modifier: 1.2,
           slideShadows: true,
         },
-        pagination: {
-          el: '.craft-pagination',
-          clickable: true,
+        navigation: {
+          nextEl: '.craft-next',
+          prevEl: '.craft-prev',
         },
       });
     }
@@ -202,10 +194,6 @@ document.addEventListener('DOMContentLoaded', () => {
         navigation: {
           nextEl: '.casting-next',
           prevEl: '.casting-prev',
-        },
-        pagination: {
-          el: '.casting-pagination',
-          clickable: true,
         },
         breakpoints: {
           680: { slidesPerView: 2 },
@@ -240,9 +228,9 @@ document.addEventListener('DOMContentLoaded', () => {
           delay: 5200,
           disableOnInteraction: true,
         },
-        pagination: {
-          el: '.testi-pagination',
-          clickable: true,
+        navigation: {
+          nextEl: '.testi-next',
+          prevEl: '.testi-prev',
         },
         breakpoints: {
           768: { slidesPerView: 2 },
@@ -258,9 +246,9 @@ document.addEventListener('DOMContentLoaded', () => {
         spaceBetween: 24,
         speed: 650,
         grabCursor: true,
-        pagination: {
-          el: '.video-rev-pagination',
-          clickable: true,
+        navigation: {
+          nextEl: '.video-rev-next',
+          prevEl: '.video-rev-prev',
         },
         breakpoints: {
           768: { slidesPerView: 2 },
@@ -388,13 +376,13 @@ document.addEventListener('DOMContentLoaded', () => {
       const ss = String(secs % 60).padStart(2, '0');
       const ff = String(Math.floor((elapsed * 24) % 24)).padStart(2, '0');
 
-      ctx.fillStyle = '#f5b82e';
+      ctx.fillStyle = '#ff6b1a';
       ctx.font = 'bold 18px sans-serif';
       ctx.fillText(`REC ● 00:${mm}:${ss}:${ff}  •  4K CINEMA PREVIEW`, 32, 44);
 
       ctx.fillStyle = '#ffffff';
       ctx.font = 'bold 28px sans-serif';
-      ctx.fillText(titleText || 'CINECAST SHOWREEL', 32, canvas.height - 42);
+      ctx.fillText(titleText || 'MIND BLOWING MEDIA', 32, canvas.height - 42);
 
       canvasStreamRaf = requestAnimationFrame(drawFrame);
     }
@@ -429,7 +417,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function openReelPlayer({ title, category, poster, videoUrl }) {
     stopReelPlayer();
-    if (reelTitle) reelTitle.textContent = title || 'CINECAST শো-রিল';
+    if (reelTitle) reelTitle.textContent = title || 'Mind Blowing Media শো-রিল';
     if (reelCategory) reelCategory.textContent = category || 'অফিসিয়াল প্রিভিউ';
 
     const defaultYtUrl = 'https://www.youtube.com/watch?v=aqz-KE-bpKQ';
@@ -860,7 +848,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (openShowreelBtn) {
     openShowreelBtn.addEventListener('click', () => {
       openReelPlayer({
-        title: 'CINECAST ২০২৬ মেগা শো-রিল',
+        title: 'Mind Blowing Media ২০২৬ মেগা শো-রিল',
         category: 'অফিসিয়াল শো-রিল • ২:৪৫ মিনিট',
         poster: 'assets/images/hero-cinema.jpg',
         videoUrl: 'https://www.youtube.com/watch?v=aqz-KE-bpKQ',
@@ -1338,7 +1326,7 @@ document.addEventListener('DOMContentLoaded', () => {
         height: ds.height || "5' 9\"",
         expLabel: ds.exp || '৪ বছর অভিজ্ঞতা',
         photo: ds.photo || 'assets/images/portfolio-casting.jpg',
-        bio: ds.bio || 'ভেরিফাইড CINECAST শিল্পী ও মডেল প্রোফাইল।',
+        bio: ds.bio || 'ভেরিফাইড Mind Blowing Media শিল্পী ও মডেল প্রোফাইল।',
         videoLink: ds.video || 'https://www.youtube.com/watch?v=aqz-KE-bpKQ',
         driveLink: ds.drive || 'index.html#registration-section',
       });
@@ -1666,32 +1654,39 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }
 
-    // Navbar Brand ScrambleText on Load + Hover
+    // Navbar Brand ScrambleText on Load + Hover (preserves colored word spans)
     const brandTitle = document.querySelector('.brand-title');
     const brandSub = document.querySelector('.brand-sub');
     const brandWrap = document.querySelector('.brand');
     if (hasScrambleText && brandTitle) {
-      brandTitle.dataset.scrambleText = brandTitle.textContent;
-      gsap.to(brandTitle, {
-        duration: 1.0,
-        ease: 'none',
-        scrambleText: { text: brandTitle.dataset.scrambleText, chars: 'upperCase', revealDelay: 0.1, speed: 0.45 },
+      const wordSpans = Array.from(brandTitle.querySelectorAll('span'));
+      const targets = wordSpans.length ? wordSpans : [brandTitle];
+      targets.forEach((sp, i) => {
+        sp.dataset.scrambleText = sp.textContent;
+        gsap.to(sp, {
+          duration: 0.9,
+          delay: i * 0.08,
+          ease: 'none',
+          scrambleText: { text: sp.dataset.scrambleText, chars: 'upperAndLowerCase', revealDelay: 0.1, speed: 0.45 },
+        });
       });
       if (brandSub) {
         brandSub.dataset.scrambleText = brandSub.textContent;
         gsap.to(brandSub, {
-          duration: 1.1,
-          delay: 0.12,
+          duration: 1.0,
+          delay: 0.14,
           ease: 'none',
           scrambleText: { text: brandSub.dataset.scrambleText, chars: 'upperAndLowerCase', revealDelay: 0.1, speed: 0.5 },
         });
       }
       if (brandWrap) {
         brandWrap.addEventListener('mouseenter', () => {
-          gsap.to(brandTitle, {
-            duration: 0.65,
-            overwrite: 'auto',
-            scrambleText: { text: brandTitle.dataset.scrambleText, chars: 'XO0123456789CINECAST', speed: 0.55 },
+          targets.forEach((sp) => {
+            gsap.to(sp, {
+              duration: 0.65,
+              overwrite: 'auto',
+              scrambleText: { text: sp.dataset.scrambleText, chars: 'XO0123456789MINDBLOWING', speed: 0.55 },
+            });
           });
           if (brandSub) {
             gsap.to(brandSub, {
@@ -2068,5 +2063,71 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   initCinemaAnimations();
+
+  /* -------------------- 12. Stylish Back-to-Top Floating Button (All Pages) -------------------- */
+  function initBackToTopButton() {
+    if (document.getElementById('backToTopBtn')) return;
+
+    const btn = document.createElement('button');
+    btn.id = 'backToTopBtn';
+    btn.type = 'button';
+    btn.className = 'back-to-top-btn';
+    btn.setAttribute('aria-label', 'উপরে ফিরে যান');
+    btn.innerHTML = `
+      <svg class="back-to-top-ring" viewBox="0 0 54 54" aria-hidden="true">
+        <defs>
+          <linearGradient id="mbmScrollGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#1d6fff" />
+            <stop offset="55%" stop-color="#60a5fa" />
+            <stop offset="100%" stop-color="#ff6b1a" />
+          </linearGradient>
+        </defs>
+        <circle class="back-to-top-track" cx="27" cy="27" r="24"></circle>
+        <circle class="back-to-top-progress" cx="27" cy="27" r="24"></circle>
+      </svg>
+      <span class="back-to-top-core"><i class="fa-solid fa-arrow-up"></i></span>
+      <span class="back-to-top-tip">TOP</span>
+    `;
+    document.body.appendChild(btn);
+
+    const progressCircle = btn.querySelector('.back-to-top-progress');
+    const radius = 24;
+    const circumference = 2 * Math.PI * radius;
+    if (progressCircle) {
+      progressCircle.style.strokeDasharray = `${circumference}`;
+      progressCircle.style.strokeDashoffset = `${circumference}`;
+    }
+
+    function updateProgress() {
+      const scrollTop = window.scrollY || document.documentElement.scrollTop || 0;
+      const docHeight = Math.max(1, document.documentElement.scrollHeight - window.innerHeight);
+      const ratio = Math.min(1, Math.max(0, scrollTop / docHeight));
+
+      if (progressCircle) {
+        progressCircle.style.strokeDashoffset = `${circumference * (1 - ratio)}`;
+      }
+      if (scrollTop > 240) {
+        btn.classList.add('visible');
+      } else {
+        btn.classList.remove('visible');
+      }
+    }
+
+    window.addEventListener('scroll', updateProgress, { passive: true });
+    if (lenisInstance && typeof lenisInstance.on === 'function') {
+      lenisInstance.on('scroll', updateProgress);
+    }
+    updateProgress();
+
+    btn.addEventListener('click', () => {
+      if (lenisInstance && typeof lenisInstance.scrollTo === 'function') {
+        lenisInstance.scrollTo(0, { duration: 1.15 });
+      } else {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    });
+  }
+
+  initBackToTopButton();
 });
 
